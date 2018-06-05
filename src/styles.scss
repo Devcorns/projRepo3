@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.mt-10{
+    margin-top:10px;
+}
+.mt-20{
+    margin-top:20px;
+
+}
+.mb-20{
+    margin-bottom:20px;
+}
+
+.hide {
+    display: none !important;
+}
+
+body {
+    margin: 0;
+}
+
+.center-panel-box {
+    .logo {
+        & img {
+            width: 200px;
+        }
+    }
+}
+
+.mat-block {
+    width: 100%;
+}
+
+.checkbox-radio-box {
+    padding: 0px 0px 20px 0px;
+}
+.mat-drawer-container{
+    height:100vh;
+}
+.inline-checkbox{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.inline-checkbox .mat-checkbox{
+    flex:33%;
+    max-width:33%;
+}

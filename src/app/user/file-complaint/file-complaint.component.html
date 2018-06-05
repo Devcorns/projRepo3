@@ -1,0 +1,28 @@
+<div fxLayout="row" fxLayoutAlign="center center" class="center-panel-box">
+  
+      <div fxFlex="600px">
+          <mat-card>
+              <div fxLayout="column">
+                  
+                  <form >
+                      <mat-form-field class="mat-block">
+                        <mat-select placeholder="Select Issues" [formControl]="toppings" multiple>
+                          <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping.issue}}</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+  
+                      <mat-form-field class="mat-block">
+                          <input matInput type="password"  placeholder="Password">
+                      </mat-form-field>
+                      <div class="checkbox-radio-box">
+                          <mat-checkbox >Remember Me</mat-checkbox>
+                      </div>
+  
+                      <button class="mat-block"  mat-raised-button color="primary">Sign In !</button>
+                  </form>
+              </div>
+          </mat-card>
+  
+  
+      </div>
+  </div>
