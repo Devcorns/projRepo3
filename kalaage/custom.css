@@ -1,0 +1,93 @@
+.text-reddish{
+    color:#cc4e40 !important;
+}
+.text-semibold{
+    font-weight:400;
+}
+.title-container{
+    margin-bottom:80px; 
+}
+.title-container .title{
+    color:#010101;
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.title-container  .title + .hr-title {
+    border:1px solid rgb(136, 136, 136);
+    width:40px;
+}
+
+.detail-offering .icon-offering{
+    margin-right:10px;
+    width:30px;
+    height:30px;
+}
+.detail-offering .title{
+    color:#010101;
+}
+.detail-offering .description{
+    font-size:14px;
+}
+
+.btn{
+    padding: .64rem 2.14rem;
+}
+.btn-raddish{
+    background:#cc4e40;
+    color:#fff;
+}
+
+section,footer{
+    padding:72px 0;
+    
+}
+.banner-section{
+    background-image: url(images/Layer2.png), url(images/layer3.png);
+    background-position: top left, right bottom;
+    background-repeat: no-repeat;
+    
+}
+.detail-offering.with-margin>div{
+    margin-bottom:80px;
+}
+
+.banner-section .banner-content *:not(button){
+    margin-bottom:34px;
+}
+
+.banner-section .banner-content .description-content{
+    font-size:12px;
+}
+.btns-shower .btn-transp{
+    background:transparent;
+    color: #111111;
+    font-weight: 500;
+   
+}
+
+.btns-shower .btn-white{
+    background:#fff;
+}
+footer.page-footer{
+    background:#f4f4f4;
+    color:#000;
+}
+.icon-text .logo{
+    background:#cc4e40;
+    padding:0px 5px;
+    margin-right:5px;
+    color:#fff;
+}
+
+.sub-heading{
+    margin-left:30px;
+    color:#000;
+    font-weight: 400;
+}
+
+@media screen and (max-width:768px){
+    .detail-offering>div{
+        margin-bottom:50px !important;
+    }
+}
