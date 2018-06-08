@@ -65,8 +65,9 @@ export class SettingsComponent implements OnInit {
         })
 
     }
-    selectIssue() {
-        console.log(this.issueSelectedForm.value);
+    selectIssue(data):void {
+       
+        console.log(data)
     }
 
 }

@@ -21,7 +21,7 @@
                             <button mat-raised-button color="primary">Save Issue</button>
                         </div>
                     </form>
-                    <form [formGroup]="issueSelectedForm" (submit)=selectIssue()>
+                    <form [formGroup]="issueSelectedForm" (submit)=selectIssue(issueSelectedForm)>
                         <div class="mat-block inline-checkbox mt-10" formArrayName="issueTypes" *ngFor="let issuesValues of issueSelectedForm.get('issueTypes')['controls']; let i = index">
                             <mat-checkbox formControlName="{{i}}">
                                 {{issueSelectedForm.get('issueTypes').value[i]}}
