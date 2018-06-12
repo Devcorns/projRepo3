@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SettingSenderService } from "./setting-sender.service";
-import { FormGroup, FormControl, Validators, FormBuilder }  from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder,FormArray }  from '@angular/forms';
 
 @Component({
   selector: 'app-settings',
@@ -18,23 +18,34 @@ export class SettingsComponent implements OnInit {
     this.issueForm = this.fb.group({
       issueType : new FormControl("",Validators.required)
     });
+    this.issueSelectedForm = this.fb.group({
+      issueTypes: this.fb.array([])
+  });
    
 
    }
 
   ngOnInit() {
     
-    this.settingService.showIssues().subscribe(result=>{
-     
-     for(var i =0;i<result.length;i++){
-       if(result[i].issueType!=undefined){
-          this.issueCheckBox.push(result[i].issueType);
-       }
-       
-     }
-     console.log(this.issueCheckBox);
-    })
+    this.settingService.showIssues().subscribe(result => {
+
+      for (var i = 0; i < result.length; i++) {
+          if (result[i].issueType != undefined) {
+              this.addIssueType(result[i].issueType);
+              //this.issueCheckBox.push(result[i].issueType);
+          }
+
+      }
+      console.log(this.issueCheckBox);
+  });
   }
+
+
+  addIssueType(val): void {
+    let array:FormArray = this.issueSelectedForm.get('issueTypes') as FormArray;
+    array.push(new FormControl(val));
+}
+
 
   issueEntry(data){
 

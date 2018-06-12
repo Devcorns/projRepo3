@@ -18,6 +18,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { SettingSenderService } from './settings/setting-sender.service';
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -31,6 +32,7 @@ import { SettingSenderService } from './settings/setting-sender.service';
     FlexLayoutModule,
     MatButtonModule,
     MatCheckboxModule,
+    MatSelectModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule

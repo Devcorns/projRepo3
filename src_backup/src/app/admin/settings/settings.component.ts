@@ -55,7 +55,7 @@ export class SettingsComponent implements OnInit {
 
 
     issueEntry(data) {
-
+        
         this.settingService.saveIssueEntry(data).subscribe(result => {
 
             console.log(result);
