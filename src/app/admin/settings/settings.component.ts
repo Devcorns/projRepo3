@@ -25,6 +25,11 @@ export class SettingsComponent implements OnInit {
 
    }
 
+
+   toppings = new FormControl();
+
+   toppingList = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
+
   ngOnInit() {
     
     this.settingService.showIssues().subscribe(result => {

@@ -21,16 +21,18 @@
                             <button mat-raised-button color="primary">Save Issue</button>
                         </div>
                     </form>
-                    <!-- <form [formGroup]="issueSelectedForm" (submit)=selectIssue(issueSelectedForm) >  -->
-                    <div class="mat-block inline-checkbox mt-10">
-                        <mat-checkbox *ngFor="let issuesValues of issueCheckBox">
-                            {{issuesValues}}
-                        </mat-checkbox>
-                    </div>
-                    <div class="mat-block  mt-10">
-                        <button mat-raised-button color="primary">Select Issue to Show </button>
-                    </div>
-                    <!-- </form> -->
+                    <form [formGroup]="issueSelectedForm" (submit)=selectIssue(issueSelectedForm)>
+                        <mat-form-field class="mat-block mt-20">
+                            <mat-select placeholder="Issue types to show" formArrayName="issueTypes" multiple value="issueSelectedForm.get( 'issueTypes').value[i]">
+
+                                <mat-option *ngFor="let issuesValues of issueSelectedForm.get('issueTypes')['controls']; let i = index" formControlName="{{i}}"> {{issueSelectedForm.get('issueTypes').value[i]}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <div class="mat-block  mt-10">
+                            <button mat-raised-button color="primary">Select Issue to Show1 </button>
+                        </div>
+                    </form>
 
                 </mat-expansion-panel>
                 <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
