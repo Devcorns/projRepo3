@@ -12,6 +12,7 @@ export class SettingsComponent implements OnInit {
   issueForm:FormGroup;
   issueSelectedForm:FormGroup;
   issueCheckBox=[];
+  issueVal=[];
   
  
   constructor(private settingService:SettingSenderService,public fb:FormBuilder) {
@@ -22,13 +23,11 @@ export class SettingsComponent implements OnInit {
       issueTypes: this.fb.array([])
   });
    
-
+  
    }
 
 
-   toppings = new FormControl();
-
-   toppingList = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
+  
 
   ngOnInit() {
     

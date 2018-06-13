@@ -22,10 +22,18 @@
                         </div>
                     </form>
                     <form [formGroup]="issueSelectedForm" (submit)=selectIssue(issueSelectedForm)>
-                        <mat-form-field class="mat-block mt-20">
-                            <mat-select placeholder="Issue types to show" formArrayName="issueTypes" multiple value="issueSelectedForm.get( 'issueTypes').value[i]">
+                        <!-- <mat-form-field class="mat-block mt-20">
+                            <mat-select placeholder="Issue types to show" formArrayName="issueTypes" multiple value="issueSelectedForm.get('issueTypes').value[i]">
 
                                 <mat-option *ngFor="let issuesValues of issueSelectedForm.get('issueTypes')['controls']; let i = index" formControlName="{{i}}"> {{issueSelectedForm.get('issueTypes').value[i]}}</mat-option>
+                            </mat-select>
+                        </mat-form-field> -->
+
+
+                        <mat-form-field class="mat-block mt-20">
+                            <mat-select placeholder="Issue types to show" multiple formArrayName="issueTypes">
+
+                                <mat-option *ngFor="let issuesValues of issueSelectedForm.get('issueTypes')['controls']; let i = index"> {{issuesValues.value}}</mat-option>
                             </mat-select>
                         </mat-form-field>
 
