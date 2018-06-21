@@ -18,6 +18,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { VisitorModule } from './visitor/visitor.module';
+import { LearningModule } from './learning/learning.module';
 
 
 
@@ -50,7 +51,8 @@ import { VisitorModule } from './visitor/visitor.module';
     MatListModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    LearningModule
 
    
     

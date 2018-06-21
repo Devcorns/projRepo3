@@ -45,9 +45,10 @@ export class SettingsComponent implements OnInit {
   }
 
 
-  addIssueType(val): void {
-    let array:FormArray = this.issueSelectedForm.get('issueTypes') as FormArray;
-    array.push(new FormControl(val));
+addIssueType(val) {
+  
+  let array:FormArray = this.issueSelectedForm.get('issueTypes') as FormArray;
+  array.push(new FormControl(val));
 }
 
 
