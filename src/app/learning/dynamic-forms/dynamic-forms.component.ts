@@ -8,18 +8,13 @@ import { FormBuilder } from '@angular/forms/src/form_builder';
   styleUrls: ['./dynamic-forms.component.css']
 })
 export class DynamicFormsComponent implements OnInit {
-  dynamicForm:FormGroup
-  constructor(private fb:FormBuilder) { 
-    this.dynamicForm = this.fb.group({
-      dynamicCheckbox:this.fb.array([])
-    })
+
+  constructor() { 
+   
 
   }
 
-  addCheckbox(){
-    let array = this.dynamicForm.get('dynamicArr') as FormArray;
-    
-  }
+ 
 
   ngOnInit() {
   }
