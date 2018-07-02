@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="//fonts.googleapis.com/icon?family=Raleway:400,500,700,800|Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/ebook.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="header-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <a href="http://tsh.io/" class="header__logo"></a>
+                    <ul class="header__menu">
+                        <li class="header__menu-item" data-region="#content"><a href="/ebook#content" class="header__menu-link">Content</a></li>
+                        <li class="header__menu-item" data-region="#knowledge"><a href="/ebook#knowledge" class="header__menu-link">Knowledge</a></li>
+                        <li class="header__menu-item" data-region="#authors"><a href="/ebook#authors" class="header__menu-link">Authors</a></li>
+                        <li class="header__menu-item" data-region="#experts"><a href="/ebook#experts" class="header__menu-link">Experts</a></li>
+                    </ul>
+                    <ul class="social-links header__social-links">
+                        <li class="social-links__item"><a href="https://www.linkedin.com/company/2632812/" target="_blank" rel="noreferrer noopener" class="social-links__link"><i class="mdi mdi-linkedin social-links__link-icon"></i></a></li>
+                        <li class="social-links__item"><a href="https://web.facebook.com/TheSoftwareHousePL/" target="_blank" rel="noreferrer noopener" class="social-links__link"><i class="mdi mdi-facebook social-links__link-icon"></i></a></li>
+                        <li class="social-links__item"><a href="https://twitter.com/realtsh" target="_blank" rel="noreferrer noopener" class="social-links__link"><i class="mdi mdi-twitter social-links__link-icon"></i></a></li>
+                        <li class="social-links__item"><a href="https://www.behance.net/thesoftwarehouse" target="_blank" rel="noreferrer noopener" class="social-links__link"><i class="mdi mdi-behance social-links__link-icon"></i></a></li>
+                        <li class="social-links__item"><a href="https://clutch.co/profile/software-house" target="_blank" rel="noreferrer noopener" class="social-links__link header__link"><svg xmlns="http:/www.w3.org/2000/svg" class="social-links__link-icon social-links__link-icon--image" viewBox="0 0 70.2 79.3"><path class="a" d="M54.8 56.2a22.35 22.35 0 0 1-15.1 5.6c-12.8 0-22.2-9.4-22.2-22.3s9.1-21.9 22.2-21.9a22.9 22.9 0 0 1 15.2 5.5l2.8 2.4 12.4-12.4-3.1-2.9A40.13 40.13 0 0 0 39.7 0C16.7 0 0 16.6 0 39.4s17.1 39.9 39.7 39.9a40.14 40.14 0 0 0 27.5-10.4l3-2.8-12.6-12.4z"></path><circle class="a" cx="39.1" cy="39.6" r="13.3"></circle></svg></a></li>
+                    </ul><button type="button" class="header__get-it-button">Get it!</button></div>
+            </div>
+        </header>
+    </div>
+    <div class="sections-wrapper">
+        <section class="section section-learn-to-love-outsourcing section-learn-to-love-outsourcing--disable-arrow">
+            <div class="container">
+                <div class="section-learn-to-love-outsourcing__row">
+                    <div class="section-learn-to-love-outsourcing__col-graphics">
+                        <div class="section-learn-to-love-outsourcing__graphics-wrapper"><img class="section-learn-to-love-outsourcing__tablet" src="assets/images/tablet.png" alt="">
+                            <div class="section-learn-to-love-outsourcing__backgrounds"><img class="section-learn-to-love-outsourcing__background" src="assets/images/data-flow-background.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="section-learn-to-love-outsourcing__col-content">
+                        <h1 class="section-learn-to-love-outsourcing__title">Learn to love software development outsourcing</h1>
+                        <p class="section-learn-to-love-outsourcing__description">You probably have lots of worries when thinking about outsourcing your software development. Read about the newest trends, stop worrying and find out how you can love the outsourcing instead.</p>
+                        <div class="section-learn-to-love-outsourcing__form">
+                            <p class="section-learn-to-love-outsourcing__form-paragraph">Get your free e-book now:</p>
+                            <form action="/send-ebook" method="POST" id="get-ebook-form">
+                                <div class="section-learn-to-love-outsourcing__input-wrapper">
+                                    <div class="section-learn-to-love-outsourcing__input-message-box"><i class="mdi mdi-loading mdi-spin section-learn-to-love-outsourcing__input-message-spinner"></i><span class="section-learn-to-love-outsourcing__input-message" data-success-text="We have sent you a link for downloading the e-book. Please, check your e-mail."
+                                            data-failure-text="Something went wrong. Please try again." data-incorrect-email-text="You must provide a valid e-mail address." data-missing-accept-text="You must accept our terms."></span></div><input type="text"
+                                        name="email" class="section-learn-to-love-outsourcing__input" placeholder="Your e-mail adress"><button type="submit" class="section-learn-to-love-outsourcing__submit">Get it!</button></div>
+                                <div class="section-learn-to-love-outsourcing__label-accept-conditions">
+                                    By providing your e‑mail address, you agree to our <a href="http://tsh.io/software-development-outsourcing-ebook-statute">Privacy Policy</a>. We will not send you any spam – only link for downloading the e‑book and
+                                    probably some more useful resources in the future.
+                                </div>
+                                <div class="section-share-with-love"><span class="">Share the knowledge!</span>
+                                    <ul class="social-links social-share-links">
+                                        <li class="social-links__item"><a href="https://twitter.com/intent/tweet?text=Learn%20to%20love%20%23software%20%23development%20%23outsourcing%21%20Read%20about%20the%20newest%20trends%20in%20this%20%23free%20%23ebook.&amp;url=http%3A%2F%2Ftsh.io%2Fsoftware-development-outsourcing-ebook&amp;hashtags=&amp;source=webclient"
+                                                target="_blank" rel="noreferrer noopener" class="social-links__link"><i class="mdi mdi-twitter social-links__link-icon"></i></a></li>
+                                        <li class="social-links__item"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ftsh.io%2Fsoftware-development-outsourcing-ebook" target="_blank" rel="noreferrer noopener" class="social-links__link"><i class="mdi mdi-facebook social-links__link-icon"></i></a></li>
+                                        <li class="social-links__item">
+                                            <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Ftsh.io%2Fsoftware-development-outsourcing-ebook&amp;source=tsh.io" target="_blank" rel="noreferrer noopener" class="social-links__link"><i class="mdi mdi-linkedin social-links__link-icon"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-what-will-you-find-inside section-what-will-you-find-inside--inside-viewport" id="content">
+            <div class="container">
+                <header class="section__header">
+                    <h3 class="section__header-title"><span class="section__header-title-content--large">What will you find inside?</span><span class="section__header-title-content--small">Content</span></h3>
+                </header>
+                <div class="section-what-will-you-find-inside__row">
+                    <div class="section-what-will-you-find-inside__col" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" style="">
+                        <div class="section-what-will-you-find-inside__item">
+                            <div class="section-what-will-you-find-inside__item-image-wrapper"><img src="assets/images/findinside/redrawing-the-map.png" class="section-what-will-you-find-inside__item-image" alt="Redrawing the map"></div>
+                            <h3 class="section-what-will-you-find-inside__item-title">Redrawing the map</h3>
+                            <p class="section-what-will-you-find-inside__item-description">What are the most important outsourcing regions?</p>
+                        </div>
+                    </div>
+                    <div class="section-what-will-you-find-inside__col" tabindex="0" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" style="">
+                        <div class="section-what-will-you-find-inside__item">
+                            <div class="section-what-will-you-find-inside__item-image-wrapper"><img src="assets/images/findinside/gaining-advantage.png" class="section-what-will-you-find-inside__item-image" alt="Gaining advantage"></div>
+                            <h3 class="section-what-will-you-find-inside__item-title">Gaining advantage</h3>
+                            <p class="section-what-will-you-find-inside__item-description">Who can benefit from the software development outsourcing?</p>
+                        </div>
+                    </div>
+                    <div class="section-what-will-you-find-inside__col" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control01" style="">
+                        <div class="section-what-will-you-find-inside__item">
+                            <div class="section-what-will-you-find-inside__item-image-wrapper"><img src="assets/images/findinside/addressing-your-needs.png" class="section-what-will-you-find-inside__item-image" alt="Addressing your needs"></div>
+                            <h3 class="section-what-will-you-find-inside__item-title">Addressing your needs</h3>
+                            <p class="section-what-will-you-find-inside__item-description">How to choose the right development team?</p>
+                        </div>
+                    </div>
+                    <div class="section-what-will-you-find-inside__col" tabindex="-1" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03" style="">
+                        <div class="section-what-will-you-find-inside__item">
+                            <div class="section-what-will-you-find-inside__item-image-wrapper"><img src="assets/images/findinside/going-mobile.png" class="section-what-will-you-find-inside__item-image" alt="Going mobile"></div>
+                            <h3 class="section-what-will-you-find-inside__item-title">Going mobile</h3>
+                            <p class="section-what-will-you-find-inside__item-description">What to demand from mobile app developers?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-what-can-you-learn-about" id="knowledge">
+            <div class="container">
+                <header class="section__header">
+                    <h3 class="section__header-title"><span class="section__header-title-content--large">What can you learn about? </span><span class="section__header-title-content--small">Knowledge</span></h3>
+                </header>
+                <div class="section-what-can-you-learn-about__row">
+                    <div class="section-what-can-you-learn-about__col-graphics">
+                        <div class="section-what-can-you-learn-about__graphic-wrapper">
+                            <div class="section-what-can-you-learn-about__graphic section-what-can-you-learn-about__graphic--background"></div>
+                            <div class="section-what-can-you-learn-about__graphic section-what-can-you-learn-about__graphic--device" style="transform: translate3d(0px, 0px, 0px);"></div>
+                            <div class="section-what-can-you-learn-about__graphic section-what-can-you-learn-about__graphic--screen" style="transform: translate3d(0px, 0px, 0px);"></div>
+                            <div class="section-what-can-you-learn-about__graphic section-what-can-you-learn-about__graphic--interface" style="transform: translate3d(0px, 0px, 0px);"></div>
+                        </div>
+                    </div>
+                    <div class="section-what-can-you-learn-about__col-content">
+                        <ul class="section-what-can-you-learn-about__list">
+                            <li class="section-what-can-you-learn-about__list-item">The phenomenon of nearshoring</li>
+                            <li class="section-what-can-you-learn-about__list-item">Financial and cultural aspects of outsourcing</li>
+                            <li class="section-what-can-you-learn-about__list-item">Types of businesses which can benefit from outsourcing</li>
+                            <li class="section-what-can-you-learn-about__list-item">Finding the software house which is the best fit for you</li>
+                            <li class="section-what-can-you-learn-about__list-item">The unique offer of some outsourcing vendors</li>
+                            <li class="section-what-can-you-learn-about__list-item">Developing mobile apps on the today market</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-who-wrote-this-ebook" id="authors">
+            <div class="container">
+                <header class="section__header">
+                    <h3 class="section__header-title"><span class="section__header-title-content--large">Who wrote this e-book?</span><span class="section__header-title-content--small">Authors</span></h3>
+                </header>
+                <div class="section-who-wrote-this-ebook__row">
+                    <div class="section-who-wrote-this-ebook__col">
+                        <div class="section-who-wrote-this-ebook__author"><img class="section-who-wrote-this-ebook__author-picture" src="assets/images/users/mateusz-kubiczek.jpg" alt="Mateusz Kubiczek">
+                            <h5 class="section-who-wrote-this-ebook__author-name">Mateusz Kubiczek</h5>
+                            <p class="section-who-wrote-this-ebook__author-description">CEO at The Software House with more than 10 years of experience in building web and mobile apps.</p>
+                        </div>
+                    </div>
+                    <div class="section-who-wrote-this-ebook__col">
+                        <div class="section-who-wrote-this-ebook__author"><img class="section-who-wrote-this-ebook__author-picture" src="assets/images/users/marcin-mazurek.jpg" alt="Marcin Mazurek">
+                            <h5 class="section-who-wrote-this-ebook__author-name">Marcin Mazurek</h5>
+                            <p class="section-who-wrote-this-ebook__author-description">An advocate of bespoke software solutions which can transform business, Sales Director at The Software House.</p>
+                        </div>
+                    </div>
+                    <div class="section-who-wrote-this-ebook__col">
+                        <div class="section-who-wrote-this-ebook__author"><img class="section-who-wrote-this-ebook__author-picture" src="assets/images/users/patryk-mamczur.jpg" alt="Patryk Mamczur">
+                            <h5 class="section-who-wrote-this-ebook__author-name">Patryk Mamczur</h5>
+                            <p class="section-who-wrote-this-ebook__author-description">A devoted tech enthusiast and an internet culture lover, currently Copywriter at The Software House.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-who-was-the-expert-consultant" id="experts">
+            <header class="section__header">
+                <h3 class="section__header-title">Who was the expert consultant?</h3>
+            </header>
+            <div class="container">
+                <div class="section-who-was-the-expert-consultant__person-list">
+                    <div class="section-who-was-the-expert-consultant__person" tabindex="0" role="tabpanel" id="slick-slide10" aria-describedby="slick-slide-control10" style="">
+                        <div class="section-who-was-the-expert-consultant__person-content">
+                            <div class="section-who-was-the-expert-consultant__person-image-wrapper"><img class="section-who-was-the-expert-consultant__person-image" src="assets/images/users/dave-hecker.jpg" alt="Dave Hecker"></div>
+                            <div class="section-who-was-the-expert-consultant__person-meta">
+                                <h5 class="section-who-was-the-expert-consultant__person-name">Dave Hecker</h5>
+                                <p class="section-who-was-the-expert-consultant__person-title">Co-founder of SourceSeek</p>
+                                <p class="section-who-was-the-expert-consultant__person-description">"Time zones have effect on outsourced projects but the importance of time zones is often exaggerated. In most cases – a few hours of overlap will be enough. If you are certain you need more, either your application is unusually
+                                    complicated or there is something lacking in your development workflow."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-who-was-the-expert-consultant__person" tabindex="0" role="tabpanel" id="slick-slide11" aria-describedby="slick-slide-control11" style="">
+                        <div class="section-who-was-the-expert-consultant__person-content">
+                            <div class="section-who-was-the-expert-consultant__person-image-wrapper"><img class="section-who-was-the-expert-consultant__person-image" src="assets/images/users/monika-mikowska.jpg" alt="Monika Mikowska"></div>
+                            <div class="section-who-was-the-expert-consultant__person-meta">
+                                <h5 class="section-who-was-the-expert-consultant__person-name">Monika Mikowska</h5>
+                                <p class="section-who-was-the-expert-consultant__person-title">CEO of Mobee Dick</p>
+                                <p class="section-who-was-the-expert-consultant__person-description">"Development is not everything – you should always start with business and technical analysis. We have already worked with a few companies which contacted us with the intention of developing an app but realised – after
+                                    the consultations – that it would be a waste of time and money. Each time they were extremely thankful for discouraging them from making the mistake."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-who-was-the-expert-consultant__person" tabindex="-1" role="tabpanel" id="slick-slide12" aria-describedby="slick-slide-control11" style="">
+                        <div class="section-who-was-the-expert-consultant__person-content">
+                            <div class="section-who-was-the-expert-consultant__person-image-wrapper"><img class="section-who-was-the-expert-consultant__person-image" src="assets/images/users/paul-walentynowicz.jpg" alt="Paul Walentynowicz"></div>
+                            <div class="section-who-was-the-expert-consultant__person-meta">
+                                <h5 class="section-who-was-the-expert-consultant__person-name">Paul Walentynowicz</h5>
+                                <p class="section-who-was-the-expert-consultant__person-title">Founder of PWCIB</p>
+                                <p class="section-who-was-the-expert-consultant__person-description">"The most important trend on the today IT market is the ongoing automation and robotisation. It is going to change the world of outsourcing significantly. Simple data processing – those tasks which were usually moved to
+                                    Asia – are going to be automated, as it is becoming less and less expensive. Therefore, end-of-the-value-chain countries may lose a lot."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-who-was-the-expert-consultant__person" tabindex="-1" role="tabpanel" id="slick-slide13" aria-describedby="slick-slide-control13" style="">
+                        <div class="section-who-was-the-expert-consultant__person-content">
+                            <div class="section-who-was-the-expert-consultant__person-image-wrapper"><img class="section-who-was-the-expert-consultant__person-image" src="assets/images/users/clayton-kenerson.jpg" alt="Clayton Kenerson"></div>
+                            <div class="section-who-was-the-expert-consultant__person-meta">
+                                <h5 class="section-who-was-the-expert-consultant__person-name">Clayton Kenerson</h5>
+                                <p class="section-who-was-the-expert-consultant__person-title">Senior Business Analyst at Clutch.co</p>
+                                <p class="section-who-was-the-expert-consultant__person-description">“Early in the evolution of outsourcing, blue chips could take advantage of outsourcing because of the amount they could invest in the infrastructure. Now, through the decentralisation of trust, first-time entrepreneurs
+                                    and small business owners can access the same international talent without high investment or the risk.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
