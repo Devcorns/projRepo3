@@ -2982,19 +2982,19 @@ body {
 
 .section-what-can-you-learn-about__graphic--background {
     z-index: 1;
-    background-image: url("../images/ebook/smartphone-deconstructed-1.png");
+    background-image: url("../images/findinside/smartphone-deconstructed-1.png");
 }
 
 .section-what-can-you-learn-about__graphic--device {
     z-index: 2;
-    background-image: url("../images/ebook/smartphone-deconstructed-2.png");
+    background-image: url("../images/findinside/smartphone-deconstructed-2.png");
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
 .section-what-can-you-learn-about__graphic--screen {
     z-index: 3;
-    background-image: url("../images/ebook/smartphone-deconstructed-3.png");
+    background-image: url("../images/findinside/smartphone-deconstructed-3.png");
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
