@@ -43,6 +43,11 @@ html {
     bottom: -1px;
 }
 
+.header__logo img {
+    max-width: 150px;
+    color: #fff;
+}
+
 @media (min-width: 1200px) {
     .section-share-with-love {
         max-width: 340px;

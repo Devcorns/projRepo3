@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>SoftwareMill</title>
+    <description>SoftwareMill - the best place to work for true engineers delivering software that matters to our business clients</description>
+    <link>https://softwaremill.com/</link>
+    <atom:link href="https://softwaremill.com/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <item>
+      <title>Scalable read model updates in Akka Persistence</title>
+      <description>Akka Persistence is a pretty nice Event Sourcing implementation. There is no point in describing all its functionalities, because (almost)…...</description>
+      <pubDate>Tue, 26 Jun 2018 10:00:00 UT</pubDate>
+      <link>https://blog.softwaremill.com/scalable-read-model-updates-in-akka-persistence-5042cdd7dce4</link>
+      <guid isPermaLink="true">https://blog.softwaremill.com/scalable-read-model-updates-in-akka-persistence-5042cdd7dce4</guid>
+    </item>
+    <item>
+      <title>Akka vs ZIO vs Monix, part 2: communication</title>
+      <description>In part 1, we’ve explored how to implement a process which manages some non-trivial state using Akka, Akka Typed, Monix and ZIO. However…...</description>
+      <pubDate>Mon, 18 Jun 2018 10:00:00 UT</pubDate>
+      <link>https://blog.softwaremill.com/akka-vs-zio-vs-monix-part-2-communication-9ce7261aa08c</link>
+      <guid isPermaLink="true">https://blog.softwaremill.com/akka-vs-zio-vs-monix-part-2-communication-9ce7261aa08c</guid>
+    </item>
+    <item>
+      <title>Setting up the private Kubernetes cluster on GKE. The working one.</title>
+      <description>Kubernetes is everywhere. It is a very good choice when few Docker containers on single server is not enough. It’s an abstraction layer…...</description>
+      <pubDate>Wed, 13 Jun 2018 10:00:00 UT</pubDate>
+      <link>https://blog.softwaremill.com/setting-up-the-private-kubernetes-cluster-on-gke-the-working-one-e155ca18c113</link>
+      <guid isPermaLink="true">https://blog.softwaremill.com/setting-up-the-private-kubernetes-cluster-on-gke-the-working-one-e155ca18c113</guid>
+    </item>
+    <item>
+      <title>Scalaz 8 IO vs Akka (typed) actors vs Monix (part 1)</title>
+      <description>There’s a couple of hot development areas in the Scala ecosystem, and the competition between the various side-effect wrappers is one of…...</description>
+      <pubDate>Mon, 11 Jun 2018 10:00:00 UT</pubDate>
+      <link>https://blog.softwaremill.com/scalaz-8-io-vs-akka-typed-actors-vs-monix-part-1-5672657169e1</link>
+      <guid isPermaLink="true">https://blog.softwaremill.com/scalaz-8-io-vs-akka-typed-actors-vs-monix-part-1-5672657169e1</guid>
+    </item>
+    <item>
+      <title>Running akka-cluster on Kubernetes</title>
+      <description>In this article I won’t go into akka-cluster details and why it’s great. You can find a lot of excellent articles about it. Of course a…...</description>
+      <pubDate>Mon, 04 Jun 2018 10:00:00 UT</pubDate>
+      <link>https://blog.softwaremill.com/running-akka-cluster-on-kubernetes-e4cd2913e951</link>
+      <guid isPermaLink="true">https://blog.softwaremill.com/running-akka-cluster-on-kubernetes-e4cd2913e951</guid>
+    </item>
+    <item>
+      <title>This is how we proof tested our realtime indoor tracking and notification system</title>
+      <description>Tracking people, objects or assets in real time gives a possibility to automatically identify the physical location based on actual data. De...</description>
+      <pubDate>Sun, 27 May 2018 10:00:00 UT</pubDate>
+      <link>https://blog.softwaremill.com/this-is-how-we-proof-tested-our-realtime-indoor-tracking-and-notification-system-e07402c188dd</link>
+      <guid isPermaLink="true">https://blog.softwaremill.com/this-is-how-we-proof-tested-our-realtime-indoor-tracking-and-notification-system-e07402c188dd</guid>
+    </item>
+    <item>
+      <title>Incorporating FaceNet into Play framework with Silhouette authentication</title>
+      <description>Facial recognition technology is nothing new but with the latest iPhone X and Apple’s Face ID replacing Fingerprint ID the whole idea of…...</description>
+      <pubDate>Wed, 23 May 2018 10:00:00 UT</pubDate>
+      <link>https://blog.softwaremill.com/incorporating-facenet-into-play-framework-with-silhouette-authentication-4a8844849b62</link>
+      <guid isPermaLink="true">https://blog.softwaremill.com/incorporating-facenet-into-play-framework-with-silhouette-authentication-4a8844849b62</guid>
+    </item>
+    <item>
+      <title>Scalar 2018 whiteboard voting results!</title>
+      <description>It’s over a month since Scalar 2018; all of the videos are available, and we’re slowly starting to think about the next one (which will…...</description>
+      <pubDate>Tue, 22 May 2018 10:00:00 UT</pubDate>
+      <link>https://blog.softwaremill.com/scalar-2018-whiteboard-voting-results-c6f50f8fb16d</link>
+      <guid isPermaLink="true">https://blog.softwaremill.com/scalar-2018-whiteboard-voting-results-c6f50f8fb16d</guid>
+    </item>
+    <item>
+      <title>GeeCON 2018 - our takeaways from the conference for Java programmers</title>
+      <description>Four of our developers gave talks and even a bigger bunch of SoftwareMillers attended!...</description>
+      <pubDate>Tue, 15 May 2018 10:00:00 UT</pubDate>
+      <link>https://blog.softwaremill.com/geecon-2018-our-takeaways-from-the-conference-for-java-programmers-ad13ec3da381</link>
+      <guid isPermaLink="true">https://blog.softwaremill.com/geecon-2018-our-takeaways-from-the-conference-for-java-programmers-ad13ec3da381</guid>
+    </item>
+    <item>
+      <title>Meaningful Docker image tags made with build tools</title>
+      <description>Nowadays when we talk about microservices we often assume “microservices running in containers”. The build tools plugins like…...</description>
+      <pubDate>Sun, 13 May 2018 10:00:00 UT</pubDate>
+      <link>https://blog.softwaremill.com/meaningful-docker-image-tags-made-with-build-tools-c8877cd21da9</link>
+      <guid isPermaLink="true">https://blog.softwaremill.com/meaningful-docker-image-tags-made-with-build-tools-c8877cd21da9</guid>
+    </item>
+  </channel>
+</rss>
