@@ -11,19 +11,19 @@ var initliazed = function(){
   
     
         if(i<9){
-            chess.append("<div class='chess-box' id='"+chess_items1[i-1].id+"'><img src='"+chess_items1[i-1].img+"'></div>");
+            chess.append("<div class='chess-box' id='"+i+"'><div class='chess-item' id='"+chess_items1[i-1].id+"'><img src='"+chess_items1[i-1].img+"'></div></div>");
         }
         if(i>8&&i<17){
-            chess.append("<div class='chess-box' id='pawnB"+i+"'><img src='"+chess_pawn[0].img+"'></div>");
+            chess.append("<div class='chess-box' id='"+i+"'><div class='chess-item' id='pawnB"+i+"'><img src='"+chess_pawn[0].img+"'></div></div>");
         }
-        if(i>16&&i<33){
-            chess.append("<div class='chess-box' id='blank"+i+"'></div>");
+        if(i>16&&i<49){
+            chess.append("<div class='chess-box'  id='"+i+"'><div class='chess-item' id='blank"+i+"'></div></div>");
         }
-        if(i>32&&i<41){
-            chess.append("<div class='chess-box' id='pawnA"+i+"'><img src='"+chess_pawn[0].img+"'></div>");
+        if(i>48&&i<57){
+            chess.append("<div class='chess-box' id='"+i+"'><div class='chess-item' id='pawnA"+i+"'><img src='"+chess_pawn[0].img+"'></div></div>");
         }
-        if(i>40&&i<49){
-            chess.append("<div class='chess-box' id='"+chess_items2[i%10-1].id+"'><img src='"+chess_items2[i%10-1].img+"'></div>");
+        if(i>56&&i<65){
+            chess.append("<div class='chess-box' id='"+i+"' ><div class='chess-item' id='"+chess_items2[i-57].id+"'><img src='"+chess_items2[i-57].img+"'></div></div>");
             
         }
         if(i%8==0){
@@ -33,8 +33,19 @@ var initliazed = function(){
 };
 initliazed();
 
-$("[id^='pawn']").on("click",function(){
-    alert($(this));
+$("[id^='pawnA']").on("click",function(e){
+    console.log(e.target);
+    var pawnCurrentPosition = $(e.target).parent().parent().attr("id");
+    console.log(pawnCurrentPosition)
+    //var pawnVal = pawnCurrentPosition.slice(-2);
+    var pawnNextPosition = pawnCurrentPosition-8;
+    console.log(pawnNextPosition);
+    var blankStorage = $("#blank"+pawnNextPosition).parent().html();
+    
+    $("#blank"+pawnNextPosition).parent().html($(e.target).parent());
+    
+    $("#"+pawnCurrentPosition).html(blankStorage)
+    
 })
 
 // ,'Elephant','Horse','Camel','Queen','King','Camel','Horse','Elephant','pyada'

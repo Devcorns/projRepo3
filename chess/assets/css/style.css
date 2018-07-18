@@ -25,3 +25,8 @@
     left:50%;
     transform:translate(-50%,-50%);
 }
+div.chess-item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}

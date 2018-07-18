@@ -18,9 +18,10 @@ export class SettingsComponent implements OnInit {
   constructor(private settingService:SettingSenderService,public fb:FormBuilder) {
     this.issueForm = this.fb.group({
       issueType : new FormControl("",Validators.required)
+      
     });
     this.issueSelectedForm = this.fb.group({
-      issueTypes: this.fb.array([])
+      issueTypes: this.fb.array([{name:'a',id:'1'},{name:'b',id:'2'},{name:'c',id:'3'}])
   });
    
   
@@ -35,7 +36,7 @@ export class SettingsComponent implements OnInit {
 
       for (var i = 0; i < result.length; i++) {
           if (result[i].issueType != undefined) {
-              this.addIssueType(result[i].issueType);
+              this.addIssueType(result[i].issueType.name);
               //this.issueCheckBox.push(result[i].issueType);
           }
 
@@ -44,11 +45,14 @@ export class SettingsComponent implements OnInit {
   });
   }
 
+  holu(id){
+    console.log(id);
+  }
 
 addIssueType(val) {
   
-  let array:FormArray = this.issueSelectedForm.get('issueTypes') as FormArray;
-  array.push(new FormControl(val));
+  // let array:FormArray = this.issueSelectedForm.get('issueTypes') as FormArray;
+  // array.push(new FormControl(val));
 }
 
 
