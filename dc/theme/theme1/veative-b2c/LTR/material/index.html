@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="../../../../global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+
+<!-- 
+	<link rel="stylesheet" href="knowledge/demo.css"/>
+    <link rel="stylesheet" href="knowledge/graph.css"/>
+    <link rel="stylesheet" href="knowledge/list.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'> -->
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="../../../../global_assets/js/main/jquery.min.js"></script>
+	<script src="../../../../global_assets/js/main/bootstrap.bundle.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/loaders/blockui.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/ui/ripple.min.js"></script>
+	<!-- /core JS files -->
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/extensions/jquery_ui/touch.min.js"></script>
+    <script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+
+	<!-- Theme JS files -->
+	
+	<script src="assets/js/app.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/dashboard.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/content_cards_draggable.js"></script>
+    <script src="../../../../global_assets/js/demo_pages/form_select2.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-expand-md navbar-light navbar-static">
+
+		<!-- Header with logos -->
+		<div class="navbar-header navbar-dark d-none d-md-flex align-items-md-center">
+			<div class="navbar-brand navbar-brand-md">
+				<a href="index.html" class="d-inline-block">
+					<img src="../../../../global_assets/images/logo_light.png" alt="">
+				</a>
+			</div>
+			
+			<div class="navbar-brand navbar-brand-xs">
+				<a href="index.html" class="d-inline-block">
+					<img src="../../../../global_assets/images/logo_icon_light.png" alt="">
+				</a>
+			</div>
+		</div>
+		<!-- /header with logos -->
+	
+
+		<!-- Mobile controls -->
+		<div class="d-flex flex-1 d-md-none">
+			<div class="navbar-brand mr-auto">
+				<a href="index.html" class="d-inline-block">
+					<img src="../../../../global_assets/images/logo_dark.png" alt="">
+				</a>
+			</div>	
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+				<i class="icon-tree5"></i>
+			</button>
+
+			<button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+				<i class="icon-paragraph-justify3"></i>
+			</button>
+		</div>
+		<!-- /mobile controls -->
+
+
+		<!-- Navbar content -->
+		<div class="collapse navbar-collapse" id="navbar-mobile">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+						<i class="icon-paragraph-justify3"></i>
+					</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
+						<i class="icon-people"></i>
+						<span class="d-md-none ml-2">Users</span>
+						<span class="badge badge-mark border-pink-400 ml-auto ml-md-0"></span>
+					</a>
+					
+					<div class="dropdown-menu dropdown-content wmin-md-300">
+						<div class="dropdown-content-header">
+							<span class="font-weight-semibold">Users online</span>
+							<a href="#" class="text-default"><i class="icon-search4 font-size-base"></i></a>
+						</div>
+
+						<div class="dropdown-content-body dropdown-scrollable">
+							<ul class="media-list">
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Jordana Ansley</a>
+										<span class="d-block text-muted font-size-sm">Lead web developer</span>
+									</div>
+									<div class="ml-3 align-self-center"><span class="badge badge-mark border-success"></span></div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Will Brason</a>
+										<span class="d-block text-muted font-size-sm">Marketing manager</span>
+									</div>
+									<div class="ml-3 align-self-center"><span class="badge badge-mark border-danger"></span></div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Hanna Walden</a>
+										<span class="d-block text-muted font-size-sm">Project manager</span>
+									</div>
+									<div class="ml-3 align-self-center"><span class="badge badge-mark border-success"></span></div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Dori Laperriere</a>
+										<span class="d-block text-muted font-size-sm">Business developer</span>
+									</div>
+									<div class="ml-3 align-self-center"><span class="badge badge-mark border-warning-300"></span></div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<a href="#" class="media-title font-weight-semibold">Vanessa Aurelius</a>
+										<span class="d-block text-muted font-size-sm">UX expert</span>
+									</div>
+									<div class="ml-3 align-self-center"><span class="badge badge-mark border-grey-400"></span></div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="dropdown-content-footer bg-light">
+							<a href="#" class="text-grey mr-auto">All users</a>
+							<a href="#" class="text-grey"><i class="icon-gear"></i></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<span class="navbar-text ml-md-3 mr-md-auto">
+				<span class="badge bg-pink-400 badge-pill">16 orders</span>
+			</span>
+
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+						<img src="../../../../global_assets/images/lang/gb.png" class="img-flag mr-2" alt="">
+						English
+					</a>
+
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="#" class="dropdown-item english active"><img src="../../../../global_assets/images/lang/gb.png" class="img-flag" alt=""> English</a>
+						<a href="#" class="dropdown-item ukrainian"><img src="../../../../global_assets/images/lang/ua.png" class="img-flag" alt=""> Українська</a>
+						<a href="#" class="dropdown-item deutsch"><img src="../../../../global_assets/images/lang/de.png" class="img-flag" alt=""> Deutsch</a>
+						<a href="#" class="dropdown-item espana"><img src="../../../../global_assets/images/lang/es.png" class="img-flag" alt=""> España</a>
+						<a href="#" class="dropdown-item russian"><img src="../../../../global_assets/images/lang/ru.png" class="img-flag" alt=""> Русский</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
+						<i class="icon-bubbles4"></i>
+						<span class="d-md-none ml-2">Messages</span>
+						<span class="badge badge-mark border-pink-400 ml-auto ml-md-0"></span>
+					</a>
+					
+					<div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
+						<div class="dropdown-content-header">
+							<span class="font-weight-semibold">Messages</span>
+							<a href="#" class="text-default"><i class="icon-compose"></i></a>
+						</div>
+
+						<div class="dropdown-content-body dropdown-scrollable">
+							<ul class="media-list">
+								<li class="media">
+									<div class="mr-3 position-relative">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+
+									<div class="media-body">
+										<div class="media-title">
+											<a href="#">
+												<span class="font-weight-semibold">James Alexander</span>
+												<span class="text-muted float-right font-size-sm">04:58</span>
+											</a>
+										</div>
+
+										<span class="text-muted">who knows, maybe that would be the best thing for me...</span>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3 position-relative">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+
+									<div class="media-body">
+										<div class="media-title">
+											<a href="#">
+												<span class="font-weight-semibold">Margo Baker</span>
+												<span class="text-muted float-right font-size-sm">12:16</span>
+											</a>
+										</div>
+
+										<span class="text-muted">That was something he was unable to do because...</span>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<div class="media-title">
+											<a href="#">
+												<span class="font-weight-semibold">Jeremy Victorino</span>
+												<span class="text-muted float-right font-size-sm">22:48</span>
+											</a>
+										</div>
+
+										<span class="text-muted">But that would be extremely strained and suspicious...</span>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<div class="media-title">
+											<a href="#">
+												<span class="font-weight-semibold">Beatrix Diaz</span>
+												<span class="text-muted float-right font-size-sm">Tue</span>
+											</a>
+										</div>
+
+										<span class="text-muted">What a strenuous career it is that I've chosen...</span>
+									</div>
+								</li>
+
+								<li class="media">
+									<div class="mr-3">
+										<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+									</div>
+									<div class="media-body">
+										<div class="media-title">
+											<a href="#">
+												<span class="font-weight-semibold">Richard Vango</span>
+												<span class="text-muted float-right font-size-sm">Mon</span>
+											</a>
+										</div>
+										
+										<span class="text-muted">Other travelling salesmen live a life of luxury...</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="dropdown-content-footer bg-light">
+							<a href="#" class="text-grey mr-auto">All messages</a>
+							<div>
+								<a href="#" class="text-grey" data-popup="tooltip" title="Mark all as read"><i class="icon-radio-unchecked"></i></a>
+								<a href="#" class="text-grey ml-2" data-popup="tooltip" title="Settings"><i class="icon-cog3"></i></a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown dropdown-user">
+					<a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+						<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" alt="">
+						<span>Victoria</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
+						<a href="#" class="dropdown-item"><i class="icon-coins"></i> My balance</a>
+						<a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Messages <span class="badge badge-pill bg-indigo-400 ml-auto">58</span></a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
+						<a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- /navbar content -->
+		
+	</div>
+	<!-- /main navbar -->
+
+					
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
+
+			<!-- Sidebar mobile toggler -->
+			<div class="sidebar-mobile-toggler text-center">
+				<a href="#" class="sidebar-mobile-main-toggle">
+					<i class="icon-arrow-left8"></i>
+				</a>
+				Navigation
+				<a href="#" class="sidebar-mobile-expand">
+					<i class="icon-screen-full"></i>
+					<i class="icon-screen-normal"></i>
+				</a>
+			</div>
+			<!-- /sidebar mobile toggler -->
+
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+				
+				<!-- User menu -->
+				<div class="sidebar-user-material">
+					<div class="sidebar-user-material-body">
+						<div class="card-body text-center">
+							<a href="#">
+								<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid rounded-circle shadow-1 mb-3" width="80" height="80" alt="">
+							</a>
+							<h6 class="mb-0 text-white text-shadow-dark">Victoria Baker</h6>
+							<span class="font-size-sm text-white text-shadow-dark">Santa Ana, CA</span>
+						</div>
+													
+						<div class="sidebar-user-material-footer">
+							<a href="#user-nav" class="d-flex justify-content-between align-items-center text-shadow-dark dropdown-toggle" data-toggle="collapse"><span>My account</span></a>
+						</div>
+					</div>
+
+					<div class="collapse" id="user-nav">
+						<ul class="nav nav-sidebar">
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-user-plus"></i>
+									<span>My profile</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-coins"></i>
+									<span>My balance</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-comment-discussion"></i>
+									<span>Messages</span>
+									<span class="badge bg-success-400 badge-pill align-self-center ml-auto">58</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-cog5"></i>
+									<span>Account settings</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">
+									<i class="icon-switch2"></i>
+									<span>Logout</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /user menu -->
+	
+				
+				<!-- Main navigation -->
+				<div class="card card-sidebar-mobile">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+						<!-- Main -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
+						<li class="nav-item">
+							<a href="index.html" class="nav-link active">
+								<i class="icon-home4"></i>
+								<span>
+									Dashboard
+									<span class="d-block font-weight-normal opacity-50">No active orders</span>
+								</span>
+							</a>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item"><a href="../../../../layout_1/LTR/default/full/index.html" class="nav-link">Default layout</a></li>
+								<li class="nav-item"><a href="index.html" class="nav-link active">Layout 2</a></li>
+								<li class="nav-item"><a href="../../../../layout_3/LTR/default/full/index.html" class="nav-link">Layout 3</a></li>
+								<li class="nav-item"><a href="../../../../layout_4/LTR/default/full/index.html" class="nav-link">Layout 4</a></li>
+								<li class="nav-item"><a href="../../../../layout_5/LTR/default/full/index.html" class="nav-link">Layout 5</a></li>
+								<li class="nav-item"><a href="../../../../layout_6/LTR/default/full/index.html" class="nav-link disabled">Layout 6 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Themes</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Themes">
+								<li class="nav-item"><a href="../../../LTR/default/full/index.html" class="nav-link">Default</a></li>
+								<li class="nav-item"><a href="index.html" class="nav-link active">Material</a></li>
+								<li class="nav-item"><a href="../../../LTR/dark/full/index.html" class="nav-link disabled">Dark <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+								<li class="nav-item"><a href="../../../LTR/clean/full/index.html" class="nav-link disabled">Clean <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-stack"></i> <span>Starter kit</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Starter kit">
+								<li class="nav-item"><a href="../seed/layout_nav_horizontal.html" class="nav-link">Horizontal navigation</a></li>
+								<li class="nav-item"><a href="../seed/sidebar_none.html" class="nav-link">No sidebar</a></li>
+								<li class="nav-item"><a href="../seed/sidebar_main.html" class="nav-link">1 sidebar</a></li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">2 sidebars</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="../seed/sidebar_secondary.html" class="nav-link">Secondary sidebar</a></li>
+										<li class="nav-item"><a href="../seed/sidebar_right.html" class="nav-link">Right sidebar</a></li>
+									</ul>
+								</li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">3 sidebars</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="../seed/sidebar_right_hidden.html" class="nav-link">Right sidebar hidden</a></li>
+										<li class="nav-item"><a href="../seed/sidebar_right_visible.html" class="nav-link">Right sidebar visible</a></li>
+									</ul>
+								</li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Content sidebars</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="../seed/sidebar_content_left.html" class="nav-link">Left sidebar</a></li>
+										<li class="nav-item"><a href="../seed/sidebar_content_right.html" class="nav-link">Right sidebar</a></li>
+									</ul>
+								</li>
+								<li class="nav-item"><a href="../seed/layout_boxed.html" class="nav-link">Boxed layout</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="../seed/navbar_fixed_main.html" class="nav-link">Fixed main navbar</a></li>
+								<li class="nav-item"><a href="../seed/navbar_fixed_secondary.html" class="nav-link">Fixed secondary navbar</a></li>
+								<li class="nav-item"><a href="../seed/navbar_fixed_both.html" class="nav-link">Both navbars fixed</a></li>
+								<li class="nav-item"><a href="../seed/layout_fixed.html" class="nav-link">Fixed layout</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
+						<!-- /main -->
+
+						<!-- Layout -->
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Page layouts">
+								<li class="nav-item"><a href="layout_fixed_navbar.html" class="nav-link">Fixed navbar</a></li>
+								<li class="nav-item"><a href="layout_fixed_sidebar_custom.html" class="nav-link">Fixed sidebar - custom scroll</a></li>
+								<li class="nav-item"><a href="layout_fixed_sidebar_native.html" class="nav-link">Fixed sidebar - native scroll</a></li>
+								<li class="nav-item"><a href="layout_fixed_footer.html" class="nav-link">Fixed footer</a></li>
+								<li class="nav-item"><a href="layout_hideable_navbar.html" class="nav-link">Hideable navbar</a></li>
+								<li class="nav-item"><a href="layout_without_header.html" class="nav-link">Without page header</a></li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="layout_boxed_default.html" class="nav-link">Boxed with default sidebar</a></li>
+								<li class="nav-item"><a href="layout_boxed_mini.html" class="nav-link">Boxed with mini sidebar</a></li>
+								<li class="nav-item"><a href="layout_boxed_full.html" class="nav-link">Boxed full width</a></li>
+								<li class="nav-item"><a href="layout_boxed_content.html" class="nav-link">Boxed content</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-page-break2"></i> <span>Headers &amp; footers</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Content styling">
+								<li class="nav-item"><a href="content_page_header.html" class="nav-link">Page header</a></li>
+								<li class="nav-item"><a href="content_page_footer.html" class="nav-link disabled">Page footer <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-indent-decrease2"></i> <span>Sidebars</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Sidebars">
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Main sidebar</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="sidebar_default_collapse.html" class="nav-link">Default collapsible</a></li>
+										<li class="nav-item"><a href="sidebar_default_hide.html" class="nav-link">Default hideable</a></li>
+										<li class="nav-item"><a href="sidebar_default_hidden.html" class="nav-link">Default hidden</a></li>
+										<li class="nav-item"><a href="sidebar_mini_collapse.html" class="nav-link">Mini collapsible</a></li>
+										<li class="nav-item"><a href="sidebar_mini_hide.html" class="nav-link">Mini hideable</a></li>
+										<li class="nav-item"><a href="sidebar_mini_hidden.html" class="nav-link">Mini hidden</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="sidebar_default_color_light.html" class="nav-link">Light color</a></li>
+										<li class="nav-item"><a href="sidebar_default_color_custom.html" class="nav-link">Custom color</a></li>
+									</ul>
+								</li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Secondary sidebar</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="sidebar_secondary_after.html" class="nav-link">After default</a></li>
+										<li class="nav-item"><a href="sidebar_secondary_before.html" class="nav-link">Before default</a></li>
+										<li class="nav-item"><a href="sidebar_secondary_hidden.html" class="nav-link">Hidden by default</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="sidebar_secondary_color_dark.html" class="nav-link">Dark color</a></li>
+										<li class="nav-item"><a href="sidebar_secondary_color_custom.html" class="nav-link">Custom color</a></li>
+									</ul>
+								</li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Right sidebar</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="sidebar_right_default_collapse.html" class="nav-link">Show - collapse main</a></li>
+										<li class="nav-item"><a href="sidebar_right_default_hide.html" class="nav-link">Show - hide main</a></li>
+										<li class="nav-item"><a href="sidebar_right_default_toggle.html" class="nav-link">Show - fix default width</a></li>
+										<li class="nav-item"><a href="sidebar_right_mini_toggle.html" class="nav-link">Show - fix mini width</a></li>
+										<li class="nav-item"><a href="sidebar_right_secondary_hide.html" class="nav-link">Show - hide secondary</a></li>
+										<li class="nav-item"><a href="sidebar_right_visible.html" class="nav-link">Visible by default</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="sidebar_right_color_dark.html" class="nav-link">Dark color</a></li>
+										<li class="nav-item"><a href="sidebar_right_color_custom.html" class="nav-link">Custom color</a></li>
+									</ul>
+								</li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Content sidebar</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="sidebar_content_left.html" class="nav-link">Left position</a></li>
+										<li class="nav-item"><a href="sidebar_content_left_stretch.html" class="nav-link">Left stretched</a></li>
+										<li class="nav-item"><a href="sidebar_content_left_hidden.html" class="nav-link">Left hidden</a></li>
+										<li class="nav-item"><a href="sidebar_content_right.html" class="nav-link">Right position</a></li>
+										<li class="nav-item"><a href="sidebar_content_right_stretch.html" class="nav-link">Right stretched</a></li>
+										<li class="nav-item"><a href="sidebar_content_right_hidden.html" class="nav-link">Right hidden</a></li>
+										<li class="nav-item"><a href="sidebar_content_sections.html" class="nav-link">Sectioned sidebar</a></li>
+										<li class="nav-item-divider"></li>
+										<li class="nav-item"><a href="sidebar_content_color_dark.html" class="nav-link">Dark color</a></li>
+										<li class="nav-item"><a href="sidebar_content_color_custom.html" class="nav-link">Custom color</a></li>
+										<li class="nav-item"><a href="sidebar_content_color_sections_custom.html" class="nav-link">Custom sections color</a></li>
+									</ul>
+								</li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="sidebar_components.html" class="nav-link">Sidebar components</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-menu3"></i> <span>Navbars</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Navbars">
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Single navbar</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="navbar_single_top_static.html" class="nav-link">Single top static</a></li>
+										<li class="nav-item"><a href="navbar_single_top_fixed.html" class="nav-link">Single top fixed</a></li>
+										<li class="nav-item"><a href="navbar_single_bottom_static.html" class="nav-link">Single bottom static</a></li>
+										<li class="nav-item"><a href="navbar_single_bottom_fixed.html" class="nav-link">Single bottom fixed</a></li>
+										<li class="nav-item"><a href="navbar_single_header_before.html" class="nav-link">Before page header</a></li>
+										<li class="nav-item"><a href="navbar_single_header_after.html" class="nav-link">After page header</a></li>
+										<li class="nav-item"><a href="navbar_single_content_after.html" class="nav-link">After page content</a></li>
+									</ul>
+								</li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Multiple navbars</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="navbar_multiple_top_static.html" class="nav-link">Multiple top static</a></li>
+										<li class="nav-item"><a href="navbar_multiple_top_fixed.html" class="nav-link">Multiple top fixed</a></li>
+										<li class="nav-item"><a href="navbar_multiple_bottom_static.html" class="nav-link">Multiple bottom static</a></li>
+										<li class="nav-item"><a href="navbar_multiple_bottom_fixed.html" class="nav-link">Multiple bottom fixed</a></li>
+										<li class="nav-item"><a href="navbar_multiple_top_bottom.html" class="nav-link">Multiple - top and bottom</a></li>
+										<li class="nav-item"><a href="navbar_multiple_secondary_sticky.html" class="nav-link">Multiple - secondary sticky</a></li>
+									</ul>
+								</li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link">Content navbar</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="navbar_component_single.html" class="nav-link">Single navbar</a></li>
+										<li class="nav-item"><a href="navbar_component_multiple.html" class="nav-link">Multiple navbars</a></li>
+									</ul>
+								</li>
+								<li class="nav-item-divider"></li>
+								<li class="nav-item"><a href="navbar_colors.html" class="nav-link">Color options</a></li>
+								<li class="nav-item"><a href="navbar_sizes.html" class="nav-link">Sizing options</a></li>
+								<li class="nav-item"><a href="navbar_hideable.html" class="nav-link">Hide on scroll</a></li>
+								<li class="nav-item"><a href="navbar_components.html" class="nav-link">Navbar components</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-sort"></i> <span>Vertical navigation</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Vertical navigation">
+								<li class="nav-item"><a href="navigation_vertical_collapsible.html" class="nav-link">Collapsible menu</a></li>
+								<li class="nav-item"><a href="navigation_vertical_accordion.html" class="nav-link">Accordion menu</a></li>
+								<li class="nav-item"><a href="navigation_vertical_bordered.html" class="nav-link">Bordered navigation</a></li>
+								<li class="nav-item"><a href="navigation_vertical_right_icons.html" class="nav-link">Right icons</a></li>
+								<li class="nav-item"><a href="navigation_vertical_badges.html" class="nav-link">Badges</a></li>
+								<li class="nav-item"><a href="navigation_vertical_disabled.html" class="nav-link">Disabled items</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-transmission"></i> <span>Horizontal navigation</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Horizontal navigation">
+								<li class="nav-item"><a href="navigation_horizontal_click.html" class="nav-link">Submenu on click</a></li>
+								<li class="nav-item"><a href="navigation_horizontal_hover.html" class="nav-link">Submenu on hover</a></li>
+								<li class="nav-item"><a href="navigation_horizontal_elements.html" class="nav-link">With custom elements</a></li>
+								<li class="nav-item"><a href="navigation_horizontal_tabs.html" class="nav-link">Tabbed navigation</a></li>
+								<li class="nav-item"><a href="navigation_horizontal_disabled.html" class="nav-link">Disabled navigation links</a></li>
+								<li class="nav-item"><a href="navigation_horizontal_mega.html" class="nav-link">Horizontal mega menu</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-tree5"></i> <span>Menu levels</span></a>
+							<ul class="nav nav-group-sub" data-submenu-title="Menu levels">
+								<li class="nav-item"><a href="#" class="nav-link"><i class="icon-IE"></i> Second level</a></li>
+								<li class="nav-item nav-item-submenu">
+									<a href="#" class="nav-link"><i class="icon-firefox"></i> Second level with child</a>
+									<ul class="nav nav-group-sub">
+										<li class="nav-item"><a href="#" class="nav-link"><i class="icon-android"></i> Third level</a></li>
+										<li class="nav-item nav-item-submenu">
+											<a href="#" class="nav-link"><i class="icon-apple2"></i> Third level with child</a>
+											<ul class="nav nav-group-sub">
+												<li class="nav-item"><a href="#" class="nav-link"><i class="icon-html5"></i> Fourth level</a></li>
+												<li class="nav-item"><a href="#" class="nav-link"><i class="icon-css3"></i> Fourth level</a></li>
+											</ul>
+										</li>
+										<li class="nav-item"><a href="#" class="nav-link"><i class="icon-windows"></i> Third level</a></li>
+									</ul>
+								</li>
+								<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> Second level</a></li>
+							</ul>
+						</li>
+						<!-- /layout -->
+							
+					</ul>
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+			
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Page header -->
+			<div class="page-header">
+				<div class="page-header-content header-elements-md-inline">
+					<div class="page-title">
+                    
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Curriculum Management</span>
+                        <small class="d-block text-muted"><span class="ml-1"> KV Group - KV Board 1 - Course 5 - Chemistry - Carbon Compunds</span></small>
+                        </h4>                        
+						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+                        
+                        
+                    </div>
+                    
+                                      
+                
+
+			<a class="btn bg-indigo-400 legitRipple" data-title="Add Topic" data-toggle="lightbox" data-remote="/veative-b2c-development/santosh/public/curriculum/openPopup?module=secure&amp;view=curriculum&amp;file=popup_add_topic&amp;router=curriculum&amp;chapterId=16"><i class="icon-stack2 mr-2"></i> Add Topic <div class="legitRipple-ripple" style="left: 67.5086%; top: 22.3684%; transform: translate3d(-50%, -50%, 0px); width: 208.463%; opacity: 0;"></div></a>
+				</div>
+			</div>
+			<!-- /page header -->
+
+
+			<!-- Content area -->
+			<div class="content pt-0 hide-icon">
+
+				<!-- Main charts -->
+				<div class="row">
+					<div class="col-xl-12">
+
+
+							<div class="card-group-control card-group-control-left sortable-card" id="accordion-control-right">
+                            
+                            
+								
+										<div class="card" data-action="custom-move-panel" >
+												<div class="card-header">
+													<h5 class="card-title">
+														<a data-toggle="collapse" class="text-default" href="#accordion-control-right-group1">Calculus and analysis</a>
+														
+														
+														<ul class="list-inline list-inline-condensed mb-0 mt-2 mt-sm-0  float-right">
+													
+																							<li class="list-inline-item dropdown">
+																									<span href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></span>
+											
+																								<div class="dropdown-menu dropdown-menu-right">
+																									<span href="#" class="dropdown-item"><i class="icon-pencil5"></i> Edit</span>
+																									<span href="#" class="dropdown-item"><i class="icon-bin"></i> Delete</span>
+																									
+																								</div>
+																							</li>
+																						</ul>
+													</h5>
+													
+													
+													
+												</div>
+			
+												<div id="accordion-control-right-group1" class="collapse show hide-icon " data-parent="#accordion-control-right">
+														<div class="card-body">
+															<div class="px-xl-3">
+																<div class="row column-card-sortable">
+																		
+																	
+																		<div class="col-xl-3" data-action="custom-move">
+																			<a data-action="custom-move">
+																				<div class="card topic-box hover-effect">
+																					<div class="card-img-actions">
+																						<img class="card-img img-fluid" src="../../../../global_assets/images/products/img5.png" alt="">
+																						<!-- <div class="card-img-actions-overlay card-img"> -->
+																							<!-- <span data-toggle="modal" data-target="#addContent" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round ml-2 legitRipple">
+																								<i class="icon-plus3"></i>
+																							</span> -->
+																						<!-- </div> -->
+																					</div>
+															
+																					
+																					<!-- <div class="card-image topic-card-image">
+																						<img src="../../../../global_assets/images/products/img5.png" class="card-img img-fluid">
+																						
+																						<div class="overlay-box ">
+																							<div class="text-icos">
+																									
+																									
+																									<span data-toggle="modal" data-target="#addContent"><i class="icon-plus3"></i></span>
+																							</div>
+																							
+																						</div>
+																					</div > -->
+			
+																					<div class="card-body custom-card-body">
+																						<div class="card-image-icon like-ggl">
+																								<img src="../../../../global_assets/images/icons/video.png" alt="">
+																						</div>
+																						<div class="customize-text-duration">
+																							<code>16:17</code>
+																						</div>
+																						<h6 class="card-title">Up unpacked friendly</h6>
+																						
+																						<p class="card-text text-muted "><span class="related-concept">Releted concept</span>: Nuclear</p>
+																					</div>
+																					<!-- <div class="card-body p-2">
+																						<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+																							<div>
+																									<div class="card-image-icon like-ggl">
+																											<img src="../../../../global_assets/images/icons/video.png" alt="">
+																									</div>
+																								<h6 class="head-title">Calculus power of math and its powerful nature</h6>
+																								
+																								
+																							</div>
+																						</div>
+																					</div> -->
+											
+																					<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+																							<span class="card_device_img"> 
+																									<span  href="#"><img src="../../../../global_assets/images/icons/360.png" alt="">  </span>
+																									<span  href="#"><img src="../../../../global_assets/images/icons/sterio.png" alt=""> </span>
+																								
+																								</span>
+												
+											
+																						<ul class="list-inline list-inline-condensed mb-0 mt-2 mt-sm-0">
+																							<!-- <li class="list-inline-item">
+																								<a href="#" class="text-default"><i class=""></i></a>
+																							</li> -->
+																							
+																							<li class="list-inline-item dropdown">
+																								<span href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></span>
+											
+																								<div class="dropdown-menu dropdown-menu-right">
+																									<span href="#" class="dropdown-item"><i class="icon-pencil5"></i> Edit</span>
+																									<span href="#" class="dropdown-item"><i class="icon-unlink2"></i> Unlink</span>
+																									
+																								</div>
+																							</li>
+																						</ul>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																		<div class="col-xl-3" data-action="custom-move">
+																			<a data-action="custom-move">
+																				<div class="card topic-box hover-effect">
+																					<div class="card-img-actions">
+																						<img class="card-img img-fluid" src="../../../../global_assets/images/products/img2.png" alt="">
+																						<!-- <div class="card-img-actions-overlay card-img"> -->
+																								<!-- <span data-toggle="modal" data-target="#knowledgeGraph" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round legitRipple">
+																										<i class="icon-link"></i>
+																								</span> -->
+															
+																								<!-- <span data-toggle="modal" data-target="#addContent" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round ml-2 legitRipple">
+																										<i class="icon-plus3"></i>
+																								</span> -->
+																						<!-- </div> -->
+																					</div>
+																					<!-- <div class="card-image topic-card-image">
+																					<img src="../../../../global_assets/images/products/img2.png" class="card-img img-fluid">
+																						
+																						<div class="overlay-box ">
+																							<div class="text-icos">
+																									
+																									
+																									<span data-toggle="modal" data-target="#addContent"><i class="icon-plus3"></i></span>
+																							</div>
+																							
+																						</div>
+																					</div > -->
+																					<div class="card-body custom-card-body">
+																							<div class="card-image-icon like-ggl">
+																									<img src="../../../../global_assets/images/icons/ar-activity.png" alt="">
+																							</div>
+																							
+																							<h6 class="card-title">Up unpacked friendly</h6>
+																					</div>
+																					<!-- <div class="card-body p-2">
+																						<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+																							<div>
+																									<div class="card-image-icon like-ggl">
+																											<img src="../../../../global_assets/images/icons/ar-activity.png" alt="">
+																									</div>
+																								<p class="head-title">Calculus power of math and its powerful nature</p>
+																								
+																								
+																							</div>
+																						</div>
+																					</div> -->
+											
+																					<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+																							
+																							<span></span>
+																						<ul class="list-inline list-inline-condensed mb-0 mt-2 mt-sm-0">
+																							<!-- <li class="list-inline-item">
+																								<a href="#" class="text-default"><i class=""></i></a>
+																							</li> -->
+																							
+																							<li class="list-inline-item dropdown">
+																									<span href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></span>
+											
+																								<div class="dropdown-menu dropdown-menu-right">
+																									<span href="#" class="dropdown-item"><i class="icon-pencil5"></i> Edit</span>
+																									<span href="#" class="dropdown-item"><i class="icon-unlink2"></i> Unlink</span>
+																									
+																								</div>
+																							</li>
+																						</ul>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																		<div class="col-xl-3 " data-action="custom-move">
+																				<a data-action="custom-move">
+																				<div class="card topic-box hover-effect">
+																						<div class="card-img-actions">
+																							<img class="card-img img-fluid" src="../../../../global_assets/images/products/img3.png" alt="">
+																							<!-- <div class="card-img-actions-overlay card-img"> -->
+																									<!-- <span data-toggle="modal" data-target="#knowledgeGraph" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round legitRipple">
+																											<i class="icon-link"></i>
+																									</span> -->
+																
+																									<!-- <span data-toggle="modal" data-target="#addContent" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round ml-2 legitRipple">
+																											<i class="icon-plus3"></i>
+																									</span> -->
+																							<!-- </div> -->
+																						</div>
+																					<!-- <div class="card-image topic-card-image">
+																						<img src="../../../../global_assets/images/products/img3.png" class="card-img img-fluid">
+																						
+																						<div class="overlay-box ">
+																							<div class="text-icos">
+																									
+																									
+																									<span data-toggle="modal" data-target="#addContent"><i class="icon-plus3"></i></span>
+																							</div>
+																							
+																						</div>
+																					</div > -->
+																					<div class="card-body custom-card-body">
+																							<div class="card-image-icon like-ggl">
+																									<img src="../../../../global_assets/images/icons/vr_simulation.png" alt="">
+																							</div>
+																							
+																							<h6 class="card-title">Up unpacked friendly</h6>
+																							
+																							
+																						</div>
+																					<!-- <div class="card-body p-2">
+																						<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+																							<div>
+																									<div class="card-image-icon like-ggl">
+																											<img src="../../../../global_assets/images/icons/vr_simulation.png" alt="">
+																									</div>
+																								<p class="head-title">Calculus power of math and its powerful nature</p>
+																								
+																								
+																							</div>
+																						</div>
+																					</div> -->
+											
+																					<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+																							<span class="card_device_img"> 
+																									<span href="#"><img src="../../../../global_assets/images/icons/google-cardboard.png" alt="">  </span>
+																									<span href="#"><img src="../../../../global_assets/images/icons/gearvr.png" alt=""> </span>
+																									<span href="#"><img src="../../../../global_assets/images/icons/google_daydream.png" alt=""> </span>
+																									<span href="#"><img src="../../../../global_assets/images/icons/oculus.png" alt=""></span>
+																									<span href="#"><img src="../../../../global_assets/images/icons/pico.png" alt=""></span>
+																								</span>
+												
+											
+																						<ul class="list-inline list-inline-condensed mb-0 mt-2 mt-sm-0">
+																							<!-- <li class="list-inline-item">
+																								<a href="#" class="text-default"><i class=""></i></a>
+																							</li> -->
+																							
+																							<li class="list-inline-item dropdown">
+																									<span href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></span>
+											
+																								<div class="dropdown-menu dropdown-menu-right">
+																									<span href="#" class="dropdown-item"><i class="icon-pencil5"></i> Edit</span>
+																									<span href="#" class="dropdown-item"><i class="icon-unlink2"></i> Unlink</span>
+																									
+																								</div>
+																							</li>
+																						</ul>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																		<div class="col-xl-3 " data-action="custom-move">
+																			<a data-action="custom-move">
+																				<div class="card topic-box hover-effect">
+																						<div class="card-img-actions">
+																								<img class="card-img img-fluid" src="../../../../global_assets/images/products/img4.png" alt="">
+																								<!-- <div class="card-img-actions-overlay card-img"> -->
+																									<!-- <span data-toggle="modal" data-target="#knowledgeGraph" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round legitRipple">
+																											<i class="icon-link"></i>
+																									</span> -->
+																
+																									<!-- <span data-toggle="modal" data-target="#addContent" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round ml-2 legitRipple">
+																											<i class="icon-plus3"></i>
+																									</span> -->
+																								<!-- </div> -->
+																							</div>
+																					<!-- <div class="card-image topic-card-image">
+																						<img src="../../../../global_assets/images/products/img4.png" class="card-img img-fluid">
+																						
+																						<div class="overlay-box ">
+																							<div class="text-icos">
+																									
+																									
+																									<span data-toggle="modal" data-target="#knowledgeGraph"><i class="icon-link"></i></span>
+																									<span data-toggle="modal" data-target="#addContent"><i class="icon-plus3"></i></span>
+																							</div>
+																							
+																						</div>
+																					</div > -->
+																					<div class="card-body custom-card-body">
+																							<div class="card-image-icon like-ggl">
+																									<img src="../../../../global_assets/images/icons/test.png" alt="">
+																							</div>
+																							
+																							<h6 class="card-title">Up unpacked friendly</h6>
+																							
+																							
+																					</div>
+																					<!-- <div class="card-body p-2">
+																						<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+																							<div>
+																																													<div class="card-image-icon like-ggl">
+																																															<img src="../../../../global_assets/images/icons/test.png" alt="">
+																						</div>
+																								<p class="head-title">Calculus power of math and its powerful nature</p>
+																								
+																								
+																							</div>
+																						</div>
+																					</div> -->
+											
+																					<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+																							
+																							<span></span>
+																						<ul class="list-inline list-inline-condensed mb-0 mt-2 mt-sm-0">
+																							<!-- <li class="list-inline-item">
+																								<a href="#" class="text-default"><i class=""></i></a>
+																							</li> -->
+																							
+																							<li class="list-inline-item dropdown">
+																									<span href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></span>
+											
+																								<div class="dropdown-menu dropdown-menu-right">
+																									<span href="#" class="dropdown-item"><i class="icon-pencil5"></i> Edit</span>
+																									<span href="#" class="dropdown-item"><i class="icon-unlink2"></i> Unlink</span>
+																									
+																								</div>
+																							</li>
+																						</ul>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																		<div class="col-xl-3 " data-action="custom-move">
+																			<a data-action="custom-move">
+																				<div class="card topic-box hover-effect">
+																						<div class="card-img-actions">
+																								<img class="card-img img-fluid" src="../../../../global_assets/images/products/img5.png" alt="">
+																								<!-- <div class="card-img-actions-overlay card-img"> -->
+																								
+																
+																									<!-- <span href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round ml-2 legitRipple" data-toggle="modal" data-target="#addContent">
+																											<i class="icon-plus3"></i>
+																									</span> -->
+																								<!-- </div> -->
+																							</div>
+																					<!-- <div class="card-image topic-card-image">
+																						<img src="../../../../global_assets/images/products/img5.png" class="card-img img-fluid">
+																						
+																						<div class="overlay-box ">
+																							<div class="text-icos">
+																									
+																									
+																									<span data-toggle="modal" data-target="#addContent"><i class="icon-plus3"></i></span>
+																							</div>
+																							
+																						</div>
+																					</div > -->
+			
+																					<div class="card-body custom-card-body">
+																							<div class="card-image-icon like-ggl">
+																									<img src="../../../../global_assets/images/icons/video.png" alt="">
+																							</div>
+																							<div class="customize-text-duration">
+																								<code>16:17</code>
+																							</div>
+																							<h6 class="card-title">Up unpacked friendly</h6>
+																							
+																							<p class="card-text text-muted "><span class="related-concept">Releted concept</span>: Nuclear</p>
+																						</div>
+																					<!-- <div class="card-body p-2">
+																						<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+																							<div>
+																									<div class="card-image-icon like-ggl">
+																											<img src="../../../../global_assets/images/icons/video.png" alt="">
+																									</div>
+																								<h6 class="head-title">Calculus power of math and its powerful nature</h6>
+																								
+																								
+																							</div>
+																						</div>
+																					</div> -->
+											
+																					<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+																							<span class="card_device_img"> 
+																									<span  href="#"><img src="../../../../global_assets/images/icons/360.png" alt="">  </span>
+																									<span  href="#"><img src="../../../../global_assets/images/icons/sterio.png" alt=""> </span>
+																									<span  href="#"><img src="../../../../global_assets/images/icons/mono.png" alt=""> </span>
+																								
+																								</span>
+												
+											
+																						<ul class="list-inline list-inline-condensed mb-0 mt-2 mt-sm-0">
+																							<!-- <li class="list-inline-item">
+																								<a href="#" class="text-default"><i class=""></i></a>
+																							</li> -->
+																							
+																							<li class="list-inline-item dropdown">
+																									<span href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></span>
+											
+																								<div class="dropdown-menu dropdown-menu-right">
+																									<span href="#" class="dropdown-item"><i class="icon-pencil5"></i> Edit</span>
+																									<span href="#" class="dropdown-item"><i class="icon-unlink2"></i> Unlink</span>
+																									
+																								</div>
+																							</li>
+																						</ul>
+																					</div>
+																				</div>
+																			</a>
+																		</div>
+																		<div class="col-xl-3 skip-card">
+																			<a>
+																				<div class="card topic-box with-add-content">
+																					
+																					<div class="card-body p-0">
+																						<div class="d-sm-flex align-item-sm-center flex-sm-nowrap">
+																							<div class="add-main">
+																									<div class="add-content left"  data-target="#addContent" data-toggle="modal">
+																											<i class="icon-plus3"></i>
+																											
+																											
+																										</div>
+																										<div class="add-content right"  data-target="#knowledgeGraph" data-toggle="modal">
+																												<i class="icon-link"></i>
+																												
+																												
+																											</div>
+																										
+																							</div>
+																							
+																							
+																						</div>
+																					</div>
+											
+																					
+																				</div>
+																			</a>
+																		</div>
+			
+																	
+																</div>
+															</div>
+														</div>
+												</div>
+											</div>
+
+								
+								
+								
+								
+
+								
+									<div class="card column-panel-movable" data-action="custom-move-panel" >
+										<div class="card-header">
+											<h5 class="card-title">
+												<a data-toggle="collapse" class="text-default" href="#accordion-control-right-group2">Geometry</a>
+												
+												
+												<ul class="list-inline list-inline-condensed mb-0 mt-2 mt-sm-0  float-right">
+											
+																					<li class="list-inline-item dropdown">
+																							<span href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></span>
+									
+																						<div class="dropdown-menu dropdown-menu-right">
+																							<span href="#" class="dropdown-item"><i class="icon-pencil5"></i> Edit</span>
+																							<span href="#" class="dropdown-item"><i class="icon-bin"></i> Delete</span>
+																							
+																						</div>
+																					</li>
+																				</ul>
+											</h5>
+											
+											
+											
+										</div>
+
+										<div id="accordion-control-right-group2" class="collapse  hide-icon " data-parent="#accordion-control-right">
+												<div class="card-body">
+													<div class="px-xl-3">
+														<div class="row column-card-sortable">
+																
+															
+																<div class="col-xl-3" data-action="custom-move">
+																	<a data-action="custom-move">
+																		<div class="card topic-box hover-effect">
+																			<div class="card-img-actions">
+																				<img class="card-img img-fluid" src="../../../../global_assets/images/products/img5.png" alt="">
+																				<!-- <div class="card-img-actions-overlay card-img"> -->
+																					<!-- <span data-toggle="modal" data-target="#addContent" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round ml-2 legitRipple">
+																						<i class="icon-plus3"></i>
+																					</span> -->
+																				<!-- </div> -->
+																			</div>
+													
+																			
+																			<!-- <div class="card-image topic-card-image">
+																				<img src="../../../../global_assets/images/products/img5.png" class="card-img img-fluid">
+																				
+																				<div class="overlay-box ">
+																					<div class="text-icos">
+																							
+																							
+																							<span data-toggle="modal" data-target="#addContent"><i class="icon-plus3"></i></span>
+																					</div>
+																					
+																				</div>
+																			</div > -->
+
+																			<div class="card-body custom-card-body">
+																				<div class="card-image-icon like-ggl">
+																						<img src="../../../../global_assets/images/icons/video.png" alt="">
+																				</div>
+																				<div class="customize-text-duration">
+																					<code>16:17</code>
+																				</div>
+																				<h6 class="card-title">Up unpacked friendly</h6>
+																				
+																				<p class="card-text text-muted "><span class="related-concept">Releted concept</span>: Nuclear</p>
+																			</div>
+																			<!-- <div class="card-body p-2">
+																				<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+																					<div>
+																							<div class="card-image-icon like-ggl">
+																									<img src="../../../../global_assets/images/icons/video.png" alt="">
+																							</div>
+																						<h6 class="head-title">Calculus power of math and its powerful nature</h6>
+																						
+																						
+																					</div>
+																				</div>
+																			</div> -->
+									
+																			<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+																					<span class="card_device_img"> 
+																							<span  href="#"><img src="../../../../global_assets/images/icons/360.png" alt="">  </span>
+																							<span  href="#"><img src="../../../../global_assets/images/icons/sterio.png" alt=""> </span>
+																						
+																						</span>
+										
+									
+																				<ul class="list-inline list-inline-condensed mb-0 mt-2 mt-sm-0">
+																					<!-- <li class="list-inline-item">
+																						<a href="#" class="text-default"><i class=""></i></a>
+																					</li> -->
+																					
+																					<li class="list-inline-item dropdown">
+																						<span href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></span>
+									
+																						<div class="dropdown-menu dropdown-menu-right">
+																							<span href="#" class="dropdown-item"><i class="icon-pencil5"></i> Edit</span>
+																							<span href="#" class="dropdown-item"><i class="icon-unlink2"></i> Unlink</span>
+																							
+																						</div>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+																<div class="col-xl-3" data-action="custom-move">
+																	<a data-action="custom-move">
+																		<div class="card topic-box hover-effect">
+																			<div class="card-img-actions">
+																				<img class="card-img img-fluid" src="../../../../global_assets/images/products/img2.png" alt="">
+																				<!-- <div class="card-img-actions-overlay card-img"> -->
+																						<!-- <span data-toggle="modal" data-target="#knowledgeGraph" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round legitRipple">
+																								<i class="icon-link"></i>
+																						</span> -->
+													
+																						<!-- <span data-toggle="modal" data-target="#addContent" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round ml-2 legitRipple">
+																								<i class="icon-plus3"></i>
+																						</span> -->
+																				<!-- </div> -->
+																			</div>
+																			<!-- <div class="card-image topic-card-image">
+																			<img src="../../../../global_assets/images/products/img2.png" class="card-img img-fluid">
+																				
+																				<div class="overlay-box ">
+																					<div class="text-icos">
+																							
+																							
+																							<span data-toggle="modal" data-target="#addContent"><i class="icon-plus3"></i></span>
+																					</div>
+																					
+																				</div>
+																			</div > -->
+																			<div class="card-body custom-card-body">
+																					<div class="card-image-icon like-ggl">
+																							<img src="../../../../global_assets/images/icons/ar-activity.png" alt="">
+																					</div>
+																					
+																					<h6 class="card-title">Up unpacked friendly</h6>
+																			</div>
+																			<!-- <div class="card-body p-2">
+																				<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+																					<div>
+																							<div class="card-image-icon like-ggl">
+																									<img src="../../../../global_assets/images/icons/ar-activity.png" alt="">
+																							</div>
+																						<p class="head-title">Calculus power of math and its powerful nature</p>
+																						
+																						
+																					</div>
+																				</div>
+																			</div> -->
+									
+																			<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+																					
+																					<span></span>
+																				<ul class="list-inline list-inline-condensed mb-0 mt-2 mt-sm-0">
+																					<!-- <li class="list-inline-item">
+																						<a href="#" class="text-default"><i class=""></i></a>
+																					</li> -->
+																					
+																					<li class="list-inline-item dropdown">
+																							<span href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></span>
+									
+																						<div class="dropdown-menu dropdown-menu-right">
+																							<span href="#" class="dropdown-item"><i class="icon-pencil5"></i> Edit</span>
+																							<span href="#" class="dropdown-item"><i class="icon-unlink2"></i> Unlink</span>
+																							
+																						</div>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+																<div class="col-xl-3 " data-action="custom-move">
+																		<a data-action="custom-move">
+																		<div class="card topic-box hover-effect">
+																				<div class="card-img-actions">
+																					<img class="card-img img-fluid" src="../../../../global_assets/images/products/img3.png" alt="">
+																					<!-- <div class="card-img-actions-overlay card-img"> -->
+																							<!-- <span data-toggle="modal" data-target="#knowledgeGraph" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round legitRipple">
+																									<i class="icon-link"></i>
+																							</span> -->
+														
+																							<!-- <span data-toggle="modal" data-target="#addContent" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round ml-2 legitRipple">
+																									<i class="icon-plus3"></i>
+																							</span> -->
+																					<!-- </div> -->
+																				</div>
+																			<!-- <div class="card-image topic-card-image">
+																				<img src="../../../../global_assets/images/products/img3.png" class="card-img img-fluid">
+																				
+																				<div class="overlay-box ">
+																					<div class="text-icos">
+																							
+																							
+																							<span data-toggle="modal" data-target="#addContent"><i class="icon-plus3"></i></span>
+																					</div>
+																					
+																				</div>
+																			</div > -->
+																			<div class="card-body custom-card-body">
+																					<div class="card-image-icon like-ggl">
+																							<img src="../../../../global_assets/images/icons/vr_simulation.png" alt="">
+																					</div>
+																					
+																					<h6 class="card-title">Up unpacked friendly</h6>
+																					
+																					
+																				</div>
+																			<!-- <div class="card-body p-2">
+																				<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+																					<div>
+																							<div class="card-image-icon like-ggl">
+																									<img src="../../../../global_assets/images/icons/vr_simulation.png" alt="">
+																							</div>
+																						<p class="head-title">Calculus power of math and its powerful nature</p>
+																						
+																						
+																					</div>
+																				</div>
+																			</div> -->
+									
+																			<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+																					<span class="card_device_img"> 
+																							<span href="#"><img src="../../../../global_assets/images/icons/google-cardboard.png" alt="">  </span>
+																							<span href="#"><img src="../../../../global_assets/images/icons/gearvr.png" alt=""> </span>
+																							<span href="#"><img src="../../../../global_assets/images/icons/google_daydream.png" alt=""> </span>
+																							<span href="#"><img src="../../../../global_assets/images/icons/oculus.png" alt=""></span>
+																							<span href="#"><img src="../../../../global_assets/images/icons/pico.png" alt=""></span>
+																						</span>
+										
+									
+																				<ul class="list-inline list-inline-condensed mb-0 mt-2 mt-sm-0">
+																					<!-- <li class="list-inline-item">
+																						<a href="#" class="text-default"><i class=""></i></a>
+																					</li> -->
+																					
+																					<li class="list-inline-item dropdown">
+																							<span href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></span>
+									
+																						<div class="dropdown-menu dropdown-menu-right">
+																							<span href="#" class="dropdown-item"><i class="icon-pencil5"></i> Edit</span>
+																							<span href="#" class="dropdown-item"><i class="icon-unlink2"></i> Unlink</span>
+																							
+																						</div>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+																<div class="col-xl-3 " data-action="custom-move">
+																	<a data-action="custom-move">
+																		<div class="card topic-box hover-effect">
+																				<div class="card-img-actions">
+																						<img class="card-img img-fluid" src="../../../../global_assets/images/products/img4.png" alt="">
+																						<!-- <div class="card-img-actions-overlay card-img"> -->
+																							<!-- <span data-toggle="modal" data-target="#knowledgeGraph" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round legitRipple">
+																									<i class="icon-link"></i>
+																							</span> -->
+														
+																							<!-- <span data-toggle="modal" data-target="#addContent" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round ml-2 legitRipple">
+																									<i class="icon-plus3"></i>
+																							</span> -->
+																						<!-- </div> -->
+																					</div>
+																			<!-- <div class="card-image topic-card-image">
+																				<img src="../../../../global_assets/images/products/img4.png" class="card-img img-fluid">
+																				
+																				<div class="overlay-box ">
+																					<div class="text-icos">
+																							
+																							
+																							<span data-toggle="modal" data-target="#knowledgeGraph"><i class="icon-link"></i></span>
+																							<span data-toggle="modal" data-target="#addContent"><i class="icon-plus3"></i></span>
+																					</div>
+																					
+																				</div>
+																			</div > -->
+																			<div class="card-body custom-card-body">
+																					<div class="card-image-icon like-ggl">
+																							<img src="../../../../global_assets/images/icons/test.png" alt="">
+																					</div>
+																					
+																					<h6 class="card-title">Up unpacked friendly</h6>
+																					
+																					
+																			</div>
+																			<!-- <div class="card-body p-2">
+																				<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+																					<div>
+																																											<div class="card-image-icon like-ggl">
+																																													<img src="../../../../global_assets/images/icons/test.png" alt="">
+																				</div>
+																						<p class="head-title">Calculus power of math and its powerful nature</p>
+																						
+																						
+																					</div>
+																				</div>
+																			</div> -->
+									
+																			<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+																					
+																					<span></span>
+																				<ul class="list-inline list-inline-condensed mb-0 mt-2 mt-sm-0">
+																					<!-- <li class="list-inline-item">
+																						<a href="#" class="text-default"><i class=""></i></a>
+																					</li> -->
+																					
+																					<li class="list-inline-item dropdown">
+																							<span href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></span>
+									
+																						<div class="dropdown-menu dropdown-menu-right">
+																							<span href="#" class="dropdown-item"><i class="icon-pencil5"></i> Edit</span>
+																							<span href="#" class="dropdown-item"><i class="icon-unlink2"></i> Unlink</span>
+																							
+																						</div>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+																<div class="col-xl-3 " data-action="custom-move">
+																	<a data-action="custom-move">
+																		<div class="card topic-box hover-effect">
+																				<div class="card-img-actions">
+																						<img class="card-img img-fluid" src="../../../../global_assets/images/products/img5.png" alt="">
+																						<!-- <div class="card-img-actions-overlay card-img"> -->
+																						
+														
+																							<!-- <span href="#" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round ml-2 legitRipple" data-toggle="modal" data-target="#addContent">
+																									<i class="icon-plus3"></i>
+																							</span> -->
+																						<!-- </div> -->
+																					</div>
+																			<!-- <div class="card-image topic-card-image">
+																				<img src="../../../../global_assets/images/products/img5.png" class="card-img img-fluid">
+																				
+																				<div class="overlay-box ">
+																					<div class="text-icos">
+																							
+																							
+																							<span data-toggle="modal" data-target="#addContent"><i class="icon-plus3"></i></span>
+																					</div>
+																					
+																				</div>
+																			</div > -->
+
+																			<div class="card-body custom-card-body">
+																					<div class="card-image-icon like-ggl">
+																							<img src="../../../../global_assets/images/icons/video.png" alt="">
+																					</div>
+																					<div class="customize-text-duration">
+																						<code>16:17</code>
+																					</div>
+																					<h6 class="card-title">Up unpacked friendly</h6>
+																					
+																					<p class="card-text text-muted "><span class="related-concept">Releted concept</span>: Nuclear</p>
+																				</div>
+																			<!-- <div class="card-body p-2">
+																				<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+																					<div>
+																							<div class="card-image-icon like-ggl">
+																									<img src="../../../../global_assets/images/icons/video.png" alt="">
+																							</div>
+																						<h6 class="head-title">Calculus power of math and its powerful nature</h6>
+																						
+																						
+																					</div>
+																				</div>
+																			</div> -->
+									
+																			<div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+																					<span class="card_device_img"> 
+																							<span  href="#"><img src="../../../../global_assets/images/icons/360.png" alt="">  </span>
+																							<span  href="#"><img src="../../../../global_assets/images/icons/sterio.png" alt=""> </span>
+																						
+																						</span>
+										
+									
+																				<ul class="list-inline list-inline-condensed mb-0 mt-2 mt-sm-0">
+																					<!-- <li class="list-inline-item">
+																						<a href="#" class="text-default"><i class=""></i></a>
+																					</li> -->
+																					
+																					<li class="list-inline-item dropdown">
+																							<span href="#" class="text-default dropdown-toggle" data-toggle="dropdown"><i class="icon-menu7"></i></span>
+									
+																						<div class="dropdown-menu dropdown-menu-right">
+																							<span href="#" class="dropdown-item"><i class="icon-pencil5"></i> Edit</span>
+																							<span href="#" class="dropdown-item"><i class="icon-unlink2"></i> Unlink</span>
+																							
+																						</div>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</a>
+																</div>
+																<div class="col-xl-3 skip-card">
+																	<a>
+																		<div class="card topic-box with-add-content">
+																			
+																			<div class="card-body p-0">
+																				<div class="d-sm-flex align-item-sm-center flex-sm-nowrap">
+																					<div class="add-main">
+																							<div class="add-content left"  data-target="#addContent" data-toggle="modal">
+																									<i class="icon-plus3"></i>
+																									
+																									
+																								</div>
+																								<div class="add-content right"  data-target="#knowledgeGraph" data-toggle="modal">
+																										<i class="icon-link"></i>
+																										
+																										
+																									</div>
+																								
+																					</div>
+																					
+																					
+																				</div>
+																			</div>
+									
+																			
+																		</div>
+																	</a>
+																</div>
+
+															
+														</div>
+													</div>
+												</div>
+										</div>
+									</div>
+								
+	
+								
+							</div>
+
+					
+
+					</div>
+
+					
+				</div>
+				
+				<!-- /main charts -->
+
+
+				<!-- Dashboard content -->
+				
+				<!-- /dashboard content -->
+
+			</div>
+			<!-- /content area -->
+
+
+			<!-- Footer -->
+			<div class="navbar navbar-expand-lg navbar-light">
+				<div class="text-center d-lg-none w-100">
+					<button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+						<i class="icon-unfold mr-2"></i>
+						Footer
+					</button>
+				</div>
+
+				<div class="navbar-collapse collapse" id="navbar-footer">
+					<span class="navbar-text">
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+					</span>
+
+				
+				</div>
+			</div>
+			<!-- /footer -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+	<div id="addContent" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-lg">
+		
+			<!-- Modal content-->
+			<div class="modal-content">
+			<div class="modal-header">
+				
+				<h4 class="modal-title">Add Content</h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+					<div class="tabbable">
+							<div class="row">
+								<div class="col-lg-12" id="cs-book-msg"></div>
+							</div>
+							<ul class="nav nav-tabs nav-tabs-bottom">
+								<li class="active"><a href="#browse-tab" data-toggle="tab" aria-expanded="true" class="nav-link active show">Browse</a></li>
+								<li class=""><a href="#upload-tab" data-toggle="tab" aria-expanded="false" class="nav-link">Upload</a></li>
+						
+							</ul>
+							<div class="tab-content custom-cont">
+								<div class="col-xl-12 publish-message no-margin"></div>
+								<div class="tab-pane active show" id="browse-tab">
+									<div>
+										<div class="col-lg-12" id="search-box">
+											<div class="input-group mb-3">
+												<div class="form-group-feedback form-group-feedback-left">
+													<input type="text" class="form-control form-control-lg" placeholder="Search" id="search-text">
+													<div class="form-control-feedback form-control-feedback-lg">
+														<i class="icon-search4 text-muted"></i>
+													</div>
+												</div>
+						
+												<div class="input-group-append">
+													<button type="submit" class="btn bg-indigo-400 legitRipple" onclick="GetContent('simple-search')">Search</button>
+												</div>
+											</div>
+										</div>
+										<div class="form-group no-margin no-padding">
+											<div class="col-lg-12 col-xs-12 pull-right"><a href="javascript:void(0)" name="advance-search" id="filterCategorizedContent" onclick="toggleFilter(this)">Advance Search</a>
+											</div>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div class="card" id="filter-box" style="display: none;">
+										<div class="card-body">
+											<fieldset class="mb-3">
+												<div class="row basic-search">
+													<div class="input-group mb-3">
+														<div class="form-group-feedback form-group-feedback-left">
+															<input type="text" class="form-control form-control-sm" placeholder="Search" id="advanced-search-text">
+															<div class="form-control-feedback form-control-feedback-sm">
+																<i class="icon-search4 text-muted"></i>
+															</div>
+														</div>
+													</div>
+													<div class="col-lg-6 col-xs-12"><select name="group" class="form-control-static form-control batch group_list0" id="allgroup" onchange="getContentFilterData(this, 'getBoard');" data-width="100%"> <option value="">Select Group</option><option value="8">KV Group</option><option value="9">Gujarat Education</option><option value="10">Madhya Pradesh Education</option><option value="13">New Zealand</option><option value="14">Namibia</option><option value="15">Australian Ecucation</option><option value="17">USA</option><option value="18">South Africa</option><option value="19">Qatar</option><option value="20">NGSS</option><option value="21">West Bengal Education</option><option value="22">Bihar Education</option><option value="23">Maharashtra Education</option><option value="24">ICSE</option><option value="25">CBSE</option><option value="26">sdasd</option></select></div>	 
+													<div class="col-lg-6 col-xs-12"><select name="board" class="form-control-static form-control batch board_list0" id="allboard" onchange="getContentFilterData(this, 'getCourse');" data-width="100%"> <option value="" selected="">Select Board</option></select></div>	 
+													<div class="col-lg-6 col-xs-12"><select name="course" class="form-control-static form-control grade course_list0" id="allcourse" onchange="getContentFilterData(this, 'getSubjects');" data-width="100%"> <option value="" selected="">Select Course</option></select></div>
+													<div class="col-lg-6 col-xs-12"><select name="subject_id" class="form-control-static form-control class subject_list0" id="allsubject" data-width="100%"><option value="">Select Subject</option></select></div> 
+													<div class="col-lg-6 col-xs-12"><select name="content_id" class="form-control-static form-control class content_list0" id="allcontent" data-width="100%"><option value="">Select Content Type</option><option value="3">ASSESSMENT</option><option value="1">VIDEO</option><option value="2">VR-MODULES</option></select></div>
+						
+												</div>
+												<div class="row">
+													<div class="col-lg-12 col-xs-12 text-right"><input type="button" name="filter" class="btn bg-indigo-400 legitRipple" id="filterCategorizedContent" value="Apply" onclick="GetContent('advance-search')">	 
+														<a name="filter" class="btn btn-light legitRipple" id="getUnCategorizedData" onclick="resetfilter();">Clear</a>
+													</div>
+												</div>
+											</fieldset>
+										</div>	
+									</div>
+									<div id="content-list">
+									</div>
+						
+									<div class="clearfix"></div>
+									<div class="col-lg-12 text-center text-semibold" id="content-list-count">
+									</div>
+								</div>
+						
+								<div class="tab-pane" id="upload-tab">
+						
+								</div>  
+							</div>
+						
+						</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn bg-indigo-400 legitRipple" >Submit</button>
+			</div>
+			</div>
+		
+		</div>
+	</div>
+	<div id="knowledgeGraph" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-lg">
+			
+				<!-- Modal content-->
+				<div class="modal-content">
+				<div class="modal-header">
+					
+					<h4 class="modal-title">Related Content
+						<br>
+							<span class="item-selected text-muted">Calculus Practice test:<span id="">2</span></span>,
+							<span class="item-selected text-muted">Geometry video:<span id="">2</span></span>
+					</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body text-center">
+						<a id="openCloseModal"><img src="../../../../global_assets/images/knowlage-map.png"></a>
+						<div id="main-display-view">
+
+								<div id="graph-view-wrapper">
+								</div>
+						  
+							  </div>
+						<script type="text/template" id="concept-list-template">
+
+							<div id="concept-list-show-button" class="small-vp-button">
+							  Concept List
+							</div>
+					  
+							<div id="concept-title-header">
+							  <h1>
+								Concept List
+							  </h1>
+							  <div id="explore-learn-tools">
+								<div id="concept-list-search">
+								  <input type="text" id="concept-list-search-input" placeholder="enter the name of a concept to find it">
+								  <input type="button" value="Clear" id="cancel-search-input" style="top: 39px;">
+								</div>
+					  
+								<div id="concept-list-hide-button" style="font-size: 1.4em; padding: 0  0.1em 0.2em 0.1em;">
+								  «
+								</div>
+					  
+							  </div>
+							</div>
+					  
+							<div id="concept-list-wrapper">
+							  <ol id="concept-list">
+							  </ol>
+							</div>
+						  </script>
+						
+				</div>
+				<div class="modal-footer">
+						<button type="button" class="btn bg-indigo-400 legitRipple" data-id="submit_to_prevModal" >Proceed</button>
+				</div>
+				
+				</div>
+			
+			</div>
+		</div>
+		<div id="anotherModal" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+				
+					<!-- Modal content-->
+					<div class="modal-content">
+					<div class="modal-header">
+						
+						<h4 class="modal-title">Calculus and analysis
+								<!-- <p class="item-selected text-muted hide">Item Selected:<span id="itemSelected">0</span></p> -->
+						</h4>
+						
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body pt-0">
+							
+						<div class="row mb-3 pb-2">
+							
+
+                                    <div class=" col-lg-6">
+									<select class=" select" data-fouc>
+                                    <option>Select Content type:</option>
+											<option value="AZ">Videos</option>
+											<option value="CO">VR Simulations</option>
+											<option value="ID">AR Activities</option>
+											<option value="WY">Practice Tests</option>
+										
+									</select>
+                                    </div>
+								
+                                </div>
+                                
+                               
+                                
+							<div class="row custom-card">
+									<div class="col-xl-4" data-action="custom-move">
+											<a data-action="custom-move">
+												<div class="card topic-box hover-effect">
+													<div class="card-img-actions">
+														<img class="card-img img-fluid" src="../../../../global_assets/images/products/img5.png" alt="">
+														
+													</div>
+							
+													
+													<!-- <div class="card-image topic-card-image">
+														<img src="../../../../global_assets/images/products/img5.png" class="card-img img-fluid">
+														
+														<div class="overlay-box ">
+															<div class="text-icos">
+																	
+																	
+																	<span data-toggle="modal" data-target="#addContent"><i class="icon-plus3"></i></span>
+															</div>
+															
+														</div>
+													</div > -->
+
+													<div class="card-body custom-card-body">
+														<div class="card-image-icon like-ggl">
+																<img src="../../../../global_assets/images/icons/video.png" alt="">
+														</div>
+														<div class="customize-text-duration">
+															<code>16:17</code>
+														</div>
+														<h6 class="card-title">Up unpacked friendly</h6>
+														
+														
+													</div>
+													<!-- <div class="card-body p-2">
+														<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+															<div>
+																	<div class="card-image-icon like-ggl">
+																			<img src="../../../../global_assets/images/icons/video.png" alt="">
+																	</div>
+																<h6 class="head-title">Calculus power of math and its powerful nature</h6>
+																
+																
+															</div>
+														</div>
+													</div> -->
+			
+													
+												</div>
+											</a>
+										</div>
+										<div class="col-xl-4" data-action="custom-move">
+											<a data-action="custom-move">
+												<div class="card topic-box hover-effect">
+													<div class="card-img-actions">
+														<img class="card-img img-fluid" src="../../../../global_assets/images/products/img5.png" alt="">
+														
+													</div>
+							
+													
+													<!-- <div class="card-image topic-card-image">
+														<img src="../../../../global_assets/images/products/img5.png" class="card-img img-fluid">
+														
+														<div class="overlay-box ">
+															<div class="text-icos">
+																	
+																	
+																	<span data-toggle="modal" data-target="#addContent"><i class="icon-plus3"></i></span>
+															</div>
+															
+														</div>
+													</div > -->
+
+													<div class="card-body custom-card-body">
+														<div class="card-image-icon like-ggl">
+																<img src="../../../../global_assets/images/icons/video.png" alt="">
+														</div>
+														<div class="customize-text-duration">
+															<code>16:17</code>
+														</div>
+														<h6 class="card-title">Up unpacked friendly</h6>
+														
+														
+													</div>
+													<!-- <div class="card-body p-2">
+														<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+															<div>
+																	<div class="card-image-icon like-ggl">
+																			<img src="../../../../global_assets/images/icons/video.png" alt="">
+																	</div>
+																<h6 class="head-title">Calculus power of math and its powerful nature</h6>
+																
+																
+															</div>
+														</div>
+													</div> -->
+			
+													
+												</div>
+											</a>
+										</div>
+										<div class="col-xl-4" data-action="custom-move">
+											<a data-action="custom-move">
+												<div class="card topic-box hover-effect">
+													<div class="card-img-actions">
+														<img class="card-img img-fluid" src="../../../../global_assets/images/products/img5.png" alt="">
+														
+													</div>
+							
+													
+													<!-- <div class="card-image topic-card-image">
+														<img src="../../../../global_assets/images/products/img5.png" class="card-img img-fluid">
+														
+														<div class="overlay-box ">
+															<div class="text-icos">
+																	
+																	
+																	<span data-toggle="modal" data-target="#addContent"><i class="icon-plus3"></i></span>
+															</div>
+															
+														</div>
+													</div > -->
+
+													<div class="card-body custom-card-body">
+														<div class="card-image-icon like-ggl">
+																<img src="../../../../global_assets/images/icons/video.png" alt="">
+														</div>
+														<div class="customize-text-duration">
+															<code>16:17</code>
+														</div>
+														<h6 class="card-title">Up unpacked friendly</h6>
+														
+														
+													</div>
+													<!-- <div class="card-body p-2">
+														<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+															<div>
+																	<div class="card-image-icon like-ggl">
+																			<img src="../../../../global_assets/images/icons/video.png" alt="">
+																	</div>
+																<h6 class="head-title">Calculus power of math and its powerful nature</h6>
+																
+																
+															</div>
+														</div>
+													</div> -->
+			
+													
+												</div>
+											</a>
+										</div>
+										
+														
+									<!-- <div class="col-xl-3 col-lg-3 ">
+											
+										<div class="card ">
+											<div class="card-image topic-card-image">
+												<img src="../../../../global_assets/images/products/img1.png" class="card-img img-fluid">
+												<div class="card-image-icon">
+														<img src="../../../../global_assets/images/icons/video.png" alt="">
+												</div>
+												
+											</div>
+											<div class="card-body p-2">
+												<div class="d-sm-flex align-item-sm-center flex-sm-nowrap card-content">
+													<div>
+														<p class="head-title">Calculus power of math and its powerful nature</p>
+														
+														
+													</div>
+												</div>
+											</div>
+	
+											
+										</div>
+									
+									</div> -->
+								</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn bg-indigo-400 legitRipple" data-id="submit_to_prevModal" >Submit</button>
+					</div>
+					</div>
+				
+				</div>
+			</div>
+		<!-- <script data-main="knowledge/dev.js" src="knowledge/require-min.js"></script> -->
+		<script>
+		 $("#openCloseModal").click(function(e){
+			$("[data-dismiss=modal]").trigger({ type: "click" });
+			$("#anotherModal").modal();
+			
+		 });
+		 $(".custom-card .card").on("click",function(){
+			 $(this).toggleClass("check-card");
+			//  $("#itemSelected")
+			console.log($(".check-card").length);
+			console.log($(this).attr('data-id'));
+			$("#itemSelected").text($(".check-card").length);
+		 })
+
+
+		 $("[data-id='submit_to_prevModal']").on("click",function(){
+			$("[data-dismiss=modal]").trigger({ type: "click" });
+			$("#knowledgeGraph").modal();
+		 })
+
+		 $(".opened").click(function(){
+			 $("body").find(".opened").removeClass("opened");
+		 })
+
+
+		 $('.skip-card').height(console.log($(".skip-card").prev()));
+		</script>
+</body>
+</html>
