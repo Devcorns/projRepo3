@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 import { LearningRoutingModule } from './learning-routing.module';
 import { DynamicFormsComponent } from './dynamic-forms/dynamic-forms.component';
@@ -11,7 +12,9 @@ import { ParentchildComponent } from './parentchild/parentchild.component';
 @NgModule({
   imports: [
     CommonModule,
-    LearningRoutingModule
+    LearningRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   declarations: [DynamicFormsComponent, DirectiveComponent,CustomDirective, ViewchildComponent, ParentchildComponent]
 })
