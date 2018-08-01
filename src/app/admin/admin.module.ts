@@ -43,3 +43,5 @@ import {MatSelectModule} from '@angular/material/select';
   providers:[SettingSenderService]
 })
 export class AdminModule { }
+//url for dynamic try
+//https://stackoverflow.com/questions/45997710/angular-4-create-dynamic-formarray-inside-array-using-reactive-forms
