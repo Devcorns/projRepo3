@@ -1,11 +1,11 @@
-<form [formGroup]="dynamicform">
+<form [formGroup]="dynamicform" (submit)="formCall()">
     <div formArrayName="arrayContent">
-           <div *ngFor="let control of reviewForm.get('controlArray').controls; let i = index">
+           <div *ngFor="let control of dynamicform.get('arrayContent').controls; let i = index">
                 <input type="text" [formControlName]="i">
            </div>
             
     </div>
-    
+    <input type="submit" value="submit">
 
 </form>
 
