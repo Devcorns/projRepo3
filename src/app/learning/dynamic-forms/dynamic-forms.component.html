@@ -1,12 +1,11 @@
-<form [formGroup]="dynamicform" (submit)="formCall()">
+<form [formGroup]="dynamicform" >
+    <input type="text" (keyup.enter)="addIntoli(addintoli)" #addintoli>
     <div formArrayName="arrayContent">
-           <div *ngFor="let control of dynamicform.get('arrayContent').controls; let i = index">
-                <input type="text" [formControlName]="i">
-           </div>
-            
+        <div *ngFor="let control of dynamicform.get('arrayContent').controls; let i = index" id={{i}}>
+            <input type="text" [formControlName]="i" value="{{control.value}}">
+        </div>
     </div>
     <input type="submit" value="submit">
-
 </form>
 
 
