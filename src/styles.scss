@@ -2,6 +2,18 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+.mb-0{
+    margin-bottom: 0;
+}
+.mb-5{
+    margin-bottom: 5px;
+}
+.mt-0{
+    margin-top:0;
+}
+.mt-5{
+    margin-top: 5px;
+}
 .mt-10{
     margin-top:10px;
 }
@@ -47,4 +59,86 @@ body {
 .inline-checkbox .mat-checkbox{
     flex:33%;
     max-width:33%;
+}
+
+.paytm{
+    overflow: hidden;
+    .row{
+        margin:0;
+    }
+    min-height: 100vh;
+    .logo{
+        img{
+            max-height:30px;
+        }
+        margin-bottom:30px;
+    }
+    .secion-first{
+        padding: 15px;
+    }
+    .text-bold{
+        font-weight: 600;
+    }
+    .wallet-next{
+        list-style: none;
+        padding: 0;
+        margin-right:-20px;
+        li{
+            padding:10px 0px;
+            border-top:1px solid #ddd;
+            a{
+                color:#333;
+                font-size:12px;
+            }
+        }
+        
+        
+    }
+    .f12{
+        font-size:12px;
+    }
+    .order-id{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .hr{
+        height: 8px;
+        background: #ddd;
+    }
+
+    .conf{
+        padding:15px;
+        font-size: 12px;
+        
+        p{
+            margin:0;
+            span{
+                color:rgb(60, 145, 255);
+            }
+        }
+
+    }
+    .actual-amt{
+        margin-bottom:20px;
+    }
+    .updated-bal{
+        margin:0;
+        font-size:12px;
+        p{
+            margin-bottom:0;
+        }
+        .saved-money{
+            margin-right:20px;
+        }
+        &>div{
+            padding:15px;
+            
+
+        }
+        .logout{
+            color:rgb(60, 145, 255);
+            font-weight: 300;
+        
+        }
+    }
 }

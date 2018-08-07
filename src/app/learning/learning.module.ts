@@ -8,6 +8,7 @@ import { DirectiveComponent } from './directive/directive.component';
 import { CustomDirective } from './custom.directive';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ParentchildComponent } from './parentchild/parentchild.component';
+import { PaytmComponent } from './paytm/paytm.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,6 @@ import { ParentchildComponent } from './parentchild/parentchild.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  declarations: [DynamicFormsComponent, DirectiveComponent,CustomDirective, ViewchildComponent, ParentchildComponent]
+  declarations: [DynamicFormsComponent, DirectiveComponent,CustomDirective, ViewchildComponent, ParentchildComponent, PaytmComponent]
 })
 export class LearningModule { }
