@@ -6,8 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./paytm.component.css']
 })
 export class PaytmComponent implements OnInit {
-
-  constructor() { }
+  company:String;
+  actualAmt:Number;
+  paidAmt:Number;
+  dateAndTime:Date;
+  constructor() { 
+    this.company = "n square";
+    this.paidAmt = 7000;
+    this.actualAmt = 10000;
+    this.dateAndTime = new Date();
+  }
 
   ngOnInit() {
   }
