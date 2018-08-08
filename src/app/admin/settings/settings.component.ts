@@ -21,7 +21,7 @@ export class SettingsComponent implements OnInit {
       
     });
     this.issueSelectedForm = this.fb.group({
-      issueTypes: this.fb.array([{name:'a',id:'1'},{name:'b',id:'2'},{name:'c',id:'3'}])
+      issueTypes: this.fb.array([])
   });
    
   
@@ -36,7 +36,8 @@ export class SettingsComponent implements OnInit {
 
       for (var i = 0; i < result.length; i++) {
           if (result[i].issueType != undefined) {
-              this.addIssueType(result[i].issueType.name);
+              this.addIssueType(result[i]);
+              //console.log(result[i]);
               //this.issueCheckBox.push(result[i].issueType);
           }
 
@@ -51,8 +52,9 @@ export class SettingsComponent implements OnInit {
 
 addIssueType(val) {
   
-  // let array:FormArray = this.issueSelectedForm.get('issueTypes') as FormArray;
+   (this.issueSelectedForm.get('issueTypes') as FormArray).controls.push(new FormControl(val));
   // array.push(new FormControl(val));
+  console.log(val)
 }
 
 

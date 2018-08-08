@@ -17,6 +17,10 @@ export class DynamicFormsComponent implements OnInit {
     arrayContent:this.fb.array([])
    });
   }
+  ngOnInit(){
+    let i=0;
+
+  }
 
 
   addIntoli(addintoli:HTMLInputElement){
@@ -24,12 +28,11 @@ export class DynamicFormsComponent implements OnInit {
   }
 
 
+
  formCall(){
    console.log(this.dynamicform.value)
  }
  
 
-  ngOnInit() {
-  }
 
 }
