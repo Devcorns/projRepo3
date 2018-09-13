@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Blenera Learning Platform</title>
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/other.css" rel="stylesheet" type="text/css">
+    <!-- <link href="../assets/css/style.css" rel="stylesheet" type="text/css"> -->
+    <link href="../assets/css/cart.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!-- template -->
+
+    <link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet">
+    <link href="../assets/css/home/header_style.css" rel="stylesheet">
+    <link href="../assets/css/home/stroke-gap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic" rel="stylesheet" type="text/css">
+    <link href="../assets/css/animate.min.css" rel="stylesheet" type="text/css">
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+    <!--<script type="text/javascript" src="../assets/js/core/animated.min.js"></script>-->
+    <script type="text/javascript" src="../assets/js/plugins/wow/wow.min.js"></script>
+    <style>
+        .media-left img:not(.media-preview),
+        .media-right img:not(.media-preview),
+        .thumbnail .media img:not(.media-preview) {
+            width: 100px!important;
+            height: 100px !important;
+        }
+        
+        .media-heading h6 {
+            font-size: 16px !important;
+            font-weight: bold !important;
+        }
+        
+        .text-semibold {
+            font-weight: bold !important;
+        }
+    </style>
+</head>
+
+<body class="course_details">
+    <div class="navbar navbar-inverse ">
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu">
+                        <a id="nav-shop-all-button" href="../public/browse.html" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px;">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle userbox_top" data-toggle="dropdown" aria-expanded="true" style="padding-top: 9px; padding-bottom: 8px;">
+                                <img src="../assets/images/principle.jpg" alt="" class="">
+
+                            </a>
+
+                            <ul class="dropdown-menu profiledrop_width">
+                                <div class="alartbox">This account is managed by <span>Veative Labs</span><br>
+                                    <a href="#">Learn more</a></div>
+
+                                <li class="p-10">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="../assets/images/principle.jpg" class="img-circle img-lg" style="width: 70px !important; height: 70px !important;" alt="">
+
+                                            <span class="changeimg">Change</span>
+                                        </a>
+
+                                        <div class="media-body">
+                                            <h6 class="media-heading">Benjamin Loretti</h6>
+                                            <span class="text-muted"><a href="mailto:benjamin@pironcorp.com">benjamin@pironcorp.com</a></span>
+
+                                            <a href="#" class="btn-primary btn-sm btn mt-10">My Account</a>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+
+                                <div class="panel-footer pt-10 pb-5 text-right"><a href="../public/login.html" class="btn-default btn-xs btn"> Logout</a></div>
+
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-header ">
+        <div class="breadcrumb-line breadcrumb-line-wide">
+            <ul class="breadcrumb">
+                <li>Course Listing</li>
+
+            </ul>
+
+            <ul class="breadcrumb-elements">
+                <li><a href="add_course.html" class="no-padding mt-5"><button class="btn btn-success btn-sm font-size16">Create Courses</button></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-gear position-left"></i>
+
+                        <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+                        <li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+                        <li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a>
+        </div>
+    </div>
+
+
+
+
+    <div class="page-container">
+        <div class="page-content custom-work">
+            <div class="sidebar sidebar-main sidebar-default">
+                <div class="sidebar-content">
+
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Navigation</span> <i class="icon-menu" title="Main pages"></i></li>
+                                <li class=""><a href="index.html"><i class="icon-users"></i> <span>Dashboard</span></a></li>
+                                <li class=""><a href="user_management.html"><i class="icon-users"></i> <span>User Management</span></a></li>
+                                <li class="active"><a href="course_listing.html"><i class="icon-graduation2"></i> Course Listing</a></li>
+                                <!-- /main -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+
+                </div>
+            </div>
+            <div class="content-wrapper">
+                <div class="pl-10">
+                    <!-- List -->
+                    <ul class="media-list">
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Fathom Backpack</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Fashion</a></li>
+                                    <li><a href="#" class="text-muted">Men's Accessories</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">It prepare is ye nothing blushes up brought. Or as gravity pasture limited evening on. Wicket around beauty say she.</p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Aloha</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$49.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">85 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Mystery Air Long Sleeve T Shirt</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Fashion</a></li>
+                                    <li><a href="#" class="text-muted">Long sleeve shirts</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">Conveying or northward offending admitting perfectly my. Colonel gravity get thought fat smiling add but. </p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Burton</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$25.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-half text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">34 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Women’s Prospect Backpack</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Fashion</a></li>
+                                    <li><a href="#" class="text-muted">Men's Accessories</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">Or kind rest bred with am shed then. In raptures building an bringing be. Elderly is detract tedious assured private so to visited. Do travelling companions contrasted it. </p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">DC Shoes</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$63.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-empty3 text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">63 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Overlook Short Sleeve T Shirt</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Fashion</a></li>
+                                    <li><a href="#" class="text-muted">T-Shirts</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">Warrant fifteen exposed ye at mistake. Blush since so in noisy still built up an again. As young ye hopes no he place means. </p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Aped</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$57.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">74 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Infinite Ride Liner</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Sports</a></li>
+                                    <li><a href="#" class="text-muted">Winter sports</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">He difficult contented we determine ourselves me am earnestly. Hour no find it park. Eat welcomed any husbands moderate. </p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Giro</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$89.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">39 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Custom Snowboard</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Sports</a></li>
+                                    <li><a href="#" class="text-muted">Winter sports</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">Debating all she mistaken indulged believed provided declared. He many kept on draw lain song as same. </p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Head</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$35.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-empty3 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-empty3 text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">38 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Kids' Day Hiker 20L Backpack</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Fashion</a></li>
+                                    <li><a href="#" class="text-muted">Men's Accessories</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">Offending she contained mrs led listening resembled. Delicate marianne absolute men dashwood landlord and offended. Suppose cottage between and way. </p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Hurley</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$143.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-half text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">48 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Lunch Sack</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Fashion</a></li>
+                                    <li><a href="#" class="text-muted">Men's Accessories</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">Extremely depending he gentleman improving intention rapturous as. Real sold my in call. Invitation on an advantages collecting.</p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Kinetic</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$93.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-half text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">64 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Cambridge Jacket</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Sports</a></li>
+                                    <li><a href="#" class="text-muted">Winter jackets</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">End friendship sufficient assistance can prosperous met. As game he show it park do. Was has unknown few certain ten promise. </p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Miller</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$36.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-empty3 text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">94 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Covert Jacket</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Sports</a></li>
+                                    <li><a href="#" class="text-muted">Winter jackets</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">Whole wound wrote at whose to style in. Figure ye innate former do so we. </p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Picture</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$25.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-half text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">15 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Day Hiker Pinnacle 31L Backpack</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Fashion</a></li>
+                                    <li><a href="#" class="text-muted">Men's Accessories</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">He difficult contented we determine ourselves me am earnestly. Hour no find it park.</p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Pieps</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$47.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">145 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Kids' Gromlet Backpack</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Fashion</a></li>
+                                    <li><a href="#" class="text-muted">Men's Accessories</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">Impression to discretion understood to we interested he excellence. Him remarkably use projection collecting. </p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Rope</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$85.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">37 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Tinder Backpack</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Fashion</a></li>
+                                    <li><a href="#" class="text-muted">Men's Accessories</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">At as in understood an remarkably solicitude. Mean them very seen she she. Use totally written the observe pressed justice. </p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Reef</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$47.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-empty3 text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">64 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Almighty Snowboard Boot</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Sports</a></li>
+                                    <li><a href="#" class="text-muted">Sport accessories</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">Warrant fifteen exposed ye at mistake. Blush since so in noisy still built up an again. As young ye hopes no he place means. </p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Roxy</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$76.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-empty3 text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">2 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+
+                        <li class="media panel panel-body stack-media-on-mobile">
+                            <a href="../assets/img/placeholder.jpg" class="media-left" data-popup="lightbox">
+                                <img src="../assets/img/placeholder.jpg" width="96" alt="">
+                            </a>
+
+                            <div class="media-body">
+                                <h6 class="media-heading text-semibold">
+                                    <a href="#">Fathom Backpack</a>
+                                </h6>
+
+                                <ul class="list-inline list-inline-separate mb-10">
+                                    <li><a href="#" class="text-muted">Fashion</a></li>
+                                    <li><a href="#" class="text-muted">Men's Accessories</a></li>
+                                </ul>
+
+                                <p class="content-group-sm">By impossible of in difficulty discovered celebrated ye. Justice joy manners boy met resolve produce. </p>
+
+                                <ul class="list-inline list-inline-separate">
+                                    <li>All items from <a href="#">Stance</a></li>
+                                    <li>Add to <a href="#">wishlist</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="media-right text-center">
+                                <h3 class="no-margin text-semibold">$59.99</h3>
+
+                                <div class="text-nowrap">
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-full2 text-size-base text-warning-300"></i>
+                                    <i class="icon-star-half text-size-base text-warning-300"></i>
+                                </div>
+
+                                <div class="text-muted">32 reviews</div>
+
+                                <button type="button" class="btn bg-teal-400 mt-15">Read more</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- /list -->
+
+
+                    <!-- Pagination -->
+                    <div class="text-center content-group-lg pt-20">
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#"><i class="icon-arrow-small-left"></i></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#"><i class="icon-arrow-small-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /pagination -->
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //	new WOW().init();
+        $(".card-footer.with-price>span.like-us").on('click', function() {
+            $(this).toggleClass("active");
+        });
+    </script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Blenera Learning Platform</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/other.css" rel="stylesheet" type="text/css">
+
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/tables/datatables/extensions/jszip/jszip.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/tables/datatables/extensions/pdfmake/pdfmake.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/tables/datatables/extensions/pdfmake/vfs_fonts.min.js"></script>
+
+    <script type="text/javascript" src="../assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/pickers/daterangepicker.js"></script>
+
+
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+    <script type="text/javascript" src="../assets/js/pages/datatables_extension_buttons_html5.js"></script>
+    <script type="text/javascript" src="../assets/js/pages/invite_user.js"></script>
+    <style type="text/css">
+        .datatable-header {
+            padding: 20px 20px 0px 20px
+        }
+        
+        .datatable-footer {
+            padding: 20px 20px 0px 20px
+        }
+        
+        .sidebar-content {
+            background: none !important;
+            box-shadow: none!important;
+            border: none!important;
+        }
+        
+        html,
+        body {
+            background: #f1f1f1 !important
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="navbar navbar-inverse">
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu">
+                        <a id="nav-shop-all-button" href="../public/browse.html" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px;">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle userbox_top" data-toggle="dropdown" aria-expanded="true" style="padding-top: 9px; padding-bottom: 8px;">
+                                <img src="../assets/images/principle.jpg" alt="" class="">
+
+                            </a>
+
+                            <ul class="dropdown-menu profiledrop_width">
+                                <div class="alartbox">This account is managed by <span>Veative Labs</span><br>
+                                    <a href="#">Learn more</a></div>
+
+                                <li class="p-10">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="../assets/images/principle.jpg" class="img-circle img-lg" style="width: 70px !important; height: 70px !important;" alt="">
+
+                                            <span class="changeimg">Change</span>
+                                        </a>
+
+                                        <div class="media-body">
+                                            <h6 class="media-heading">Benjamin Loretti</h6>
+                                            <span class="text-muted"><a href="mailto:benjamin@pironcorp.com">benjamin@pironcorp.com</a></span>
+
+                                            <a href="#" class="btn-primary btn-sm btn mt-10">My Account</a>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+
+                                <div class="panel-footer pt-10 pb-5 text-right"><a href="../public/login.html" class="btn-default btn-xs btn"> Logout</a></div>
+
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page-header ">
+        <div class="breadcrumb-line breadcrumb-line-wide">
+            <ul class="breadcrumb">
+                <li>User Management</li>
+
+            </ul>
+
+            <ul class="breadcrumb-elements">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-gear position-left " style="font-size:22px;"></i>
+
+                        <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+                        <li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+                        <li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a></div>
+
+
+    </div>
+
+
+
+    <div class="page-container">
+        <div class="page-content custom-work">
+
+
+
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main sidebar-default">
+                <div class="sidebar-content">
+
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Navigation</span> <i class="icon-menu" title="Main pages"></i></li>
+                                <li class=""><a href="index.html"><i class="icon-users"></i> <span>Dashboard</span></a></li>
+                                <li class="active"><a href="user_management.html"><i class="icon-users"></i> <span>User Management</span></a></li>
+                                <li><a href="course_listing.html"><i class="icon-graduation2"></i> Course Listing</a></li>
+                                <!-- /main -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+
+                </div>
+            </div>
+            <!-- /main sidebar -->
+
+
+
+
+            <!-- Main content -->
+            <div class="content-wrapper">
+
+                <div class="col-lg-2 ">
+                    <div class="sidebar sidebar-secondary sidebar-default sidebar2">
+                        <div class="sidebar-content">
+
+                            <!-- Search task -->
+
+                            <!-- /search task -->
+
+
+                            <!-- Action buttons -->
+                            <div class="sidebar-category hide">
+                                <div class="category-title">
+                                    <span>Action buttons</span>
+                                    <ul class="icons-list">
+                                        <li>
+                                            <a href="#" data-action="collapse"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="category-content">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <button class="btn bg-teal-400 btn-block btn-float btn-float-lg" type="button"><i class="icon-git-branch"></i> <span>Branch</span></button>
+                                            <button class="btn bg-purple-300 btn-block btn-float btn-float-lg" type="button"><i class="icon-mail-read"></i> <span>Messages</span></button>
+                                        </div>
+
+                                        <div class="col-xs-6">
+                                            <button class="btn bg-warning-400 btn-block btn-float btn-float-lg" type="button"><i class="icon-stats-bars"></i> <span>Statistics</span></button>
+                                            <button class="btn bg-blue btn-block btn-float btn-float-lg" type="button"><i class="icon-people"></i> <span>Users</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /action buttons -->
+
+
+                            <!-- Task navigation -->
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <!-- Basic initialization -->
+                    <div class="panel panel-white">
+
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-lg-6 col-xs-12">
+                                    <h4 class="panel-title">User Management</h4>
+
+
+                                </div>
+                                <div class="col-lg-6 col-xs-12"><a class="btn btn-success mr-10 btn-labeled pull-right" data-toggle="modal" data-target="#invite_user"><b><i class="icon-user-plus"></i></b>Bulk Upload</a>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+                        <div class="panel-flat">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!-- Productivity goal  [graph section] -->
+                                        <div class="panel text-center">
+                                            <div class="panel-body memberbox_flex">
+
+
+                                                <div class="col-lg-1 col-xs-6 mt-25">
+                                                    <div id="" class="position-relative no-margin-bottom"><svg width="36" height="36"></svg>
+                                                        <h2 class="mt-15">8</h2><i class="icon-user counter-icon" style="top: 2px"></i>
+                                                        <div>Student</div>
+                                                        <div class="text-size-small text-muted"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-1 col-xs-6 mt-25">
+                                                    <div id="" class="position-relative no-margin-bottom"><svg width="36" height="36"> </svg>
+                                                        <h2 class="mt-15">1</h2><i class=" icon-woman counter-icon" style="top: 2px"></i>
+                                                        <div>Parents</div>
+                                                        <div class="text-size-small text-muted"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1 col-xs-6 mt-25">
+                                                    <div id="" class="position-relative no-margin-bottom"><svg width="36" height="36"> </svg>
+                                                        <h2 class="mt-15">1</h2><i class=" icon-user-lock counter-icon" style="top: 2px"></i>
+                                                        <div>Coach Principle</div>
+                                                        <div class="text-size-small text-muted"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1 col-xs-6 mt-25">
+                                                    <div id="" class="position-relative no-margin-bottom"><svg width="36" height="36"> </svg>
+                                                        <h2 class="mt-15">12</h2><i class="icon-user-tie counter-icon" style="top: 2px"></i>
+                                                        <div>Subject Teacher</div>
+                                                        <div class="text-size-small text-muted"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-1 col-xs-6 mt-25">
+                                                    <div id="" class="position-relative no-margin-bottom"><svg width="36" height="36"> </svg>
+                                                        <h2 class="mt-15">20</h2><i class=" icon-users4 counter-icon" style="top: 2px"></i>
+                                                        <div>Class Supervisor</div>
+                                                        <div class="text-size-small text-muted"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-1 col-xs-6 mt-25">
+                                                    <div id="" class="position-relative no-margin-bottom"><svg width="36" height="36"> </svg>
+                                                        <h2 class="mt-15">10</h2><i class="icon-presentation counter-icon" style="top: 2px"></i>
+                                                        <div>Virtual Instructor</div>
+                                                        <div class="text-size-small text-muted"></div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-lg-1 col-xs-6 mt-25">
+                                                    <div id="" class="position-relative no-margin-bottom"><svg width="36" height="36"> </svg>
+                                                        <h2 class="mt-15">5</h2><i class="icon-reading counter-icon" style="top: 2px"></i>
+                                                        <div>Subject Teacher</div>
+                                                        <div class="text-size-small text-muted"></div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-lg-1 col-xs-6 mt-25">
+                                                    <div id="" class="position-relative no-margin-bottom"><svg width="36" height="36"> </svg>
+                                                        <h2 class="mt-15">33</h2><i class="icon-user-tie counter-icon" style="top: 2px"></i>
+                                                        <div>Subject Expert</div>
+                                                        <div class="text-size-small text-muted"></div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-lg-1 col-xs-6 mt-25">
+                                                    <div id="" class="position-relative no-margin-bottom"><svg width="36" height="36"> </svg>
+                                                        <h2 class="mt-15">23</h2><i class="icon-collaboration counter-icon" style="top: 2px"></i>
+                                                        <div>Site Cordinator</div>
+                                                        <div class="text-size-small text-muted"></div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <!-- /productivity goal -->
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+                    <!-- /Basic initialization -->
+
+                    <div class="panel panel-white">
+                        <div class="panel-flat">
+
+
+
+                            <div class="panel-heading">
+
+
+
+                                <div class="row">
+                                    <h4 class="panel-title pull-left ml-10">4 Active members available</h4>
+                                </div>
+                            </div>
+
+
+
+
+                            <table class="table datatable-button-html5-basic">
+
+                                <thead>
+                                    <tr>
+                                        <th><strong>#</strong></th>
+                                        <th width="100%"><strong>Name</strong></th>
+                                        <th nowrap><strong>Last Login</strong></th>
+                                        <th nowrap><strong>User</strong></th>
+                                        <th><strong>Status</strong></th>
+                                        <th><strong>Action</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="media-left media-middle">
+                                                <a href="../principle/dashboard_student.html"><img src="../assets/images/users/face1.jpg" class="img-circle img-xs" alt=""></a>
+                                            </div>
+
+                                            <div class="media-left">
+                                                <div class=""><a href="../principle/dashboard_student.html" class="text-default text-semibold">Arun Vishkarma</a></div>
+                                                <div class="text-muted text-size-small">
+                                                    arun@flexiguru.com
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td>Never</td>
+                                        <td>Teacher</td>
+                                        <td class="text-right" nowrap><span class="label bg-blue">Active</span></td>
+                                        <td nowrap>
+                                            <div class="media-right media-middle">
+                                                <ul class="icons-list text-nowrap">
+                                                    <li>
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-more2"></i></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="#" data-toggle="modal" data-target="#update_section"><i class="  icon-key pull-right"></i> Change a Password</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#edit_year"><i class=" icon-user-lock pull-right"></i> Make a Admin</a></li>
+
+                                                            <li><a href="#" data-toggle="modal" data-target="#edit_year"><i class="icon-user-cancel pull-right"></i> Delete user</a></li>
+
+
+
+
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <div class="media-left media-middle">
+                                                <a href="../principle/dashboard_student.html"><img src="../assets/images/users/face3.jpg" class="img-circle img-xs" alt=""></a>
+                                            </div>
+
+                                            <div class="media-left">
+                                                <div class=""><a href="../principle/dashboard_student.html" class="text-default text-semibold">Sanjay Gupta</a></div>
+                                                <div class="text-muted text-size-small">
+                                                    sanjay@flexiguru.com
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td>Never</td>
+                                        <td>Admin</td>
+                                        <td nowrap class="text-right"><span class="label bg-danger">pending</span> </td>
+                                        <td nowrap>
+                                            <div class="media-right media-middle">
+                                                <ul class="icons-list text-nowrap">
+                                                    <li>
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-more2"></i></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="#" data-toggle="modal" data-target="#update_section"><i class=" icon-pencil7 pull-right"></i> Edit</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#edit_year"><i class=" icon-cross pull-right"></i> Delete</a></li>
+
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <div class="media-left media-middle">
+                                                <a href="../principle/dashboard_student.html"><img src="../assets/images/users/face11.jpg" class="img-circle img-xs" alt=""></a>
+                                            </div>
+
+                                            <div class="media-left">
+                                                <div class=""><a href="../principle/dashboard_student.html" class="text-default text-semibold">Pankaj Seth</a></div>
+                                                <div class="text-muted text-size-small">
+                                                    pankaj@flexiguru.com
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td>16 Mar 2016</td>
+                                        <td>User</td>
+                                        <td nowrap class="text-right"><span class="label bg-grey-400">Hold</span> </td>
+                                        <td nowrap>
+                                            <div class="media-right media-middle">
+                                                <ul class="icons-list text-nowrap">
+                                                    <li>
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-more2"></i></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="#" data-toggle="modal" data-target="#update_section"><i class=" icon-pencil7 pull-right"></i> Edit</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#edit_year"><i class=" icon-cross pull-right"></i> Delete</a></li>
+
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            <div class="media-left media-middle">
+                                                <a href="../principle/dashboard_student.html"><img src="../assets/images/users/face13.jpg" class="img-circle img-xs" alt=""></a>
+                                            </div>
+
+                                            <div class="media-left">
+                                                <div class=""><a href="../principle/dashboard_student.html" class="text-default text-semibold">Santosh Kumar Singh</a></div>
+                                                <div class="text-muted text-size-small">
+                                                    santosh@flexiguru.com
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                        <td>4:30 pm</td>
+                                        <td>Parent</td>
+                                        <td nowrap class="text-right"><span class="label bg-blue">Active</span> </td>
+                                        <td nowrap>
+                                            <div class="media-right media-middle">
+                                                <ul class="icons-list text-nowrap">
+                                                    <li>
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-more2"></i></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <li><a href="#" data-toggle="modal" data-target="#update_section"><i class=" icon-pencil7 pull-right"></i> Edit</a></li>
+                                                            <li><a href="#" data-toggle="modal" data-target="#edit_year"><i class=" icon-cross pull-right"></i> Delete</a></li>
+
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+            <!-- /main content -->
+
+        </div>
+        <!-- Page content -->
+
+        <!-- /page content -->
+
+
+        <!-- Footer -->
+        <div class="footer text-muted hide">
+            Powered by <a href="http://www.pironcorp.com/" target="_blank">Piron Corporation Inc</a>.
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- Invite user -->
+    <div id="invite_user" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title">Add Users</h5>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row mb-10">
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">User Type: </label>
+                            <div class="col-lg-9">
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-primary"><i class=" icon-user"></i></span>
+                                    <input type="text" class="form-control" placeholder="Student">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-10">
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">Name: </label>
+                            <div class="col-lg-9">
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-primary"><i class=" icon-user-tie"></i></span>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-10">
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">Email (Optional): </label>
+                            <div class="col-lg-9">
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-primary"><i class=" icon-mail5"></i></span>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Invite user -->
+
+
+</body>
+
+</html>

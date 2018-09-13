@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Blenera Learning Platform</title>
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/other.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/tables/datatables/extensions/jszip/jszip.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/tables/datatables/extensions/pdfmake/pdfmake.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/tables/datatables/extensions/pdfmake/vfs_fonts.min.js"></script>
+    <!--script type="text/javascript" src="../assets/js/plugins/visualization/d3/d3.min.js"></script>
+		<script type="text/javascript" src="../assets/js/plugins/visualization/d3/d3_tooltip.js"></script-->
+    <script type="text/javascript" src="../assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+    <script type="text/javascript" src="../assets/js/pages/datatables_extension_buttons_html5.js"></script>
+    <!--script type="text/javascript" src="../assets/js/pages/invite_user.js"></script-->
+    <script type="text/javascript" src="../assets/js/plugins/uploaders/plupload/plupload.full.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/uploaders/plupload/plupload.queue.min.js"></script>
+    <script type="text/javascript" src="../assets/js/pages/uploader_plupload.js"></script>
+    <style type="text/css">
+        .datatable-header {
+            padding: 20px 20px 0px 20px
+        }
+        
+        .datatable-footer {
+            padding: 20px 20px 0px 20px
+        }
+        
+        .sidebar-content {
+            background: none !important;
+            box-shadow: none!important;
+            border: none!important;
+        }
+        
+        html,
+        body {
+            background: #f1f1f1 !important
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="navbar navbar-inverse">
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu hidden-xs">
+                        <a id="nav-shop-all-button" href="../public/browse.html" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown mobiletmenu visible-xs">
+                        <div class="panel-heading">
+                            <h6 class="panel-title">
+                                <a class="hauto" data-toggle="collapse" data-parent="#accordion" href="#collapsez"> <i class="fa fa-bars fa-lg"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                            </h6>
+                        </div>
+                        <div id="collapsez" class="panel-collapse collapse ">
+                            <div class="">
+                                <div class="panel-group" id="accordionone">
+                                    <div class="panel">
+                                        <div class="panel-heading">
+                                            <a class="hauto" data-toggle="collapse" data-parent="#accordionone" href="#collapse1">Browse by Category</a>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                    <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                        <li class="nav_first nav_pop_li nav_browse_cat_head">General</li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item">Literature</a></li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item">Economy</a></li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item">Education</a></li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item">Law</a></li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item">Human sciences</a></li>
+                                                        <li class="nav_first nav_pop_li nav_browse_cat_head">Enrichment books</li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item">Characters</a></li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item">Figures and events</a></li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item">Facts and concepts</a></li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item">Organizations and institutions</a></li>
+                                                        <li class="nav_first nav_pop_li nav_browse_cat_head">Curriculum</li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item">Arabic language for native</a></li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item">Arabic language to non-native</a></li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item">speakers</a></li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item">Islamic Education</a></li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item">Social sciences</a></li>
+                                                        <li class="nav_first nav_pop_li nav_browse_cat_head">Training Books (Hawwaz)</li>
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item">Educational Technology</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="panel-heading">
+                                            <a class="hauto" data-toggle="collapse" data-parent="#accordionone" href="#collapse2">Browse by Publisher</a>
+                                        </div>
+                                        <div id="collapse2" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                    <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                        <!-- <li class="nav_first nav_pop_li nav_browse_cat_head">Bestsellers</li>-->
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item">All Publishers</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="panel-heading">
+                                            <a class="hauto" data-toggle="collapse" data-parent="#accordionone" href="#collapse3">Browse by Author</a>
+                                        </div>
+                                        <div id="collapse3" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat">
+                                                    <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                        <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item">All Authors</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="panel-heading">
+                                            <a class="hauto" href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book">Interactive Books</a>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="panel-heading">
+                                            <a class="hauto" href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books">Printed Books</a>
+                                        </div>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="panel-heading">
+                                            <a class="hauto" href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category">View All</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  <div id="browse-cs-data" class="dropdown-menu dropdown-content hide">
+											<ul class="media-list dropdown-content-body">
+											    <li class="media">
+											   <div id="headermenuresponsive" class="menuresponsive" >
+											       
+											       
+											
+											       
+											       
+											       
+											       
+											       
+											<ul class="">
+											<li class='has-sub'><a href="#"><span>KG to 12th</span></a>
+											<ul>
+											<li class='has-sub'><a href="javascript:void(0);"><span><strong class="blacktext">Universal Concepts</strong></span></a>
+											<ul>
+											<li><a href="https://www.flexiguru.com/learn/environmental-studies/pr?sid=89,2G,SN&c=Course"><span>Environmental Studies</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/maths/pr?sid=88,xA,H0&c=Course"><span>Mathematics</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/science/pr?sid=4M,O6,Bs&c=Course"><span>Science</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/school-languages-english/pr?sid=SR,e2,ZL&c=Course"><span>English</span></a></li>
+											<li class='last'><a href="https://www.flexiguru.com/learn/social-studies/pr?sid=7i,Sl,Xf&c=Course"><span>Social Studies</span></a></li>
+											</ul>
+											</li>
+											
+											<li class='has-sub'><a href="javascript:void(0);"><span><strong class="blacktext">CBSE</strong></span></a>
+											<ul>
+											<li><a href="https://www.flexiguru.com/learn/cbse-grade-1/pr?sid=p2,Oh,nD&edu=Piron+K12&c=Course"><span>Grade 1</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/cbse-grade-2/pr?sid=km,Zq,Bm&edu=Piron+K12&c=Course"><span>Grade 2</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/cbse-grade-3/pr?sid=1z,m8,cM&edu=Piron+K12&c=Course"><span>Grade 3</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/cbse-grade-4/pr?sid=PE,7R,aQ&edu=Piron+K12&c=Course"><span>Grade 4</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/cbse-grade-5/pr?sid=8p,gm,EZ&edu=Piron+K12&c=Course"><span>Grade 5</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/cbse-grade-6/pr?sid=pd,fP,5l&edu=Piron+K12&c=Course"><span>Grade 6</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/cbse-grade-7/pr?sid=CW,ia,Py&edu=Piron+K12&c=Course"><span>Grade 7</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/cbse-grade-8/pr?sid=cL,Yc,57&edu=Piron+K12&c=Course"><span>Grade 8</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/cbse-grade-9/pr?sid=DR,KT,Vu&edu=Piron+K12&c=Course"><span>Grade 9</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/cbse-grade-10/pr?sid=YE,jN,d7&edu=Piron+K12&c=Course"><span>Grade 10</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/cbse-grade-11/pr?sid=WO,IE,we&edu=Piron+K12&c=Course"><span>Grade 11</span></a></li>
+											<li class='last'><a href="https://www.flexiguru.com/learn/cbse-grade-12/pr?sid=Nl,82,Qj&edu=Piron+K12&c=Course"><span>Grade 12</span></a></li>
+											</ul>
+											</li>
+											
+											<li class='has-sub'><a href="javascript:void(0);"><span><strong class="blacktext">Common Core Standards</strong></span></a>
+											<ul>
+											<li><a href="https://www.flexiguru.com/learn/common-core-kindergarten/pr?sid=p6,1w,uR&c=Course"><span>Kindergarten</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/common-core-grade-1/pr?sid=FY,Pg,PI&c=Course"><span>Grade 1</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/common-core-grade-2/pr?sid=vl,qV,kM&c=Course"><span>Grade 2</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/common-core-grade-3/pr?sid=Ln,EB,Zn&c=Course"><span>Grade 3</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/common-core-grade-4/pr?sid=vc,oA,hI&c=Course"><span>Grade 4</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/common-core-grade-5/pr?sid=bk,Y9,51&c=Course"><span>Grade 5</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/common-core-grade-6/pr?sid=vm,Uj,gG&c=Course"><span>Grade 6</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/common-core-grade-7/pr?sid=gd,4o,kv&c=Course"><span>Grade 7</span></a></li>
+											<li><a href="https://www.flexiguru.com/learn/common-core-grade-8/pr?sid=ZN,C7,Pw&c=Course"><span>Grade 8</span></a></li>
+											<li class='last'><a href="https://www.flexiguru.com/learn/common-core-high-school/pr?sid=W8,92,Qt&c=Course"><span>High School</span></a></li>
+											</ul>
+											</li>
+											</ul>
+											</li>
+											<li class='has-sub'><a href="#"><span>Test Prep</span></a>
+											<ul>
+											<li><a href="https://www.flexiguru.com/learn/gmat">GMAT</a></li>
+											<li><a href="https://www.flexiguru.com/learn/cat">CAT</a></li>
+											<li><a href="https://www.flexiguru.com/learn/gre">GRE</a></li>
+											<li><a href="https://www.flexiguru.com/learn/sat">SAT</a></li>
+											<li><a href="https://www.flexiguru.com/learn/act/pr?sid=Dc,UL,ka">ACT</a></li>
+											<li><a href="https://www.flexiguru.com/learn/csat-civil-services-aptitude-test">CSAT</a></li>
+											<li><a href="https://www.flexiguru.com/learn/lsat/pr?sid=em,OI,qE">LSAT</a></li>
+											<li><a href="https://www.flexiguru.com/learn/jee-main-advanced">IIT JEE</a></li>
+											<li><a href="https://www.flexiguru.com/learn/aipmt">AIPMT</a></li>
+											<li><a href="https://www.flexiguru.com/learn/bank-po-clerk">Bank PO &amp; Bank Clerk</a></li>
+											<li class='last'><a href="https://www.flexiguru.com/learn/ca-cpt">CA-CPT</a></li>
+											</ul>
+											</li>
+											<li class='has-sub'><a href="javascript:void(0);"><span>Skill Development &amp; Professional</span></a>
+											<ul>
+											<li><a href="https://www.flexiguru.com/learn/business-skills/pr?sid=vO,BY,1W&c=Course">Business Skills</a></li>
+											<li><a href="https://www.flexiguru.com/learn/banking-finance-accounts/pr?sid=GD,nY,NX&c=Course">Banking / Finance &amp; Accounts</a></li>
+											<li><a href="https://www.flexiguru.com/learn/technology/pr?sid=oD,76,3M&c=Course">Technology</a></li>
+											<li><a href="https://www.flexiguru.com/learn/languages/pr?sid=yL,RC,FS&c=Course">Languages</a></li>
+											<li><a href="https://www.flexiguru.com/learn/arts-photography/pr?sid=Wg,p1,hy&c=Course">Art &amp; Photography</a></li>
+											<li><a href="https://www.flexiguru.com/learn/sports/pr?sid=VW,QT,FO&c=Course">Sports</a></li>
+											<li><a href="https://www.flexiguru.com/learn/lifestyle-other%20hobbies/pr?sid=ND,2S,p5&c=Course">Lifestyle / Other Hobbies</a></li>
+											<li class='last'><a href="https://www.flexiguru.com/learn/design/pr?sid=qY,x9,Bi&c=Course">Design</a></li>
+											</ul>
+											</li>
+											<li><a href="https://www.flexiguru.com/self-study-content"><span>Self-Study Content</span></a></li>
+											<li><a href="https://www.flexiguru.com/self-assessment"><span>Practice Tests</span></a></li>
+											<li class='last'><a href="https://www.flexiguru.com/expert/"><span>Ask &amp; Answer</span></a></li>
+											</ul>
+											</div>
+											 </li>
+											    
+											    
+											   </ul>
+											<div class="dropdown-content-footer"> <a href="#" data-popup="tooltip" title="Browse all"><i class="fa fa-ellipsis-h display-block"></i> </a> </div>
+											</div>-->
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback search-from-group">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px; ">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle userbox_top" data-toggle="dropdown" aria-expanded="true" style="padding-top: 9px; padding-bottom: 8px;">
+                                <img src="../assets/images/principle.jpg" alt="" class="">
+
+                            </a>
+
+                            <ul class="dropdown-menu profiledrop_width">
+                                <div class="alartbox">This account is managed by <span>Veative Labs</span><br>
+                                    <a href="#">Learn more</a></div>
+
+                                <li class="p-10">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="../assets/images/principle.jpg" class="img-circle img-lg" style="width: 70px !important; height: 70px !important;" alt="">
+
+                                            <span class="changeimg">Change</span>
+                                        </a>
+
+                                        <div class="media-body">
+                                            <h6 class="media-heading">Benjamin Loretti</h6>
+                                            <span class="text-muted"><a href="mailto:benjamin@pironcorp.com">benjamin@pironcorp.com</a></span>
+
+                                            <a href="#" class="btn-primary btn-sm btn mt-10">My Account</a>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+
+                                <div class="panel-footer pt-10 pb-5 text-right"><a href="../public/login.html" class="btn-default btn-xs btn"> Logout</a></div>
+
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+        </script>
+        <script type="text/javascript">
+            (function(n, b, k, l) {
+                function j(a) {
+                    q && q.count && q.count("aui:" + a, (q.count("aui:" + a) || 0) + 1)
+                }
+
+                function h(a) {
+                    try {
+                        return a.test(navigator.userAgent)
+                    } catch (b) {
+                        return !1
+                    }
+                }
+
+                function g(a, b, c) {
+                    a.addEventListener ? a.addEventListener(b, c, !1) : a.attachEvent && a.attachEvent("on" + b, c)
+                }
+
+                function i(a, b, c, d) {
+                    b = b && c ? b + a + c : b || c;
+                    return d ? i(a, b, d) : b
+                }
+
+                function e() {
+                    return setTimeout(y, 0)
+                }
+
+                function d(a, b) {
+                    var c = a.length,
+                        d = c,
+                        f = function() {
+                            d-- || (u.push(b), r || (e(), r = !0))
+                        };
+                    for (f(); c--;) x[a[c]] ? f() : (A[a[c]] = A[a[c]] || []).push(f)
+                }
+
+                function c(a,
+                    c, d, e) {
+                    var f = b.createElement(a ? "script" : "link");
+                    g(f, "error", e);
+                    a ? (f.type = "text/javascript", f.async = !0, d && B && /AUIClients.+_V2_/.test(c) && f.setAttribute("crossorigin", "anonymous"), f.src = c) : (f.rel = "stylesheet", f.href = c);
+                    b.getElementsByTagName("head")[0].appendChild(f)
+                }
+
+                function a(a, b) {
+                    return function(d) {
+                        function e() {
+                            c(b, d, f, function() {
+                                f ? (f = !1, j("resource_retry"), e()) : (j("resource_error"), a.log("Asset failed to load: " + d))
+                            })
+                        }
+                        if (z[d]) return !1;
+                        z[d] = !0;
+                        j("resource_count");
+                        var f = !0;
+                        return !e()
+                    }
+                }
+
+                function f(a,
+                    b, c, e, f) {
+                    return function(g, h) {
+                        var i = f || this;
+                        typeof g === "function" && (h = g, g = "anon" + C++);
+                        var j = i.guardError(g, function() {
+                            for (var c = [], d = 0; d < a.length; d++) c[d] = v.hasOwnProperty(a[d]) ? v[a[d]] : l;
+                            d = null;
+                            e ? d = h : typeof h === "function" && (d = h.apply(n, c));
+                            if (b) {
+                                v[g] = d;
+                                c = g;
+                                for (x[c] = !0;
+                                    (A[c] || []).length;) A[c].shift()();
+                                delete A[c]
+                            }
+                        });
+                        v.hasOwnProperty(g) && i.error("Component already registered", g);
+                        v[g] = l;
+                        c ? j() : d(a, j)
+                    }
+                }
+
+                function o(a) {
+                    return function() {
+                        return {
+                            execute: f(arguments, !1, a, !1, this),
+                            register: f(arguments, !0, a, !1, this)
+                        }
+                    }
+                }
+
+                function p(a, b) {
+                    return function(c, d) {
+                        var e = this;
+                        return function() {
+                            d || (d = c, c = l);
+                            try {
+                                d.apply(this, arguments)
+                            } catch (f) {
+                                var g = n.console;
+                                if (g && g.error && e.log(f, b, c)) g.error(i(String.fromCharCode(10), i(": ", a, c, f.message), f.stack || f));
+                                else throw f instanceof Error ? f : Error(i(": ", a, c, f));
+                            }
+                        }
+                    }
+                }
+
+                function s(b) {
+                    this.log = function(a, c, d) {
+                        var e = n.ueLogError;
+                        return e ? (e({
+                            message: a,
+                            logLevel: c || "ERROR",
+                            attribution: i(":", b, d)
+                        }), !0) : !1
+                    };
+                    this.error = function(a, c, d, e) {
+                        throw Error(i(" @ ", i(":", e, a), i(":", b, c,
+                            d)));
+                    };
+                    this.guardError = p(b);
+                    this.guardFatal = p(b, "FATAL");
+                    this.load = {
+                        js: a(this, !0),
+                        css: a(this)
+                    }
+                }
+                var t = n.AmazonUIPageJS || n.P;
+                if (t && t.when && t.register) throw Error("A copy of P has already been loaded on this page.");
+                var q = n.ue;
+                q && q.tag && (q.tag("aui"), q.tag("aui:aui_build_date:3.15.2.1-2015-02-20"));
+                var w = k.now = k.now || function() {
+                        return +new k
+                    },
+                    u = [],
+                    r = !1,
+                    y;
+                y = function() {
+                    for (var a = e(), b = w(); u.length;)
+                        if (u.shift()(), w() - b > 50) return;
+                    clearTimeout(a);
+                    r = !1
+                };
+                h(/OS 6_[0-9]+ like Mac OS X/i) && g(n, "scroll", e);
+                var x = {},
+                    A = {},
+                    B = n.InstallTrigger !== l || n.chrome || h(/MSIE 10/),
+                    z = {},
+                    C = 0,
+                    v = {},
+                    D;
+                s.prototype = {
+                    declare: f([], !0, !0, !0),
+                    register: f([], !0),
+                    execute: f([]),
+                    AUI_BUILD_DATE: "3.15.2.1-2015-02-20",
+                    when: o(),
+                    now: o(!0),
+                    trigger: function(a, b) {
+                        var c = n.aPageStart || NaN,
+                            d = w(),
+                            c = {
+                                data: b,
+                                pageElapsedTime: d - c,
+                                triggerTime: d
+                            };
+                        this.declare(a, c);
+                        D && D(a, c)
+                    },
+                    handleTriggers: function(a) {
+                        D && this.error("Trigger handler already registered");
+                        D = a
+                    },
+                    attributeErrors: function(a) {
+                        return new s(a)
+                    }
+                };
+                (function(a, b) {
+                    try {
+                        Object.defineProperty(n, a, {
+                            value: b
+                        })
+                    } catch (c) {
+                        n[a] =
+                            b
+                    }
+                })("AmazonUIPageJS", new s);
+                if (b.addEventListener) {
+                    var F;
+                    b.addEventListener("DOMContentLoaded", F = function() {
+                        n.AmazonUIPageJS.trigger("a-domready");
+                        b.removeEventListener("DOMContentLoaded", F, !1)
+                    }, !1)
+                }
+            })(window, document, Date);
+
+            (function(b) {
+                document.createElement("header");
+                var d = function(b) {
+                    function c(c, e, b) {
+                        c[b] = function() {
+                            a._replay.push(e.concat({
+                                m: b,
+                                a: [].slice.call(arguments)
+                            }))
+                        }
+                    }
+                    var a = {};
+                    a._sourceName = b;
+                    a._replay = [];
+                    a.getNow = function(a, c) {
+                        return c
+                    };
+                    a.when = function() {
+                        var a = [{
+                                m: "when",
+                                a: [].slice.call(arguments)
+                            }],
+                            b = {};
+                        c(b, a, "run");
+                        c(b, a, "declare");
+                        c(b, a, "publish");
+                        c(b, a, "build");
+                        return b
+                    };
+                    c(a, [], "declare");
+                    c(a, [], "build");
+                    c(a, [], "publish");
+                    c(a, [], "importEvent");
+                    d._shims.push(a);
+                    return a
+                };
+                d._shims = [];
+                b.$Nav || (b.$Nav = d("rcx-nav"));
+                b.$Nav.make || (b.$Nav.make = d)
+            })(window);
+
+            window.uet && uet('ns');
+
+            window._navbar = (function(o) {
+                o.componentLoaded = o.loading = function() {};
+                o.browsepromos = {};
+                o.issPromos = [];
+                return o;
+            }(window._navbar || {}));
+
+            window.$Nav && $Nav.declare('logEvent.enabled',
+                false);
+
+            window.$Nav && $Nav.declare('config.lightningDeals', {});
+            window.$Nav && $Nav.declare('config.swmStyleData', {});
+            window.$Nav && $Nav.declare('config.ajaxProximity', [141, 7, 60, 150]);
+
+            window.$Nav && $Nav.declare('config.isInternal', false);
+            window.$Nav && $Nav.declare('nav.inline');
+            window.$Nav && $Nav.declare('config.velocityFlyoutToggling', false);
+            window.$Nav && $Nav.declare('config.velocityFlyoutThreshold', 40);
+            window.$Nav && $Nav.declare('config.twoClickFlyouts', false);
+            window.$Nav && $Nav.declare('config.sslTriggerType', '');
+            window.$Nav && $Nav.declare('config.sslTriggerRetry', 0);
+            window._navbar = window._navbar || {};
+            window._navbar.browsepromos = window._navbar.browsepromos || {};
+
+            window.$Nav && $Nav.declare('config.flyoutURL', null);
+            window.$Nav && $Nav.declare('btf.full');
+            (window.AmazonUIPageJS ? AmazonUIPageJS : P).register('navCF');
+        </script>
+        <script type="text/javascript" src="../assets/js/dropdown_amazon.js"></script>
+        <script type="text/javascript" src="../assets/js/dropdown_amazon2.js"></script>
+    </div>
+    <div class="page-header ">
+        <div class="breadcrumb-line breadcrumb-line-wide">
+            <ul class="breadcrumb">
+                <li>Course Listing</li>
+            </ul>
+            <ul class="breadcrumb-elements">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-gear position-left"></i>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+                        <li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+                        <li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="page-content custom-work">
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main sidebar-default">
+                <div class="sidebar-content">
+
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Navigation</span> <i class="icon-menu" title="Main pages"></i></li>
+                                <li class=""><a href="index.html"><i class="icon-users"></i> <span>Dashboard</span></a></li>
+                                <li class=""><a href="user_management.html"><i class="icon-users"></i> <span>User Management</span></a></li>
+                                <li class="active"><a href="course_listing.html"><i class="icon-graduation2"></i> Course Listing</a></li>
+                                <!-- /main -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+
+                </div>
+            </div>
+            <!-- /main sidebar -->
+            <!-- Main content -->
+            <div class="content-wrapper">
+                <div class="pl-10 col-lg-offset-3 col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Create Courses</h4>
+                            <a class="heading-elements-toggle"><i class="icon-menu"></i></a>
+                        </div>
+                        <div class="panel-body">
+                            <div class="tabbable">
+                                <form method="post" name="course-form" action="&#x2F;hawwaz-development&#x2F;santosh&#x2F;public&#x2F;course&#x2F;save-course" id="course-form">
+                                    <div class="row p-15">
+                                        <div class="row">
+                                            <label class="col-lg-2 control-label text-semibold">Title</label>
+                                            <div class="col-lg-10 form-group">
+                                                <input type="text" name="COURSE_TITLE" class="form-control" id="course-title" value="">
+                                                <!--<input type="input" class="form-control" placeholder="Enter title ">-->
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <label class="col-lg-2 control-label text-semibold">Sub Title</label>
+                                            <div class="col-lg-10 form-group">
+                                                <input type="text" name="COURSE_SUBTITLE" class="form-control" id="course-subtitle" value="">
+                                            </div>
+                                        </div>
+                                        <div class="row  ">
+                                            <label class="col-lg-2 control-label text-semibold">Category</label>
+                                            <div class="col-lg-10">
+                                                <div class="form-group ">
+                                                    <a href="#" class="form-control dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                        <span id="select-parent" class="atb-category-menu-text-left">Select Category</span>
+                                                        <span class="caret pull-right atb-category-menucaret"></span></a>
+                                                    <div class="dropdown-menu p-10" style="width:100%; border-top:0px !important; top:31px; background:#fafafa; border-radius:0px; height:200px; overflow:auto;">
+                                                        <div class="tree-default">
+                                                            <ul>
+                                                                <li class="expanded level cat-1" id="id-1">
+                                                                    Politics
+                                                                    <p style="display:none;">1</p>
+                                                                    <ul>
+                                                                        <li class="expanded level cat-70" id="id-70">
+                                                                            test1
+                                                                            <p style="display:none;">70</p>
+                                                                            <ul>
+                                                                                <li class="expanded level cat-73" id="id-73">
+                                                                                    test4
+                                                                                    <p style="display:none;">73</p>
+                                                                                </li>
+                                                                                <li class="expanded level cat-72" id="id-72">
+                                                                                    test3
+                                                                                    <p style="display:none;">72</p>
+                                                                                </li>
+                                                                                <li class="expanded level cat-71" id="id-71">
+                                                                                    test2
+                                                                                    <p style="display:none;">71</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="expanded level cat-2" id="id-2">
+                                                                    Economics
+                                                                    <p style="display:none;">2</p>
+                                                                </li>
+                                                                <li class="expanded level cat-3" id="id-3">
+                                                                    Sport
+                                                                    <p style="display:none;">3</p>
+                                                                </li>
+                                                                <li class="expanded level cat-4" id="id-4">
+                                                                    Statistics
+                                                                    <p style="display:none;">4</p>
+                                                                </li>
+                                                                <li class="expanded level cat-5" id="id-5">
+                                                                    Culture
+                                                                    <p style="display:none;">5</p>
+                                                                </li>
+                                                                <li class="expanded level cat-6" id="id-6">
+                                                                    Military Sciences
+                                                                    <p style="display:none;">6</p>
+                                                                </li>
+                                                                <li class="expanded level cat-7" id="id-7">
+                                                                    Sociology
+                                                                    <p style="display:none;">7</p>
+                                                                </li>
+                                                                <li class="expanded level cat-8" id="id-8">
+                                                                    Education
+                                                                    <p style="display:none;">8</p>
+                                                                </li>
+                                                                <li class="expanded level cat-9" id="id-9">
+                                                                    Religions
+                                                                    <p style="display:none;">9</p>
+                                                                </li>
+                                                                <li class="expanded level cat-11" id="id-11">
+                                                                    Children
+                                                                    <p style="display:none;">11</p>
+                                                                </li>
+                                                                <li class="expanded level cat-12" id="id-12">
+                                                                    Press and Media
+                                                                    <p style="display:none;">12</p>
+                                                                </li>
+                                                                <li class="expanded level cat-13" id="id-13">
+                                                                    Administration
+                                                                    <p style="display:none;">13</p>
+                                                                </li>
+                                                                <li class="expanded level cat-14" id="id-14">
+                                                                    Literature
+                                                                    <p style="display:none;">14</p>
+                                                                </li>
+                                                                <li class="expanded level cat-16" id="id-16">
+                                                                    Advertising and public relations
+                                                                    <p style="display:none;">16</p>
+                                                                </li>
+                                                                <li class="expanded level cat-17" id="id-17">
+                                                                    Humanitarian Sciences
+                                                                    <p style="display:none;">17</p>
+                                                                </li>
+                                                                <li class="expanded level cat-18" id="id-18">
+                                                                    Environmental Science
+                                                                    <p style="display:none;">18</p>
+                                                                </li>
+                                                                <li class="expanded level cat-19" id="id-19">
+                                                                    History
+                                                                    <p style="display:none;">19</p>
+                                                                </li>
+                                                                <li class="expanded level cat-21" id="id-21">
+                                                                    Applied Science and Technology
+                                                                    <p style="display:none;">21</p>
+                                                                </li>
+                                                                <li class="expanded level cat-22" id="id-22">
+                                                                    Geography
+                                                                    <p style="display:none;">22</p>
+                                                                </li>
+                                                                <li class="expanded level cat-24" id="id-24">
+                                                                    Agriculture
+                                                                    <p style="display:none;">24</p>
+                                                                </li>
+                                                                <li class="expanded level cat-26" id="id-26">
+                                                                    Medicine
+                                                                    <p style="display:none;">26</p>
+                                                                </li>
+                                                                <li class="expanded level cat-27" id="id-27">
+                                                                    Psychology
+                                                                    <p style="display:none;">27</p>
+                                                                </li>
+                                                                <li class="expanded level cat-28" id="id-28">
+                                                                    Pure and Natural Sciences
+                                                                    <p style="display:none;">28</p>
+                                                                </li>
+                                                                <li class="expanded level cat-29" id="id-29">
+                                                                    Philosophy
+                                                                    <p style="display:none;">29</p>
+                                                                </li>
+                                                                <li class="expanded level cat-30" id="id-30">
+                                                                    Art
+                                                                    <p style="display:none;">30</p>
+                                                                </li>
+                                                                <li class="expanded level cat-31" id="id-31">
+                                                                    Law
+                                                                    <p style="display:none;">31</p>
+                                                                </li>
+                                                                <li class="expanded level cat-32" id="id-32">
+                                                                    Linguistics
+                                                                    <p style="display:none;">32</p>
+                                                                </li>
+                                                                <li class="expanded level cat-33" id="id-33">
+                                                                    Libraries and Information
+                                                                    <p style="display:none;">33</p>
+                                                                </li>
+                                                                <li class="expanded level cat-35" id="id-35">
+                                                                    Documentary
+                                                                    <p style="display:none;">35</p>
+                                                                </li>
+                                                                <li class="expanded level cat-43" id="id-43">
+                                                                    Human Development
+                                                                    <p style="display:none;">43</p>
+                                                                </li>
+                                                                <li class="expanded level cat-69" id="id-69">
+                                                                    غير محدد
+                                                                    <p style="display:none;">69</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mb-10">
+                                                        <input type="hidden" name="CAT_ID" class="form-control" id="course-cat-id" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <label class="col-lg-2 control-label text-semibold">Learning Model</label>
+                                            <div class="col-lg-10 form-group">
+                                                <select name="learning_mode" id="learningMode">
+															<option value="">Select Learning Model</option>
+															<option value="1">Station Rotation</option>
+															<option value="2">Lab Rotation</option>
+															<option value="3">Flipped Flipped</option>
+															<option value="4">Individual Rotation</option>
+															<option value="5">Flex</option>
+															<option value="6">A La Carte</option>
+														</select>
+                                                <div class="learning-models mt-10">
+                                                    <p id="1" class="hide well bg-ef">
+                                                        <img src="../assets/img/icon/model-icon-station-rotation.png" class="img-circle"> The Station Rotation model allows students to rotate through stations on a fixed schedule, where at least one of
+                                                        the stations is an online learning station. This model is most common in elementary schools because teachers are already familiar rotating in “centers” or stations.
+                                                    </p>
+                                                    <p id="2" class="hide well bg-ef">
+                                                        <img src="../assets/img/icon/model-icon-lab-rotation.png" class="img-circle">The Lab Rotation model, like a Station Rotation, allows students to rotate through stations on a fixed schedule. However,
+                                                        in this case, online learning occurs in a dedicated computer lab. This model allows for flexible scheduling arrangements with teachers and other paraprofessionals, and enables schools to make use
+                                                        of existing computer labs.</p>
+                                                    <p id="3" class="hide well bg-ef">
+                                                        <img src="../assets/img/icon/model-icon-flipped-classroom.png" class="img-circle">The Flipped Classroom model flips the traditional relationship between class time and homework. Students learn at
+                                                        home via online coursework and lectures, and teachers use class time for teacher-guided practice or projects. This model enables teachers to use class time for more than delivering traditional lectures.</p>
+                                                    <p id="4" class="hide well bg-ef">
+                                                        <img src="../assets/img/icon/model-icon-individual-rotation.png" class="img-circle">The Individual Rotation model allows students to rotate through stations, but on individual schedules set by a
+                                                        teacher or software algorithm. Unlike other rotation models, students do not necessarily rotate to every station; they rotate only to the activities scheduled on their playlists.</p>
+                                                    <p id="5" class="hide well bg-ef">
+                                                        <img src="../assets/img/icon/model-icon-flex.png" class="img-circle">The Flex model lets students move on fluid schedules among learning activities according to their needs. Online learning is the
+                                                        backbone of student learning in a Flex model. Teachers provide support and instruction on a flexible, as-needed basis while students work through course curriculum and content. This model can give
+                                                        students a high degree of control over their learning.</p>
+                                                    <p id="6" class="hide well bg-ef">
+                                                        <img src="../assets/img/icon/model-icon-a-la-carte.png" class="img-circle">The A La Carte model enables students to take an online course with an online teacher of record _in addition_ to other face-to-face
+                                                        courses, which often provides students with more flexibility over their schedules. A La Carte courses can be a great option when schools can’t provide particular learning opportunities, such as an
+                                                        Advanced Placement or elective course, making it one of the more popular models in blended high schools.</p>
+                                                </div>
+                                                <a class="help-block text-right" href="#helpLearningModal" data-toggle="modal"><i class="icon-help"></i> Help to me choose learning model</a>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <label class="col-lg-2 control-label text-semibold">Course Type</label>
+                                            <div class="col-lg-10 form-group">
+                                                <select name="COURSE_TYPE_ID" class="form-control-static&#x20;form-control" id="course_type"><option value="">Select Course Type</option>
+												<option value="1">Standalone courses</option>
+												<option value="2">Training Program</option>
+												<option value="3">Diplomas</option>
+												<option value="7">20 Days Course</option>
+												<option value="8">Crash Course</option></select> </div>
+                                        </div>
+                                        <div class="row ">
+                                            <label class="col-lg-2 control-label text-semibold ">Language</label>
+                                            <div class="col-lg-10 form-group ">
+                                                <select name="COURSE_LANG" class="form-control-static&#x20;form-control" id="language"><option value="">Select Language</option>
+												<option value="1">English - United States</option>
+												<option value="3">Portuguese - Portugal</option>
+												<option value="8">Arabic - Saudi Arabia</option>
+												<option value="9">French - France</option>
+												<option value="14">Turkish</option>
+												<option value="16">German - Germany</option></select> </div>
+                                        </div>
+                                        <div class="row ">
+                                            <label class="col-lg-2 control-label text-semibold ">Level</label>
+                                            <div class="col-lg-10 form-group ">
+                                                <select name="LEVEL_ID" class="form-control-static&#x20;form-control" id="level"><option value="">Select Level</option>
+												<option value="6">Beginners</option>
+												<option value="7">Basic</option>
+												<option value="8">Medium</option>
+												<option value="10">Standard</option>
+												<option value="11">Upper Medium</option></select> </div>
+                                        </div>
+                                        <div class="row ">
+                                            <label class="col-lg-2 control-label text-semibold">Technical Requirement </label>
+                                            <div class="col-lg-10 form-group">
+                                                <select name="TECHNICAL_REQUIREMENT_SELECT&#x5B;&#x5D;" class="form-control&#x20;" id="course-technical-requirement" multiple="multiple"></select>
+                                                <input type="hidden" name="TECHNICAL_REQUIREMENT" value="">
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <label class="col-lg-2 control-label text-semibold ">Upload Image</label>
+                                            <div class="col-lg-10 form-group">
+                                                <div class="file-uploader-image">
+                                                    <p>Your browser doesn't have Flash installed.</p>
+                                                </div>
+                                                <div class="text-muted">Note:- Image size dimension (750 x 420)</div>
+                                            </div>
+                                        </div>
+                                        <!--<div class="row ">
+													<div class="col-lg-10 form-group col-lg-offset-2">-->
+                                        <input type="hidden" name="COURSE_IMG" class="form-control" id="course-image" value="">
+                                        <!-- </div>
+													</div>-->
+                                        <input type="hidden" name="COURSE_CODE" value="972-204-949" />
+                                        <script type="text/javascript">
+                                            var plUploadUrl = "/hawwaz-development/santosh/public/course/pl-upload?folderpath=972-204-949&thumb=true&mode=course";
+                                        </script>
+                                        <div class="row">
+                                            <div class="col-lg-10 col-lg-offset-2 form-group leftcheckboxtext">
+                                                <div class=checkbox>
+                                                    <label>
+															<input type="checkbox" name="FEATURED" class="styled" value="Y">
+															Featured
+														</label>
+                                                </div>
+                                                <div class=checkbox>
+                                                    <label>
+															<input type="checkbox" name="SHOW_HOME_PAGE" class="styled" value="Y">
+															Show on Home page
+														</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <label class="col-lg-2 control-label text-semibold">About this course</label>
+                                            <div class="col-lg-10 form-group">
+                                                <textarea name="COURSE_ABOUT" class="form-control" rows="5" id="course-about"></textarea> </div>
+                                        </div>
+                                        <div class="row ">
+                                            <label class="col-lg-2 control-label text-semibold">Who is this course for</label>
+                                            <div class="col-lg-10 form-group">
+                                                <textarea name="COURSE_FOR" class="form-control" rows="5" id="course-for"></textarea> </div>
+                                        </div>
+                                        <div class="row ">
+                                            <label class="col-lg-2 control-label text-semibold">What do I need to know</label>
+                                            <div class="col-lg-10 form-group">
+                                                <textarea name="COURSE_NEED_KNOW" class="form-control" rows="5" id="course-need-know"></textarea> </div>
+                                        </div>
+                                        <div class="row ">
+                                            <label class="col-lg-2 control-label text-semibold">What will I learn</label>
+                                            <div class="col-lg-10 form-group">
+                                                <textarea name="COURSE_LEARN" class="form-control" rows="5" id="course-requirements"></textarea> </div>
+                                        </div>
+                                        <div class="row">
+                                            <label class="col-lg-2 control-label text-semibold">Course Requirement</label>
+                                            <div class="col-lg-10 form-group mb-10">
+                                                <textarea name="COURSE_REQUIREMENT" class="form-control" rows="5" id="course-Requirements"></textarea> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 clearfix no-padding">
+                                        <input type="submit" name="courseAdd" id="editbook-btn" class="btn btn-primary pull-right" onclick="submitForm()" value="Save">
+                                    </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /main content -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <div class="modal fade" id="helpLearningModal">
+        <div class="modal-dialog modal-xlg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close top-inherit" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title text-info">CHOOSE THE MODEL</h3>
+                    <h4 class="text-muted no-margin">Analyze your circumstances across six dimensions</h4>
+                </div>
+                <div class="modal-body">
+                    <h5 class="no-margin-top">For each question in the first column, circle the answer(s) that match your preferences and constraints the best.</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th width="16%">Question</th>
+                                    <th width="14%">Station Rotation</th>
+                                    <th width="14%">Lab Rotation</th>
+                                    <th width="14%">Flipped Classroom</th>
+                                    <th width="14%">Individual Rotation</th>
+                                    <th width="14%">Flex</th>
+                                    <th width="14%">A La Carte</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-semibold">1. What problem are you trying to solve?</td>
+                                    <td>Core problem involving mainstream students</td>
+                                    <td>Core problem involving mainstream students</td>
+                                    <td>Core problem involving mainstream students</td>
+                                    <td>Nonconsumption problem</td>
+                                    <td>Nonconsumption problem</td>
+                                    <td>Nonconsumption problem</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-semibold">2. What type of team do you need to solve the problem?</td>
+                                    <td>Functional, lightweight, or heavyweight</td>
+                                    <td>Lightweight or heavyweight</td>
+                                    <td>Functional or lightweight</td>
+                                    <td>Autonomous</td>
+                                    <td>Autonomous</td>
+                                    <td>Autonomous</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-semibold">3. What do you want students to control?</td>
+                                    <td>Their pace and path during the online portion of the course</td>
+                                    <td>Their pace and path during the online portion of the course</td>
+                                    <td>Their pace and path during the online portion of the course</td>
+                                    <td>Their pace and path throughout most all of the course</td>
+                                    <td>Their pace and path throughout most all of the course</td>
+                                    <td>Their pace and path throughout almost all of the course, with the flexibility to skip in-person class at times</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-semibold">4. What do you want the primary role of the teacher to be?</td>
+                                    <td>Delivering face-toface instruction</td>
+                                    <td>Delivering face-toface instruction</td>
+                                    <td>Providing face-toface tutoring, guidance, and enrichment to supplement online lessons</td>
+                                    <td>Providing face-toface tutoring, guidance, and enrichment to supplement online lessons</td>
+                                    <td>Providing face-toface tutoring, guidance, and enrichment to supplement online lessons</td>
+                                    <td>Serving as the online teacher-ofrecord</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-semibold">5. What physical space can you use?</td>
+                                    <td>Existing classrooms</td>
+                                    <td>Existing classrooms plus a computer lab</td>
+                                    <td>Existing classrooms</td>
+                                    <td>A large, open learning space</td>
+                                    <td>A large, open learning space</td>
+                                    <td>Any safe, supervised setting</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-semibold">6. How many internet-enabled devices are available?</td>
+                                    <td>Enough for a fraction of the students</td>
+                                    <td>Enough for a fraction of the students</td>
+                                    <td>Enough for all students to use in class and have at home or after school</td>
+                                    <td>Enough for all students throughout the entire class period</td>
+                                    <td>Enough for all students throughout the entire class period</td>
+                                    <td>Enough for all students to use in class and have at home or after school</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".file-uploader-image").pluploadQueue({});
+            $('#course-technical-requirement').select2();
+            $('.styled').uniform();
+
+            // Learning Model
+            $('#learningMode').on('change', function() {
+                $('.learning-models').children().addClass('hide');
+                if ($(this).val()) {
+                    $('.learning-models').children('#' + $(this).val()).removeClass('hide');
+                }
+            }).select2({
+                minimumResultsForSearch: -1
+            });
+            // end learning model
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Blenera Learning Platform</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/other.css" rel="stylesheet" type="text/css">
+
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/visualization/echarts/echarts.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/progressbar.min.js"></script>
+
+
+
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+</head>
+
+<body class="">
+    <div class="navbar navbar-inverse">
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu">
+                        <a id="nav-shop-all-button" href="../public/browse.html" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px;">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle userbox_top" data-toggle="dropdown" aria-expanded="true" style="padding-top: 9px; padding-bottom: 8px;">
+                                <img src="../assets/images/teacher.jpg" alt="" class="">
+
+                            </a>
+
+                            <ul class="dropdown-menu profiledrop_width">
+                                <div class="alartbox">This account is managed by <span>Veative Labs</span><br>
+                                    <a href="#">Learn more</a></div>
+
+                                <li class="p-10">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="../assets/images/teacher.jpg" class="img-circle img-lg" style="width: 70px !important; height: 70px !important;" alt="">
+
+                                            <span class="changeimg">Change</span>
+                                        </a>
+
+                                        <div class="media-body">
+                                            <h6 class="media-heading">Hanna Dorman</h6>
+                                            <span class="text-muted"><a href="mailto:hanna@pironcorp.com">hanna@pironcorp.com</a></span>
+
+                                            <a href="#" class="btn-primary btn-sm btn mt-10">My Account</a>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+
+                                <div class="panel-footer pt-10 pb-5 text-right"><a href="../public/login.html" class="btn-default btn-xs btn"> Logout</a></div>
+
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page-header ">
+        <div class="breadcrumb-line breadcrumb-line-wide">
+            <ul class="breadcrumb">
+                <li>Loudon Middle School</li>
+            </ul>
+            <ul class="breadcrumb-elements">
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-gear position-left" style="font-size:22px;"></i>
+                        <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-envelop3"></i> Email</a></li>
+                        <li><a href="#"><i class="icon-printer"></i> Print</a></li>
+                        <li><a href="#"><i class="icon-database-export"></i> Export</a></li>
+                        <li><a href="#"><i class="icon-file-empty2"></i> Save</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="page-container">
+        <div class="page-content custom-work">
+
+
+
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main sidebar-default">
+                <div class="sidebar-content">
+
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Navigation</span> <i class="icon-menu" title="Main pages"></i></li>
+                                <li class="active"><a href="mystudent.html"><i class="icon-users"></i> <span>My Student</span></a></li>
+                                <li><a href="attendance.html"><i class="icon-user-check"></i>Attendance</a></li>
+                                <li><a href="engaging_table.html"><i class="icon-stats-dots"></i>Class Progress</a></li>
+                                <li><a href="Weekdays-boxes.html"><i class=" icon-brain"></i>Learning Modal</a></li>
+                                <!-- /main -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+
+                </div>
+            </div>
+            <!-- /main sidebar -->
+
+
+
+
+            <!-- Main content -->
+            <div class="content-wrapper no-margin-top">
+                <div class="ab-content">
+                    <div class="ab-left-nav bg-info">
+                        <div class="panel panel-info panel-collapsed">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><i class="icon-filter4 position-left"></i> Standards</h4>
+                                <div class="heading-elements">
+                                    <ul class="icons-list">
+                                        <li>
+                                            <a data-action="collapse" class="rotate-180"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body" style="display:none">
+                                <div class="form-vertical">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                                    <option value="">Standard 1</option>
+                                                </select>
+                                    </div>
+                                    <div class="form-group no-margin">
+                                        <select class="form-control">
+                                                    <option value="">Standard 2</option>
+                                                </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><i class="icon-filter4 position-left"></i> Assignments</h4>
+                                <div class="heading-elements">
+                                    <ul class="icons-list">
+                                        <li>
+                                            <a data-action="collapse"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <p><a href="#">Open Saved Report</a></p>
+                                <div class="form-vertical">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                                    <option value="">Grade 3 Mathematics: Mrs. Zbornak</option>
+                                                </select>
+                                    </div>
+                                    <div class="form-group ">
+                                        <select class="form-control">
+                                                    <option value="">Current School Year</option>
+                                                </select>
+                                    </div>
+                                    <div class="form-group no-margin">
+                                        <select class="form-control">
+                                                    <option value="">Compare To School</option>
+                                                </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-info panel-collapsed">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><i class="icon-filter4 position-left"></i> Teachers</h4>
+                                <div class="heading-elements">
+                                    <ul class="icons-list">
+                                        <li>
+                                            <a data-action="collapse" class="rotate-180"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body" style="display:none">
+                                <div class="form-vertical">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                                    <option value="">Grade 3 Mathematics</option>
+                                                </select>
+                                    </div>
+                                    <div class="form-group ">
+                                        <select class="form-control">
+                                                    <option value="">Current School Year</option>
+                                                </select>
+                                    </div>
+                                    <div class="form-group no-margin">
+                                        <select class="form-control">
+                                                    <option value="">Current To School</option>
+                                                </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ab-content-body">
+                        <div class="panel panel-default mt-20">
+                            <div class="panel-heading">
+                                <h1 class="no-margin">Francisco Martinez</h1>
+                                <p class="no-margin">Grade 3 English: Mrs. Zbornak</p>
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="row  set-panel-height">
+                                    <div class="col-lg-4">
+                                        <div class="panel panel-flat">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">Estimated Skills Proficiency</h4>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="chart-container">
+                                                    <div class="chart" id="estimatedSkillsProficiencyChart" style="height:200px"></div>
+                                                </div>
+                                                <ul class="legend-list">
+                                                    <li class="legend-danger">
+                                                        <span class="legeng-label">Minimal</span>
+                                                        <span class="legeng-value">13.8%</span>
+                                                    </li>
+                                                    <li class="legend-primary">
+                                                        <span class="legeng-label">Partial</span>
+                                                        <span class="legeng-value">12.10%</span>
+                                                    </li>
+                                                    <li class="legend-warning">
+                                                        <span class="legeng-label">Basic</span>
+                                                        <span class="legeng-value">9.13%</span>
+                                                    </li>
+                                                    <li class="legend-success">
+                                                        <span class="legeng-label">Proficient</span>
+                                                        <span class="legeng-value">5.27%</span>
+                                                    </li>
+                                                    <li class="legend-purple">
+                                                        <span class="legeng-label">Advanced</span>
+                                                        <span class="legeng-value">60.42%</span>
+                                                    </li>
+                                                </ul>
+                                                <hr class="mb-15">
+                                                <div class="text-center">
+                                                    <b class="fs30">23</b>% (class average)
+                                                    <div class="fs16">Proficiency and Above</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="panel panel-flat">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">Assignments</h4>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="chart-container">
+                                                    <div class="chart" id="assignmentsChart" style="height:228px"></div>
+                                                </div>
+                                                <ul class="legend-list">
+                                                    <li class="legend-behind">
+                                                        <span class="legeng-label">Behind</span>
+                                                        <span class="legeng-value">49%</span>
+                                                    </li>
+                                                    <li class="legend-primary">
+                                                        <span class="legeng-label">On Track</span>
+                                                        <span class="legeng-value">28%</span>
+                                                    </li>
+                                                    <li class="legend-warning">
+                                                        <span class="legeng-label">Ahead</span>
+                                                        <span class="legeng-value">15%</span>
+                                                    </li>
+                                                    <li class="legend-success">
+                                                        <span class="legeng-label">Completed</span>
+                                                        <span class="legeng-value">15%</span>
+                                                    </li>
+                                                </ul>
+                                                <hr class="mb-15">
+                                                <div class="text-center">
+                                                    <b class="fs30">3</b> (class average)
+                                                    <div class="fs16">Assignments Completed</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="panel panel-flat">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">Activity</h4>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="chart-container">
+                                                    <div class="chart" id="activityChart" style="height:245px"></div>
+                                                </div>
+                                                <ul class="legend-list no-bullet text-center">
+                                                    <li class="legend-success mb-15">
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="legeng-label line-height-23 text-right">Avg active students Time per week</div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="legeng-value no-float pt-10"><i class="text-success icon-arrow-up7 fs16 text-success"></i> 1hr 40 mins</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="legend-warning">
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="legeng-label line-height-23 text-right">Total active students Time per week</div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <div class="legeng-value no-float pt-10">90hr 40 mins</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <hr class="mb-15">
+                                                <div class="text-center">
+                                                    <b class="fs30">1hr</b> <b class="fs30"> 40</b> (class average)
+                                                    <div class="fs16">Active time per week</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /main content -->
+
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footer text-muted hide">
+            Powered by <a href="https://www.veative.com/" target="_blank">Veative Labs</a>.
+        </div>
+        <!-- /footer -->
+
+    </div>
+
+
+</body>
+<script>
+    $(function() {
+        let h = $('.ab-content-body').outerHeight() + 50;
+        $('.ab-left-nav').css('height', (h > 838) ? h : 838);
+
+        // Set paths
+        // ------------------------------
+
+        require.config({
+            paths: {
+                echarts: '../assets/js/plugins/visualization/echarts'
+            }
+        });
+
+
+        // Configuration
+        // ------------------------------
+
+        require(
+            [
+                'echarts',
+                'echarts/theme/limitless',
+                'echarts/chart/line',
+                'echarts/chart/pie'
+            ],
+
+
+            // Charts setup
+            function(ec, limitless) {
+
+
+                // Initialize charts
+                // ------------------------------
+
+                var estimatedSkillsProficiencyChart = ec.init(document.getElementById('estimatedSkillsProficiencyChart'), limitless);
+                var assignmentsChart = ec.init(document.getElementById('assignmentsChart'), limitless);
+                var activityChart = ec.init(document.getElementById('activityChart'), limitless);
+
+
+                // Charts setup
+                // ------------------------------  
+
+
+                //
+                // Subject English options
+                //
+
+                estimatedSkillsProficiencyChart_options = {
+
+                    // Add tooltip
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b}: {c} ({d}%)"
+                    },
+
+
+
+                    // Add series
+                    series: [{
+                        name: 'English',
+                        type: 'pie',
+                        radius: '90%',
+                        center: ['50%', '50%'],
+                        itemStyle: {
+                            normal: {
+                                label: {
+                                    show: false
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            },
+                            emphasis: {
+                                label: {
+                                    show: false
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            }
+                        },
+                        data: [{
+                            value: 335,
+                            name: 'Minimal'
+                        }, {
+                            value: 310,
+                            name: 'Partial'
+                        }, {
+                            value: 234,
+                            name: 'Basic'
+                        }, {
+                            value: 135,
+                            name: 'Proficient'
+                        }, {
+                            value: 1548,
+                            name: 'Advanced'
+                        }]
+                    }]
+                };
+
+
+                // Add options
+                // Top text label
+                var labelTop = {
+                    normal: {
+                        label: {
+                            show: true,
+                            position: 'center',
+                            formatter: '{b}\n',
+                            textStyle: {
+                                baseline: 'middle',
+                                fontWeight: 300,
+                                fontSize: 15
+                            }
+                        },
+                        labelLine: {
+                            show: false
+                        }
+                    }
+                };
+
+                // Format bottom label
+                var labelFromatter = {
+                    normal: {
+                        label: {
+                            formatter: function(params) {
+                                return '\n\n' + params.value
+                            },
+                            textStyle: {
+                                fontSize: 20,
+                                fontWeight: 500
+                            }
+
+                        }
+                    }
+                }
+
+                // Bottom text label
+                var labelBottom = {
+                    normal: {
+                        color: '#eee',
+                        label: {
+                            show: true,
+                            position: 'center',
+                            textStyle: {
+                                baseline: 'middle'
+                            }
+                        },
+                        labelLine: {
+                            show: false
+                        }
+                    },
+                    emphasis: {
+                        color: 'rgba(0,0,0,0)'
+                    }
+                };
+                var radius = [60, 75];
+                assignmentsChart_options = {
+
+                    // Add series
+                    series: [{
+                        type: 'pie',
+                        center: ['50%', '50%'],
+                        radius: radius,
+                        itemStyle: labelFromatter,
+                        data: [{
+                            name: 'other',
+                            value: 46,
+                            itemStyle: labelBottom
+                        }, {
+                            name: 'COMPLETED',
+                            value: 54,
+                            itemStyle: labelTop
+                        }]
+                    }]
+                };
+
+
+                activityChart_options = {
+
+                    // Setup grid
+                    grid: {
+                        x: 40,
+                        x2: 20,
+                        y: 35,
+                        y2: 50
+                    },
+
+                    // Add tooltip
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+
+
+                    // Hirozontal axis
+                    xAxis: [{
+                        type: 'category',
+                        boundaryGap: false,
+                        data: [
+                            '0', '20', '40', '60', '80', '100', '120'
+                        ]
+                    }],
+
+                    // Vertical axis
+                    yAxis: [{
+                        type: 'value'
+                    }],
+
+                    // Add series
+                    series: [{
+                        name: 'Internet Explorer',
+                        type: 'line',
+                        stack: 'Total',
+                        data: [120, 132, 101, 134, 90, 230, 210]
+                    }]
+                };
+
+
+
+
+
+
+
+
+
+                // Apply options
+                // ------------------------------
+                estimatedSkillsProficiencyChart.setOption(estimatedSkillsProficiencyChart_options);
+                assignmentsChart.setOption(assignmentsChart_options);
+                activityChart.setOption(activityChart_options);
+
+
+
+                // Resize charts
+                // ------------------------------
+
+                window.onresize = function() {
+                    setTimeout(function() {
+                        estimatedSkillsProficiencyChart.resize();
+                        assignmentsChart.resize();
+                        activityChart.resize();
+                    }, 200);
+                }
+            }
+        );
+    });
+</script>
+
+</html>

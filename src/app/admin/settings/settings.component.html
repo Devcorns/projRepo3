@@ -28,7 +28,7 @@
                         <mat-form-field class="mat-block mt-20">
                             <mat-select placeholder="Issue types to show" multiple formArrayName="issueTypes">
 
-                                <mat-option   *ngFor="let issuesValues of issueSelectedForm.get('issueTypes')['controls']; let i = index" id={{i}}> {{issuesValues}}</mat-option>
+                                <mat-option   *ngFor="let issuesValues of issueSelectedForm.get('issueTypes')['controls']; let i = index" id={{i}}>{{issuesValues}}</mat-option>
                             </mat-select>
                         </mat-form-field>
 

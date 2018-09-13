@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Blenera Learning Platform</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/other.css" rel="stylesheet" type="text/css">
+
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/visualization/echarts/echarts.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/progressbar.min.js"></script>
+
+
+
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+</head>
+
+<body class="">
+    <div class="navbar navbar-inverse">
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu">
+                        <a id="nav-shop-all-button" href="../public/browse.html" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px;">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle userbox_top" data-toggle="dropdown" aria-expanded="true" style="padding-top: 9px; padding-bottom: 8px;">
+                                <img src="../assets/images/principle.jpg" alt="" class="">
+
+                            </a>
+
+                            <ul class="dropdown-menu profiledrop_width">
+                                <div class="alartbox">This account is managed by <span>pironcorp.com.</span><br>
+                                    <a href="#">Learn more</a></div>
+
+                                <li class="p-10">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="../assets/images/principle.jpg" class="img-circle img-lg" style="width: 70px !important; height: 70px !important;" alt="">
+
+                                            <span class="changeimg">Change</span>
+                                        </a>
+
+                                        <div class="media-body">
+                                            <h6 class="media-heading">Benjamin Loretti</h6>
+                                            <span class="text-muted"><a href="mailto:benjamin@pironcorp.com">benjamin@pironcorp.com</a></span>
+
+                                            <a href="#" class="btn-primary btn-sm btn mt-10">My Account</a>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+
+                                <div class="panel-footer pt-10 pb-5 text-right"><a href="../public/login.html" class="btn-default btn-xs btn"> Logout</a></div>
+
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="page-header">
+        <div class="breadcrumb-line breadcrumb-line-wide">
+            <ul class="breadcrumb">
+                <li>Dashboard</li>
+            </ul>
+            <ul class="breadcrumb-elements">
+                <li class="breadcrumb-text"><span class="text-semibold">Last updated:</span> Today 13:56 <a href="#" id="refresh" class="position-right">Refresh</a></li>
+                <li>
+                    <select class="form-control mt-5">
+                                <option value="">Select start date</option>
+                            </select>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="page-container">
+        <div class="page-content custom-work">
+
+
+
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main sidebar-default">
+                <div class="sidebar-content">
+
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Navigation</span> <i class="icon-menu" title="Main pages"></i></li>
+                                <li class="active"><a href="index.html"><i class="icon-users"></i> <span>Dashboard</span></a></li>
+                                <li class=""><a href="user_management.html"><i class="icon-users"></i> <span>User Management</span></a></li>
+                                <li><a href="course_listing.html"><i class="icon-graduation2"></i> Course Listing</a></li>
+                                <!-- /main -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+
+                </div>
+            </div>
+            <!-- /main sidebar -->
+
+
+
+
+            <!-- Main content -->
+            <div class="content-wrapper no-margin-top">
+                <div class="ab-content">
+                    <div class="ab-left-nav bg-info">
+                        <div class="ab-left-nav-subtitle">Classes to watch</div>
+                        <ul class="list-unstyled ab-bull-list">
+                            <li><span class="key-bull">3</span> Struggling</li>
+                            <li><span class="key-bull">2</span> Excelling</li>
+                            <li><span class="key-bull">5</span> Top Movers</li>
+                        </ul>
+                        <hr>
+                        <div class="ab-left-nav-subtitle">Students to watch</div>
+                        <ul class="list-unstyled ab-bull-list">
+                            <li><span class="key-bull">25</span> Struggling</li>
+                            <li><span class="key-bull">5</span> Excelling</li>
+                        </ul>
+                        <hr>
+                        <div class="ab-left-nav-subtitle">Teacher Activity</div>
+                        <ul class="list-unstyled ab-bull-list">
+                            <li><span class="key-bull">25</span> Struggling</li>
+                            <li><span class="key-bull">5</span> Excelling</li>
+                        </ul>
+                    </div>
+                    <div class="ab-content-body">
+                        <div class="row mt-20 mr-5">
+                            <div class="col-lg-4">
+                                <div class="panel panel-flat">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">School Skill Proficiency</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <ul class="legend-list">
+                                            <li class="legend-success">
+                                                <span class="legeng-label">Proficiency Skills</span>
+                                                <span class="legeng-value">500</span>
+                                            </li>
+                                            <li class="legend-warning">
+                                                <span class="legeng-label">Open Skills</span>
+                                                <span class="legeng-value">600</span>
+                                            </li>
+                                            <li class="legend-default">
+                                                <span class="legeng-label">All Skills</span>
+                                                <span class="legeng-value">3,000</span>
+                                            </li>
+                                        </ul>
+
+                                        <!-- GRADE 1 -->
+                                        <div class="grade-area">
+                                            <div class="grade-head">
+                                                <span class="grade-title">Grade 1</span>
+                                                <span class="grade-info">45 Open</span>
+                                            </div>
+                                            <div class="grade-body">
+                                                <div class="grade-body-left">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-success" style="width: 20%"></div>
+                                                        <div class="progress-bar bg-orange-400" style="width: 30%"></div>
+                                                        <div class="progress-bar bg-grey" style="width: 50%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="grade-body-right">
+                                                    <span class="grade-number">18</span>%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /grade 1 -->
+
+                                        <!-- GRADE 2 -->
+                                        <div class="grade-area">
+                                            <div class="grade-head">
+                                                <span class="grade-title">Grade 2</span>
+                                                <span class="grade-info">78 Open</span>
+                                            </div>
+                                            <div class="grade-body">
+                                                <div class="grade-body-left">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-success" style="width: 10%"></div>
+                                                        <div class="progress-bar bg-orange-400" style="width: 56%"></div>
+                                                        <div class="progress-bar bg-grey" style="width: 34%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="grade-body-right">
+                                                    <span class="grade-number">41</span>%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /grade 2 -->
+
+                                        <!-- GRADE 3 -->
+                                        <div class="grade-area">
+                                            <div class="grade-head">
+                                                <span class="grade-title">Grade 3</span>
+                                                <span class="grade-info">45 Open</span>
+                                            </div>
+                                            <div class="grade-body">
+                                                <div class="grade-body-left">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-success" style="width: 50%"></div>
+                                                        <div class="progress-bar bg-orange-400" style="width: 30%"></div>
+                                                        <div class="progress-bar bg-grey" style="width: 20%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="grade-body-right">
+                                                    <span class="grade-number">18</span>%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /grade 3 -->
+
+                                        <!-- GRADE 4 -->
+                                        <div class="grade-area">
+                                            <div class="grade-head">
+                                                <span class="grade-title">Grade 4</span>
+                                                <span class="grade-info">45 Open</span>
+                                            </div>
+                                            <div class="grade-body">
+                                                <div class="grade-body-left">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-success" style="width: 20%"></div>
+                                                        <div class="progress-bar bg-orange-400" style="width: 30%"></div>
+                                                        <div class="progress-bar bg-grey" style="width: 50%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="grade-body-right">
+                                                    <span class="grade-number">18</span>%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /grade 4 -->
+
+                                        <!-- GRADE 5 -->
+                                        <div class="grade-area">
+                                            <div class="grade-head">
+                                                <span class="grade-title">Grade 5</span>
+                                                <span class="grade-info">78 Open</span>
+                                            </div>
+                                            <div class="grade-body">
+                                                <div class="grade-body-left">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-success" style="width: 10%"></div>
+                                                        <div class="progress-bar bg-orange-400" style="width: 56%"></div>
+                                                        <div class="progress-bar bg-grey" style="width: 34%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="grade-body-right">
+                                                    <span class="grade-number">41</span>%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /grade 5 -->
+
+                                        <!-- GRADE 6 -->
+                                        <div class="grade-area">
+                                            <div class="grade-head">
+                                                <span class="grade-title">Grade 6</span>
+                                                <span class="grade-info">45 Open</span>
+                                            </div>
+                                            <div class="grade-body">
+                                                <div class="grade-body-left">
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-success" style="width: 50%"></div>
+                                                        <div class="progress-bar bg-orange-400" style="width: 30%"></div>
+                                                        <div class="progress-bar bg-grey" style="width: 20%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="grade-body-right">
+                                                    <span class="grade-number">18</span>%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /grade 6 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="panel panel-flat">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">Student Responses</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <ul class="list-inline no-margin-bottom text-center">
+                                            <li class="text-info fs16"><b>2,000</b> Responses</li>
+                                            <li class="fs16"><i class="text-success icon-arrow-up7 fs16 text-success"></i> <b>1.55.5%</b> Increase</li>
+                                        </ul>
+
+                                        <div class="chart-container">
+                                            <div class="chart" id="studentResponses" style="height:200px"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-flat">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">Teacher Assignments</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <ul class="list-inline no-margin-bottom text-center">
+                                            <li class="text-info fs16"><b>600</b> Responses</li>
+                                            <li class="fs16"><i class="text-success icon-arrow-up7 fs16 text-success"></i> <b>30.72%</b> Increase</li>
+                                        </ul>
+                                        <div class="chart-container">
+                                            <div class="chart" id="teacherAssignments" style="height:200px"></div>
+                                        </div>
+                                        <div class="chart-container">
+                                            <div class="chart" id="teacherAssignmentPie" style="height:200px"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="panel panel-flat">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">Standards Proficiency</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <ul class="list-inline text-center">
+                                            <li class="text-info fs16"><b>330</b> Student Standards below Proficient</li>
+                                            <li class="fs16"><i class="text-danger icon-arrow-down7 fs16"></i> <b>30.72%</b> Decrease</li>
+                                        </ul>
+                                        <div class="subject-chart mt-20">
+                                            <b class="fs16">English</b>
+                                            <div class="chart-container">
+                                                <div class="chart" id="subjectEnglistPie" style="height:160px"></div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="subject-chart mt-20">
+                                            <b class="fs16">Math</b>
+                                            <div class="chart-container">
+                                                <div class="chart" id="subjectMathPie" style="height:160px"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-flat">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">Activity</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <ul class="legend-list legend-list-inline">
+                                            <li class="legend-success">
+                                                <span class="legeng-label">Active</span>
+                                                <span class="legeng-value"><i class="text-success icon-arrow-up7 fs16 text-success"></i> 10%</span>
+                                            </li>
+                                            <li class="legend-danger">
+                                                <span class="legeng-label">Inactive</span>
+                                                <span class="legeng-value"><i class="text-danger icon-arrow-down7 fs16"></i> 12%</span>
+                                            </li>
+                                        </ul>
+                                        <div class="chart-container">
+                                            <div class="chart" id="activityChart" style="height:200px"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /main content -->
+
+        </div>
+        <!-- Page content -->
+
+        <!-- /page content -->
+
+
+        <!-- Footer -->
+        <div class="footer text-muted hide">
+            Powered by <a href="https://www.veative.com/" target="_blank">Veative Labs</a>.
+        </div>
+        <!-- /footer -->
+
+    </div>
+
+
+</body>
+<script>
+    $("#refresh").on("click", function() {
+        window.location = "";
+    })
+
+    $(function() {
+
+        $('.ab-left-nav').css('height', $('.ab-content-body').outerHeight() + 50);
+
+        // Set paths
+        // ------------------------------
+
+        require.config({
+            paths: {
+                echarts: '../assets/js/plugins/visualization/echarts'
+            }
+        });
+
+
+        // Configuration
+        // ------------------------------
+
+        require(
+            [
+                'echarts',
+                'echarts/theme/limitless',
+                'echarts/chart/line',
+                'echarts/chart/pie',
+                'echarts/chart/bar'
+            ],
+
+
+            // Charts setup
+            function(ec, limitless) {
+
+
+                // Initialize charts
+                // ------------------------------
+
+                var studentResponses = ec.init(document.getElementById('studentResponses'), limitless);
+                var teacherAssignments = ec.init(document.getElementById('teacherAssignments'), limitless);
+                var teacherAssignmentPie = ec.init(document.getElementById('teacherAssignmentPie'), limitless);
+
+
+                var subjectEnglistPie = ec.init(document.getElementById('subjectEnglistPie'), limitless);
+                var subjectMathPie = ec.init(document.getElementById('subjectMathPie'), limitless);
+                var activityChart = ec.init(document.getElementById('activityChart'), limitless);
+
+
+                // Charts setup
+                // ------------------------------   
+
+
+                //
+                // Stacked lines options
+                //
+
+                studentResponses_options = {
+
+                    // Setup grid
+                    grid: {
+                        x: 40,
+                        x2: 20,
+                        y: 35,
+                        y2: 25
+                    },
+
+                    // Add tooltip
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+
+
+                    // Hirozontal axis
+                    xAxis: [{
+                        type: 'category',
+                        boundaryGap: false,
+                        data: [
+                            '', '', '', '', '', '', ''
+                        ]
+                    }],
+
+                    // Vertical axis
+                    yAxis: [{
+                        type: 'value'
+                    }],
+
+                    // Add series
+                    series: [{
+                        name: 'Internet Explorer',
+                        type: 'line',
+                        stack: 'Total',
+                        data: [120, 132, 101, 134, 90, 230, 210]
+                    }, {
+                        name: 'Opera',
+                        type: 'line',
+                        stack: 'Total',
+                        data: [220, 182, 191, 234, 290, 330, 310]
+                    }, {
+                        name: 'Safari',
+                        type: 'line',
+                        stack: 'Total',
+                        data: [150, 232, 201, 154, 190, 330, 410]
+                    }, {
+                        name: 'Firefox',
+                        type: 'line',
+                        stack: 'Total',
+                        data: [320, 332, 301, 334, 390, 330, 320]
+                    }, {
+                        name: 'Chrome',
+                        type: 'line',
+                        stack: 'Total',
+                        data: [320, 332, 301, 334, 390, 330, 320]
+                    }]
+                };
+                //
+                // Teacher Assignments Option
+                //
+
+                teacherAssignments_options = {
+
+                    // Setup grid
+                    grid: {
+                        x: 40,
+                        x2: 20,
+                        y: 35,
+                        y2: 25
+                    },
+
+                    // Add tooltip
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+
+                    // Hirozontal axis
+                    xAxis: [{
+                        type: 'category',
+                        boundaryGap: false,
+                        data: [
+                            '', '', '', '', '', '', ''
+                        ]
+                    }],
+
+                    // Vertical axis
+                    yAxis: [{
+                        type: 'value'
+                    }],
+
+                    // Add series
+                    series: [{
+                        name: 'Internet Explorer',
+                        type: 'line',
+                        stack: 'Total',
+                        data: [10, 20, 50, 88, 150, 200, 144]
+                    }, {
+                        name: 'Opera',
+                        type: 'line',
+                        stack: 'Total',
+                        data: [146, 225, 10, 50, 88, 77, 100]
+                    }, {
+                        name: 'Safari',
+                        type: 'line',
+                        stack: 'Total',
+                        data: [10, 20, 50, 88, 150, 200, 144]
+                    }, {
+                        name: 'Firefox',
+                        type: 'line',
+                        stack: 'Total',
+                        data: [320, 332, 301, 334, 390, 330, 320]
+                    }, {
+                        name: 'Chrome',
+                        type: 'line',
+                        stack: 'Total',
+                        data: [146, 225, 10, 50, 88, 77, 100]
+                    }]
+                };
+
+
+
+                //
+                // Teacher Assignments options
+                //
+
+                teacherAssignmentPie_options = {
+
+
+
+                    // Add tooltip
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b}: {c} ({d}%)"
+                    },
+
+                    // Add legend
+                    legend: {
+                        orient: 'vertical',
+                        x: 'right',
+                        y: 'center',
+                        data: ['Practice \n (51.94) \n', 'Games \n (48.06)']
+                    },
+
+                    // Add series
+                    series: [{
+                        name: 'Browsers',
+                        type: 'pie',
+                        radius: '70%',
+                        center: ['30%', '57.5%'],
+                        data: [{
+                            value: 335,
+                            name: 'Practice \n (51.94) \n'
+                        }, {
+                            value: 310,
+                            name: 'Games \n (48.06)'
+                        }],
+                        itemStyle: {
+                            normal: {
+                                label: {
+                                    show: false
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            },
+                            emphasis: {
+                                label: {
+                                    show: false
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            }
+                        },
+                    }]
+                };
+
+
+
+                //
+                // Subject English options
+                //
+
+                subjectEnglistPie_options = {
+
+                    // Add tooltip
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b}: {c} ({d}%)"
+                    },
+
+                    // Add legend
+                    legend: {
+                        orient: 'vertical',
+                        x: 'right',
+                        y: "center",
+                        data: ['Minimal (13.08%)', 'Partial (12.10%)', 'Basic (9.13%)', 'Proficient (5.27%)', 'Advanced (60.42%)']
+                    },
+
+                    // Add series
+                    series: [{
+                        name: 'English',
+                        type: 'pie',
+                        radius: '80%',
+                        center: ['30%', '50%'],
+                        itemStyle: {
+                            normal: {
+                                label: {
+                                    show: false
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            },
+                            emphasis: {
+                                label: {
+                                    show: false
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            }
+                        },
+                        data: [{
+                            value: 335,
+                            name: 'Minimal (13.08%)'
+                        }, {
+                            value: 310,
+                            name: 'Partial (12.10%)'
+                        }, {
+                            value: 234,
+                            name: 'Basic (9.13%)'
+                        }, {
+                            value: 135,
+                            name: 'Proficient (5.27%)'
+                        }, {
+                            value: 1548,
+                            name: 'Advanced (60.42%)'
+                        }]
+                    }]
+                };
+
+                //
+                // Subject Math options
+                //
+
+                subjectMathPie_options = {
+
+                    // Add tooltip
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b}: {c} ({d}%)"
+                    },
+
+                    // Add legend
+                    legend: {
+                        orient: 'vertical',
+                        x: 'right',
+                        y: "center",
+                        data: ['Minimal (12.88%)', 'Partial (7.60%)', 'Basic (57.95%)', 'Proficient (8.69%)', 'Advanced (12.88%)']
+                    },
+
+                    // Add series
+                    series: [{
+                        name: 'Math',
+                        type: 'pie',
+                        radius: '80%',
+                        center: ['30%', '50%'],
+                        itemStyle: {
+                            normal: {
+                                label: {
+                                    show: false
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            },
+                            emphasis: {
+                                label: {
+                                    show: false
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            }
+                        },
+                        data: [{
+                            value: 200,
+                            name: 'Minimal (12.88%)'
+                        }, {
+                            value: 118,
+                            name: 'Partial (7.60%)'
+                        }, {
+                            value: 900,
+                            name: 'Basic (57.95%)'
+                        }, {
+                            value: 135,
+                            name: 'Proficient (8.69%)'
+                        }, {
+                            value: 200,
+                            name: 'Advanced (12.88%)'
+                        }]
+                    }]
+                };
+
+
+
+                //
+                // Activity Chart Options
+                //
+
+                activityChart_options = {
+
+                    // Setup grid
+                    grid: {
+                        x: 65,
+                        x2: 20,
+                        y: 10,
+                        y2: 40
+                    },
+
+                    // Add tooltip
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+
+                    // Add legends
+                    // legend: {
+                    //     data: ['Active', 'Inactive']
+                    // },
+
+                    // Horizontal axis
+                    xAxis: [{
+                        type: 'category',
+                        data: ['Teachers', 'Students']
+                    }],
+
+                    // Vertical axis
+                    yAxis: [{
+                        type: 'value',
+                        axisLabel: {
+                            formatter: '{value} ms'
+                        },
+                        axisLine: {
+                            lineStyle: {
+                                color: '#dc143c'
+                            }
+                        }
+                    }],
+
+
+                    // Add series
+                    series: [{
+                        name: 'Teachers',
+                        type: 'bar',
+                        itemStyle: {
+                            normal: {
+                                color: '#F44336',
+                                label: {
+                                    show: true,
+                                    textStyle: {
+                                        color: '#fff'
+                                    }
+                                }
+                            },
+                            emphasis: {
+                                label: {
+                                    show: true
+                                }
+                            }
+                        },
+                        data: [247, 187, 95, 175, 270]
+                    }, {
+                        name: 'Students',
+                        type: 'bar',
+                        itemStyle: {
+                            normal: {
+                                color: '#4CAF50',
+                                label: {
+                                    show: true,
+                                    textStyle: {
+                                        color: '#fff'
+                                    }
+                                }
+                            },
+                            emphasis: {
+                                label: {
+                                    show: true
+                                }
+                            }
+                        },
+                        data: [488, 415, 405, 340, 328]
+                    }]
+                };
+
+
+
+
+
+
+                // Apply options
+                // ------------------------------
+                studentResponses.setOption(studentResponses_options);
+                teacherAssignments.setOption(teacherAssignments_options);
+                teacherAssignmentPie.setOption(teacherAssignmentPie_options);
+
+                subjectEnglistPie.setOption(subjectEnglistPie_options);
+                subjectMathPie.setOption(subjectMathPie_options);
+                activityChart.setOption(activityChart_options);
+
+
+
+                // Resize charts
+                // ------------------------------
+
+                window.onresize = function() {
+                    setTimeout(function() {
+                        studentResponses.resize();
+                        teacherAssignments.resize();
+                        teacherAssignmentPie.resize();
+
+                        subjectEnglistPie.resize();
+                        subjectMathPie.resize();
+                        activityChart.resize();
+                    }, 200);
+                }
+            }
+        );
+    });
+</script>
+
+</html>

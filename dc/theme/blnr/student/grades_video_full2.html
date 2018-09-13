@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Blenera Learning Platform</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/other.css" rel="stylesheet" type="text/css">
+
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+
+    <script src="../assets/js/plugins/jwplayer/jwplayer.js"></script>
+
+
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+    <style type="text/css">
+        html,
+        body {
+            background: #f1f1f1 !important
+        }
+    </style>
+</head>
+
+<body class="">
+
+    <div class="navbar navbar-inverse">
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu">
+                        <a id="nav-shop-all-button" href="../public/browse.html" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px;">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle userbox_top" data-toggle="dropdown" aria-expanded="true" style="padding-top: 9px; padding-bottom: 8px;">
+                                <img src="../assets/images/childs/child-2.jpg" alt="" class="">
+
+                            </a>
+
+                            <ul class="dropdown-menu profiledrop_width">
+                                <div class="alartbox">This account is managed by <span>Veative Labs</span><br>
+                                    <a href="#">Learn more</a></div>
+
+                                <li class="p-10">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="../assets/images/childs/child-2.jpg" class="img-circle img-lg" style="width: 70px !important; height: 70px !important;" alt="">
+
+                                            <span class="changeimg">Change</span>
+                                        </a>
+
+                                        <div class="media-body">
+                                            <h6 class="media-heading">Nathan Alexander</h6>
+                                            <span class="text-muted"><a href="mailto:nathan@veative.com">nathan@veative.com</a></span>
+
+                                            <a href="../student/student-success-report.html" class="btn-primary btn-sm btn mt-10">My Account</a>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+
+                                <div class="panel-footer pt-10 pb-5 text-right"><a href="../public/login.html" class="btn-default btn-xs btn"> Logout</a></div>
+
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page-header ">
+        <div class="breadcrumb-line breadcrumb-line-wide">
+            <a class="back-btn icon-arrow-left52" href="introduction_learning.html"></a>
+            <ul class="breadcrumb">
+
+                <li>7<sup>th</sup> SCIENCE </li>
+            </ul>
+
+            <ul class="breadcrumb-elements">
+
+
+                <li>
+                    <a href="introduction_learning.html"><i class="icon-arrow-left15 position-left"></i> Previous </a>
+
+                </li>
+
+                <li><a href="nutrition_docx.html">Next<i class=" icon-arrow-right15 position-right"></i></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-gear position-left " style="font-size:22px;"></i>
+
+                        <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+                        <li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+                        <li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a></div>
+
+
+
+
+
+    </div>
+
+
+
+    <div class="page-container">
+        <div class="page-content custom-work">
+
+
+
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main sidebar-default">
+                <div class="sidebar-content">
+
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+
+
+
+
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion custom-arrow-nav">
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Intro to Nutrition in Plants</span> <i class="icon-menu" title="Main pages"></i></li>
+                                <div class="lp-navbar-nav">
+                                    <ul>
+                                        <li class="msg-time-chat-content active ">
+                                            <a href="grades_video_full2.html">
+
+                                                <div class="lp-navbar-nav-icon">
+                                                    <i class="icon-play4"></i>
+
+                                                </div>
+                                                <div class="lp-navbar-nav-bullet"></div>
+                                                <div class="lp-navbar-nav-body">
+                                                    Nutrition in plants</div>
+                                            </a>
+
+                                        </li>
+                                        <li class="msg-time-chat-content ">
+                                            <a href="nutrition_docx.html">
+
+                                                <div class="lp-navbar-nav-icon">
+                                                    <i class="icon-file-word"></i>
+
+                                                </div>
+                                                <div class="lp-navbar-nav-bullet"></div>
+                                                <div class="lp-navbar-nav-body">
+                                                    Autotrophic and heterotrophic nutrition
+                                                </div>
+                                            </a>
+
+                                        </li>
+                                        <li class="msg-time-chat-content ">
+                                            <a href="nutrition_infographic.html">
+
+                                                <div class="lp-navbar-nav-icon">
+                                                    <i class="icon-image2"></i>
+
+                                                </div>
+                                                <div class="lp-navbar-nav-bullet"></div>
+                                                <div class="lp-navbar-nav-body">
+                                                    Modes of nutrition in plants </div>
+                                            </a>
+
+                                        </li>
+                                        <li class="msg-time-chat-content ">
+                                            <a href="nutrition_pdf.html">
+
+                                                <div class="lp-navbar-nav-icon">
+                                                    <i class="icon-book"></i>
+
+                                                </div>
+                                                <div class="lp-navbar-nav-bullet"></div>
+                                                <div class="lp-navbar-nav-body">
+                                                    Nutrition in plants
+                                                </div>
+                                            </a>
+
+                                        </li>
+                                        <li class="msg-time-chat-content ">
+
+                                            <a href="nutrition_intractive_video.html">
+
+                                                <div class="lp-navbar-nav-icon">
+                                                    <i class="icon-play"></i>
+
+                                                </div>
+                                                <div class="lp-navbar-nav-bullet"></div>
+                                                <div class="lp-navbar-nav-body">
+                                                    Interactive experience</div>
+                                            </a>
+
+                                        </li>
+                                        <li class="msg-time-chat-content ">
+
+                                            <a href="nutrition_widget.html">
+
+                                                <div class="lp-navbar-nav-icon">
+                                                    <i class="icon-html52"></i>
+
+                                                </div>
+                                                <div class="lp-navbar-nav-bullet"></div>
+                                                <div class="lp-navbar-nav-body">
+                                                    Build-a-Cell: plant</div>
+                                            </a>
+
+                                        </li>
+                                        <li class="msg-time-chat-content">
+
+                                            <a href="../student/swf-widget.html">
+
+                                                <div class="lp-navbar-nav-icon">
+                                                    <i class="icon-html52"></i>
+
+                                                </div>
+                                                <div class="lp-navbar-nav-bullet"></div>
+                                                <div class="lp-navbar-nav-body">
+                                                    What plants need </div>
+                                            </a>
+
+                                        </li>
+                                        <li class="msg-time-chat-content ">
+
+                                            <a href="nutrition_game.html">
+
+                                                <div class="lp-navbar-nav-icon">
+                                                    <i class=" icon-puzzle3"></i>
+
+                                                </div>
+                                                <div class="lp-navbar-nav-bullet"></div>
+                                                <div class="lp-navbar-nav-body">
+                                                    Quiz: nutrition in plants </div>
+                                            </a>
+
+                                        </li>
+
+                                        <li class="msg-time-chat-content ">
+
+                                            <a href="../student/start-quiz.html">
+
+                                                <div class="lp-navbar-nav-icon">
+                                                    <i class=" icon-question3"></i>
+
+                                                </div>
+                                                <div class="lp-navbar-nav-bullet"></div>
+                                                <div class="lp-navbar-nav-body">
+                                                    Practice: nutrition in plants</div>
+                                            </a>
+
+                                        </li>
+
+
+                                        <li class="msg-time-chat-content">
+
+                                            <a href="../student/qrcode.html">
+
+                                                <div class="lp-navbar-nav-icon">
+                                                    <i class="icon-glasses-3d2"></i>
+
+                                                </div>
+                                                <div class="lp-navbar-nav-bullet"></div>
+                                                <div class="lp-navbar-nav-body">
+                                                    VR mode</div>
+                                            </a>
+
+                                        </li>
+
+                                        <li class="msg-time-chat-content ">
+
+                                            <a href="../student/stereo_video.html">
+
+                                                <div class="lp-navbar-nav-icon">
+                                                    <i class="icon-file-play2"></i>
+
+                                                </div>
+                                                <div class="lp-navbar-nav-bullet"></div>
+                                                <div class="lp-navbar-nav-body">
+                                                    Conservation of plants and animals</div>
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                                <ul class="next-tutorial">
+                                    <li class="msg-time-chat-content">
+                                        <a href="#" class="next-title">
+                                            Next tutorial
+                                        </a>
+                                        <a href="#" class="main-title">
+                                            <div class="lp-navbar-nav-body">
+                                                The light-dependent reactions
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                </ul>
+                                <!-- /main -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+
+                </div>
+            </div>
+            <!-- /main sidebar -->
+
+
+
+
+            <!-- Main content -->
+            <div class="content-wrapper no-margin-top no-padding-right height-calculator-with-transcript">
+                <div id="videoPlayer">This text will be replaced with a player.</div>
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="tabbable movie-desc">
+                            <ul class="nav nav-tabs nav-tabs-bottom ">
+                                <li class="active">
+                                    <a href="#about" data-toggle="tab" aria-expanded="true">
+                                        <h5>About</h5>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#transcript" data-toggle="tab" aria-expanded="false">
+                                        <h5>Transcripit</h5>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="about">
+                                    <div class="about-box">
+                                        <h5>Learning objectives:</h5>
+                                        <h6>By the end of this module, you will be able to:</h6>
+                                        <ul>
+                                            <li>Define nutrition</li>
+                                            <li>Describe autotrophic mode of nutrition in plants</li>
+                                            <li>Explain the process of photosynthesis in plants</li>
+                                            <li>Describe heterotrophic mode of nutrition in plants</li>
+                                            <li>Explain the different types of heterotrophic modes of nutrition</li>
+
+                                        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane" id="transcript">
+                                    <div class="transcript">
+                                        <p><strong>Robot:</strong> Hey professor! I’m Hungry! I have not eaten anything since morning.</p>
+
+                                        <p><strong>Professor:</strong> Go and have some food. You will get energy and feel good.</p>
+
+                                        <p><strong>Robot:</strong> Hmm! Now I am feeling satisfied. Hey! Can I ask you a question?</p>
+
+                                        <p><strong>Professor:</strong> Yes, please.</p>
+
+                                        <p><strong>Robot:</strong> I was feeling weak since I had not eaten anything for a long period of time. But I have never seen a plant eating anything. How do they survive?</p>
+
+                                        <p><strong>Professor:</strong> Well! Most plants prepare their own food using carbon dioxide and water, in the presence of chlorophyll and sunlight. However, there are some plants which do not have chlorophyll and
+                                            can not synthesise food on their own. So, they derive their food from other plants and animals.</p>
+
+                                        <p><strong>Robot:</strong> Wow! That’s interesting.</p>
+
+                                        <p><strong>Professor:</strong> Yes! Let’s learn about it.</p>
+
+                                        <h5>Modes of nutrition</h5>
+
+
+                                        <p>Nutrition is an important life process by which all living organisms take food and utilise it to get energy.</p>
+
+                                        <p>There are two types of nutrition modes: Autotrophic nutrition and Heterotrophic nutrition. </p>
+
+                                        <p>Autotrophic nutrition is the mode of nutrition, in which organisms make organic food themselves from simple inorganic substances. </p>
+
+                                        <p>These organisms are hence called autotrophs. </p>
+
+                                        <p>Green plants are the examples of autotrophs. </p>
+
+                                        <p>Heterotrophic nutrition is the mode of nutrition in which organisms depend upon other organisms to survive. </p>
+
+                                        <p>Accordingly, these organisms are called heterotrophs.</p>
+
+                                        <p>Human beings and tigers are the examples of heterotrophs.</p>
+
+                                        <h5>Photosynthesis</h5>
+
+
+                                        <p>Photosynthesis is a process by which green plants synthesise their own food from the carbon dioxide and water, in the presence of chlorophyll and sunlight.</p>
+
+                                        <h5>Raw materials for photosynthesis</h5>
+
+                                        <p>In plants, water, minerals, and carbon dioxide are raw materials for the synthesis of food. </p>
+
+                                        <p>How do plants obtain these raw materials from their surroundings? </p>
+
+                                        <p>How do they transport them to the food factories of the plant? </p>
+
+                                        <p>Water and dissolved minerals are absorbed directly from the soil through roots, by the means of many small vessels. </p>
+
+                                        <p>These vessels run throughout the root, the stem, the branches, and the leaves.</p>
+
+                                        <p>They form a continuous path or passage for water and minerals to reach the leaf. </p>
+
+                                        <p>Likewise, carbon dioxide from the air is taken in through the tiny pores, present on both surfaces of the leaves. </p>
+
+                                        <p>These pores are called stomata.</p>
+
+                                        <p>They are surrounded by ‘guard cells’.</p>
+
+                                        <h5>Products of photosynthesis</h5>
+
+                                        <p>After reaching the leaves, carbon dioxide and water react in the presence of sunlight to form carbohydrates. </p>
+
+                                        <p>The carbohydrates are ultimately converted into starch which gets stored in the different parts of the plant. </p>
+
+                                        <p>Therefore, the process of photosynthesis can be represented as:</p>
+
+                                        <p>Carbon dioxide plus water, in the presence of chlorophyll and sunlight gives carbohydrate plus oxygen.</p>
+
+                                        <h5>The Significance of photosynthesis</h5>
+
+                                        <p>Photosynthesis is an important and vital process for life on this planet. </p>
+
+                                        <p>This process helps in the conversion of solar energy into organic matter. </p>
+
+                                        <p>Hence, photosynthesis links the physical and biological world.</p>
+
+                                        <p>It is the primary source of organic food for all living forms, either directly or indirectly.</p>
+
+                                        <p>It also helps in purifying air and maintaining the balance of oxygen and carbon dioxide in the ecosystem.</p>
+
+                                        <h5>Heterotrophic mode of nutrition in plants</h5>
+
+                                        <p>Heterotrophic mode of nutrition is the mode of nutrition in which plants which do not have chlorophyll and can not synthesise food on their own, derive food from other plants and animals.</p>
+
+                                        <p>Plants which use this mode of nutrition are known as heterotrophs. </p>
+
+                                        <p>There are four types of heterotrophic plants: </p>
+
+                                        <p>Parasitic plants</p>
+
+                                        <p>Saprophytic plants</p>
+
+                                        <p>Symbiotic plants</p>
+
+                                        <p>Insectivorous plants</p>
+
+                                        <h5>Parasitic plants</h5>
+
+                                        <p>Parasitic plants are plants which obtain their food directly from other plants.</p>
+
+                                        <p>The plants from which they obtain food are called hosts. </p>
+
+                                        <p>Cuscuta is an example of a parasitic plant.</p>
+
+                                        <p>It coils around the stem and branches as a yellow, tubular structure and takes food from the host plant.</p>
+
+                                        <h5>Saprophytic plants</h5>
+
+                                        <p>You may have seen fluffy umbrella-like patches growing on rotting wood during rainy season.</p>
+
+                                        <p>These organisms are commonly called fungi. </p>
+
+                                        <p>Fungi get their nutrition from dead, decaying matter.</p>
+
+                                        <p>To get nutrients, they secrete a digestive juice and converts it into a solution. </p>
+
+                                        <p>This mode of nutrition is called saprotrophic nutrition and organisms using this mode of nutrition are called saprotrophs or saprophytes. </p>
+
+                                        <p>Fungi is an example of saprotrophs.</p>
+
+                                        <h5>Symbiotic plants</h5>
+
+                                        <p>Symbiotic relationship is the relationship between two dissimilar organisms, in which both are living together and sharing shelter and nutrients with each other. </p>
+
+                                        <p>The organisms involved in this kind of relationship are called symbionts.</p>
+
+                                        <p>Lichen is a good example of a symbiotic relationship. </p>
+
+                                        <p>It is the association between algae and fungi.</p>
+
+                                        <p>In this kind of relationship, algae provide food to fungi and fungi provide protection, absorbed water and minerals to algae.</p>
+
+                                        <h5>Insectivorous plants</h5>
+
+                                        <p>There are a few plants which can trap insects and digest them to get nutrition.</p>
+
+                                        <p>For example, pitcher plants. </p>
+
+                                        <p>These plants can synthesise their own food by photosynthesis, but they grow in nitrogen deficient soils. </p>
+
+                                        <p>In order to fulfil their nitrogen requirements, they eat small insects. </p>
+
+                                        <p>These are called insectivorous plants.</p>
+
+                                        <h5>Rhizobium- A symbiont</h5>
+
+                                        <p>Plants require a lot of nitrogen to make proteins. </p>
+
+                                        <p>Our atmosphere contains 78% nitrogen but plants cannot use it directly. </p>
+
+                                        <p>In the root nodules of gram, peas, and other legumes, a bacterium called Rhizobium lives that can take atmospheric nitrogen and convert it into a soluble form.</p>
+
+                                        <p>In return, the plant provides food and shelter to the bacteria.</p>
+
+                                        <p>Thus we can say that, Rhizobium shows a symbiotic relationship.</p>
+                                        <h5>Summary:</h5>
+                                        <h6>With this, we come to the end of this module. You are now aware of:</h6>
+
+                                        <ul>
+                                            <li>The process by which all living organisms ingest food and utilise it to get energy is called nutrition </li>
+
+                                            <li>Plants obtain their food through two modes: Autotrophic and Heterotrophic nutrition</li>
+
+                                            <li>In autotrophic mode of nutrition, plants synthesise their own food through the process of photosynthesis and are called autotrophs</li>
+
+                                            <li>Photosynthesis is a process by which green plants synthesise their own food using carbon dioxide and water, in the presence of chlorophyll and sunlight</li>
+
+                                            <li>In heterotrophic mode of nutrition, plants do not synthesise their own food but derive food from other plants and animals and are called heterotrophs</li>
+
+                                            <li>Parasitic plants obtain their food directly from other plants, which are known as hosts</li>
+
+                                            <li>Saprophytic plants get their nutrients from dead and decaying matter, by secreting a digestive juice which converts this matter into a solution</li>
+
+                                            <li>Symbiotic relationship is the relationship between two dissimilar organisms, in which both are living together and sharing shelter and nutrients with each other</li>
+
+                                            <li>Insectivorous plants can synthesise their own food but they fulfil their nitrogen requirement by trapping or eating small insects</li>
+                                        </ul>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- Page content -->
+
+    <!-- /page content -->
+
+
+    <!-- Footer -->
+    <div class="footer text-muted hide">
+        Powered by <a href="http://www.veative.com/" target="_blank">Veative Labs</a>.
+    </div>
+    <!-- /footer -->
+
+    </div>
+    <script>
+        $(function() {
+            jwplayer.key = "NpbrkfaG2NwekvM4a7otBoSO7STZVEJnQPEUHg==";
+            jwplayer("videoPlayer").setup({
+                "file": "https://s3.amazonaws.com/cdn.bayan.com/S101/UD1126/TT101001/video/B000193_ENUS_MO.mp4",
+                //"image": "http://example.com/myImage.png",
+                image: "../assets/img/poster_image.jpg",
+                "height": '650',
+                "width": '100%'
+            });
+
+        });
+    </script>
+
+
+
+</body>
+
+</html>

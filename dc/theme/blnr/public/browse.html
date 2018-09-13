@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Blenera Learning Platform</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/circle.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/other.css" rel="stylesheet" type="text/css">
+
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+
+    <!-- /core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+
+
+
+    <script type="text/javascript" src="../assets/js/plugins/visualization/echarts/echarts.js"></script>
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="../assets/js/charts/google/bubbles/bubble.js"></script>
+    <script type="text/javascript" src="../assets/js/charts/google/bubbles/bubble_gradient.js"></script>
+    <!-- <script type="text/javascript" src="../assets/js/charts/echarts/bars_tornados.js"></script> -->
+
+    <!-- <script type="text/javascript" src="../assets/js/charts/d3/bars/bars_basic_tooltip.js"></script> -->
+
+    <style type="text/css">
+        .datatable-header {
+            padding: 20px 20px 0px 20px
+        }
+        
+        .datatable-footer {
+            padding: 20px 20px 0px 20px
+        }
+        
+        .sidebar-content {
+            background: none !important;
+            box-shadow: none!important;
+            border: none!important;
+        }
+        
+        html,
+        body {
+            background: #f1f1f1 !important
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="navbar navbar-inverse">
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu">
+                        <a id="nav-shop-all-button" href="javascript:void(0);" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px;">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="login.html" class="nav-menu-active">Login</a></li>
+                        <li><a href="login.html" class="nav-menu-active">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="page-container">
+        <div class="page-content custom-work">
+
+
+
+
+
+
+            <!-- Main content -->
+
+            <div class="filter-search-header lms">
+
+                <div class="container">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 text-left main-head">
+                                <h1>Course Catalog</h1>
+                                <h6>Find a course thats right for you</h6>
+                            </div>
+
+
+
+                        </div>
+                        <div class="row select-boxex">
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="row mb-20">
+                    <div class="col-md-6">
+                        <h1 class="no-margin ml-20">Featured Courses And Program</h1>
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <!-- Basic initialization -->
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Venation" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_HS100106.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Venation</h4>
+                                    <div class="card-text ">Fine lines present on the surface of a leaf are leaf veins. The pattern of arrangement of veins on the leaf is called venation. It can be of two types, namely, reticulate venation and...</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Types of Chromosomes" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_HS100108.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Types of Chromosomes</h4>
+                                    <div class="card-text ">Chromosomes are formed by the condensation of chromatin. They are mainly of four types, namely, metacentric, submetacentric, acrocentric and telocentric. &nbsp; Learning objectives...</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="The Substances" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_MS200063.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">The Substances</h4>
+                                    <div class="card-text ">Pure substances are made of only one type of atom or only one type of molecule. For example, pure iron would only contain iron atoms, pure water would only contain molecules of water....</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Heat Engines and Second Law of Thermodynamics" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_SS400037.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Heat Engines and Second Law of Thermodynamics</h4>
+                                    <div class="card-text ">A heat engine is a device that converts some thermal energy into mechanical energy. Burning fuel in the engine's cylinders transforms chemical energy into thermal energy, then converts...</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Poliovirus" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_HS100098.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Poliovirus</h4>
+                                    <div class="card-text ">Poliovirus is a human retrovirus which is responsible for polio or poliomyelitis. It is mainly comprised of the RNA genome and protein capsid. &nbsp; Learning Objectives: &nbsp; In...</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Excretory System" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_MS100020.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Excretory System</h4>
+                                    <div class="card-text ">The excretory system consists of the kidney, ureter, urethra and urinary bladder. It helps the body in filtration and excretion of metabolic waste and unwanted materials from the blood....</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Waves in Matter" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_SS400039.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Waves in Matter</h4>
+                                    <div class="card-text ">Waves carry energy without transporting matter from place to place. Waves carry energy from place to place. &nbsp; Learning Objective: &nbsp; In this simulation, you will be able to:...</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Digestive System" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_MS100047.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Digestive System</h4>
+                                    <div class="card-text ">The digestive system is one of the major organ systems of the human body. The main parts of the digestive system are the mouth, oesophagus, stomach, small intestine, large intestine...</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Waves and Particles" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_SS400018.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Waves and Particles</h4>
+                                    <div class="card-text ">An electromagnetic wave can behave as a particle called a photon. A photon is a mass less bundle of energy that behaves like a particle. The photon's energy depends on the frequency...</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Anatomy of Neuron" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_SS100043.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Anatomy of Neuron</h4>
+                                    <div class="card-text ">A neuron is the basic component of the brain and the spinal cord of the central nervous system. The main parts of a neuron are the nucleus, dendrite, axon, cell body, and myelin sheath....</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Polarisation of Light" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_SS400019.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Polarisation of Light</h4>
+                                    <div class="card-text ">The phenomenon of restricting the vibrations of light, of electric field vectors, in a direction perpendicular to the direction of the propagation of light is called the polarization...</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Cardiac Cycle" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_SS100004.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Cardiac Cycle</h4>
+                                    <div class="card-text ">The cardiac cycle is the sequence of events that takes place when the heart beats. A single cycle can be divided into two phases, systole and diastole. &nbsp; Learning Objectives In...</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Teeth" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_MS100029.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Teeth</h4>
+                                    <div class="card-text ">A tooth has three parts. The outermost visible part is called the crown. The region which is hidden in gums is called the root. The region between the crown and root is called the neck....</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Floatation and Immersion of a Body" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_SS400045.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Floatation and Immersion of a Body</h4>
+                                    <div class="card-text ">An object can float or sink depending on its density as compared to the density of the fluid in which it is placed. An object floats if its density is less than that of the fluid. An...</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                        <div style="position:relative" class="anchor-tag">
+                            <a href="../public/course_details_new.html">
+                                <div class="card">
+                                    <img class="card-img-top" alt="Appendicular Skeletal System" src="https://s3.amazonaws.com/bucket.veative.com/CONTENTBANK/thumb_SS100017.jpg">
+                                    <div class="card-block"></div>
+                                </div>
+                                <div class="card-block-outer">
+                                    <h4 class="card-title mt-3">Appendicular Skeletal System</h4>
+                                    <div class="card-text ">The human skeletal system is categorised into two types: the axial skeletal system and the appendicular skeletal system. The appendicular skeletal system is comprised of the bones of...</div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="pull-left" title="Device">
+                        <span class="text-bold text-lightgreen">6</span> Devices </span>
+                                    <i class="icon-sphere3 pull-right" title="Multi Languages"></i>
+
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- Page content -->
+
+    <!-- /page content -->
+
+
+    <!-- Footer -->
+    <div class="footer text-muted hide">
+        Powered by <a href="https://www.veative.com/" target="_blank">Veative Labs</a>.
+    </div>
+    <!-- /footer -->
+
+    </div>
+
+
+</body>
+
+
+<style>
+    html,
+    body {
+        overflow: auto;
+    }
+    
+    .lms.filter-search-header {
+        /* margin-top: 55px; */
+        margin-bottom: 20px;
+        background: url(https://www.veative.com/learn/public/images/explore_library_bg.jpg);
+        /* background-image: url(https://www.labster.com/wp-content/uploads/2015/09/labster_bg_split.jpg); */
+        min-height: 235px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 65px;
+    }
+    
+    .lms.filter-search-header h1 {
+        font-size: 35px;
+        line-height: 30px;
+        letter-spacing: 0;
+    }
+    
+    .lms.filter-search-header h1,
+    .lms.filter-search-header h6 {
+        color: #fff;
+    }
+    
+    .anchor-tag {
+        width: 270px;
+        height: 360px;
+        display: inline-block;
+        margin-bottom: 11px;
+        margin-left: 21px;
+    }
+    
+    .card {
+        font-size: 1em;
+        overflow: hidden;
+        padding: 0;
+        border: none;
+        border-radius: .28571429rem;
+        /* box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5; */
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    }
+    
+    .card {
+        width: 275px;
+        height: 352px;
+        background: #fff;
+    }
+    
+    .card-block {
+        font-size: 1em;
+        position: relative;
+        margin: 0;
+        background: #fff;
+        padding: 1em;
+        border: none;
+        border-top: 1px solid rgba(34, 36, 38, .1);
+        box-shadow: none;
+        height: 125px;
+        overflow: hidden;
+    }
+    
+    .card-img-top {
+        display: block;
+        width: 100%;
+        height: 155px;
+    }
+    
+    .filter-search-header+.page-container .card-block-outer {
+        width: 245px;
+        position: absolute;
+        height: 95px;
+        left: 16px;
+        text-align: left;
+        top: 165px;
+        right: 16px;
+    }
+    
+    .card-text {
+        clear: both;
+        font-size: 13px;
+        height: 82px;
+        overflow: hidden;
+        /* margin-top: .5em; */
+        color: rgba(0, 0, 0, .68);
+    }
+    
+    .card-footer {
+        font-size: 1em;
+        position: static;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        padding: .75em 1em;
+        color: rgba(0, 0, 0, .4);
+        border-top: 1px solid rgba(0, 0, 0, .05) !important;
+        background: #fff;
+    }
+    
+    .anchor-tag .card-footer {
+        position: absolute;
+        bottom: 10px;
+        top: auto;
+        width: 265px;
+        left: 5px;
+        border-top: 1px solid #dedede !important;
+    }
+    
+    .mt-3 {
+        margin-top: 3px!important;
+    }
+    
+    .card-title {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2857em;
+        max-height: 42px;
+        color: #444;
+        overflow: hidden;
+    }
+    
+    .filter-search-header+.container .card-block-outer {
+        width: 245px;
+        position: absolute;
+        height: 95px;
+        left: 16px;
+        text-align: left;
+        top: 165px;
+        right: 16px;
+    }
+    
+    .text-lightgreen {
+        color: #639624;
+    }
+</style>
+
+
+
+</html>

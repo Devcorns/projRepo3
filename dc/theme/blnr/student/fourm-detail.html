@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Blenera Learning Platform</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/other.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+
+
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/editors/summernote/summernote.min.js"></script>
+    <!--<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>-->
+
+
+
+
+
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+
+
+    <!--<script type="text/javascript" src="assets/js/core/app.js"></script>-->
+    <script type="text/javascript" src="../assets/js/pages/editor_summernote.js"></script>
+    <!-- /theme JS files -->
+
+
+    <style type="text/css">
+        .datatable-header {
+            padding: 20px 20px 0px 20px
+        }
+        
+        .datatable-footer {
+            padding: 20px 20px 0px 20px
+        }
+        
+        .sidebar-content {
+            background: none !important;
+            box-shadow: none!important;
+            border: none!important;
+        }
+        
+        html,
+        body {
+            background: #f1f1f1 !important
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="navbar navbar-inverse">
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu">
+                        <a id="nav-shop-all-button" href="../public/browse.html" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px;">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle userbox_top" data-toggle="dropdown" aria-expanded="true" style="padding-top: 9px; padding-bottom: 8px;">
+                                <img src="../assets/images/childs/child-2.jpg" alt="" class="">
+
+                            </a>
+
+                            <ul class="dropdown-menu profiledrop_width">
+                                <div class="alartbox">This account is managed by <span>Veative Labs</span><br>
+                                    <a href="#">Learn more</a></div>
+
+                                <li class="p-10">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="../assets/images/childs/child-2.jpg" class="img-circle img-lg" style="width: 70px !important; height: 70px !important;" alt="">
+
+                                            <span class="changeimg">Change</span>
+                                        </a>
+
+                                        <div class="media-body">
+                                            <h6 class="media-heading">Nathan Alexander</h6>
+                                            <span class="text-muted"><a href="mailto:nathan@veative.com">nathan@veative.com</a></span>
+
+                                            <a href="../student/student-success-report.html" class="btn-primary btn-sm btn mt-10">My Account</a>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+
+                                <div class="panel-footer pt-10 pb-5 text-right"><a href="../public/login.html" class="btn-default btn-xs btn"> Logout</a></div>
+
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-header">
+        <div class="breadcrumb-line breadcrumb-line-wide">
+            <ul class="breadcrumb">
+                <li>BUSINESS &amp; ACCOUNTING</li>
+
+            </ul>
+
+            <ul class="breadcrumb-elements">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-gear position-left " style="font-size:22px;"></i>
+
+                        <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+                        <li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+                        <li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a></div>
+
+
+    </div>
+
+
+
+    <div class="page-container">
+        <div class="page-content custom-work">
+
+
+
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main sidebar-default">
+                <div class="sidebar-content">
+
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Navigation</span> <i class="icon-menu" title="Main pages"></i></li>
+                                <li><a href="index.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+                                <li><a href="assignment-dropbox.html"><i class="icon-files-empty"></i> <span>Dropbox</span></a></li>
+                                <li><a href="assignment-list.html"><i class="icon-magazine"></i> Assignment</a></li>
+                                <li class="active"><a href="forum.html"><i class="icon-question3"></i> Questions and Answers</a></li>
+                                <li><a href="schedule.html"><i class="icon-calendar22"></i> Schedule</a></li>
+                                <li><a href="course_listing.html"><i class="icon-bookmark"></i> My Courses</a></li>
+                                <!-- /main -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+
+                </div>
+            </div>
+            <!-- /main sidebar -->
+
+
+
+
+            <!-- Main content -->
+
+            <div class="content-wrapper forum">
+
+
+                <div class="col-lg-12">
+
+
+                    <!-- Main content -->
+                    <section class="content">
+                        <div class="row">
+                            <div class="col-lg-8 col-lg-offset-2">
+
+
+                                <div class="forum">
+                                    <div class="scroll-fixtop">
+                                        <div class="info-box p-20 forum-header">
+                                            <div class="forum-actions-list">
+                                                <ul>
+                                                    <li class="button"><a href="#answerModal" data-toggle="modal">Answer</a></li>
+                                                    <li>Tags: &nbsp;&nbsp;&nbsp;</li>
+                                                    <li class="tag"><a href="#">Danger and Dangers</a></li>
+                                                    <li class="tag"><a href="#">Geography</a></li>
+                                                    <li class="tag"><a href="#">Earth (planet)</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="info-box p-20">
+                                        <div class="forum-question">What is the healthiest and the cheapest food to eat daily?</div>
+                                        <div class="forum-question-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                                            it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                                            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+
+
+                                        <div class="answers-section-number">2 Answers</div>
+                                        <div class="forum-profile" data-model="answer" data-answer="1">
+                                            <figure>
+                                                <div class="forum-answer-segment">1</div>
+                                                <div class="avtar-circle">
+                                                    <img src="..\assets\img\john-deo.jpg" class="img-responsive">
+                                                </div>
+                                            </figure>
+                                            <div class="forum-profile-content">
+                                                <div class="forum-profile-title">John Deo</div>
+                                                <div class="forum-details-list">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i> 2 days ago</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="forum-content">
+                                                    <div class="text">
+                                                        <p>What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive
+                                                            and exclusive food. There are easy and cheap option available which can provide you good health at low cost. Buttermilk- A gut friendly drink loaded with probiotics, keeps you cool in the summers.
+                                                            A much better options than high calorie sugary drinks to keep you hydrated. You can add fresh mint leaves and dry cumin powder to make it more tastier. It provides you calcium, protein, phosphorus
+                                                            and magnesium.</p>
+                                                        <p><img class="img-responsive" src="https://wallpaperlayer.com/img/2016/6/model-wallpaper-9128-9462-hd-wallpapers.jpg"></p>
+                                                        <p>What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive
+                                                            and exclusive food. There are easy and cheap option available which can provide you good health at low cost. Buttermilk- A gut friendly drink loaded with probiotics, keeps you cool in the summers.
+                                                            A much better options than high calorie sugary drinks to keep you hydrated. You can add fresh mint leaves and dry cumin powder to make it more tastier. It provides you calcium, protein, phosphorus
+                                                            and magnesium.</p>
+
+                                                        <p>What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive
+                                                            and exclusive food. There are easy and cheap option available which can provide you good health at low cost. Buttermilk- A gut friendly drink loaded with probiotics, keeps you cool in the summers.
+                                                            A much better options than high calorie sugary drinks to keep you hydrated. You can add fresh mint leaves and dry cumin powder to make it more tastier. It provides you calcium, protein, phosphorus
+                                                            and magnesium.</p>
+                                                        <p><img class="img-responsive" src="https://images-na.ssl-images-amazon.com/images/I/612X9UmANLL.jpg"></p>
+                                                        <p><a href="#">http://www.veative.com</a></p>
+                                                    </div>
+                                                    <div class="forum-actions-list answer-action">
+                                                        <ul>
+                                                            <li><a href="#">Upvote <small>(5)</small></a></li>
+                                                            <li><a href="#">Downvote</a></li>
+                                                            <li><a href="javascript:void(0)" onclick="commentSection('#comment-1')">Comment <small>(2)</small></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="comment-box answer-action-comment-box hide" id="comment-1">
+                                                        <div class="forum-profile">
+                                                            <figure>
+                                                                <div class="avtar-circle">
+                                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuqI1eOt2lWGbUun0yKi7caFiT0L0e3UBvwk6f-uKppyx-AaMvuQ" class="img-responsive">
+                                                                </div>
+                                                            </figure>
+                                                            <div class="forum-profile-content">
+                                                                <form>
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <textarea type="text" placeholder="type your comment here.." class="form-control comment-textarea"></textarea>
+                                                                            <div class="input-group-btn">
+                                                                                <button class="btn bg-purple">Comment</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <div class="forum-devider"></div>
+                                                        <div class="forum-comments">
+                                                            <div class="forum-profile">
+                                                                <figure>
+                                                                    <div class="avtar-circle">
+                                                                        <img src="..\assets\img\john-deo.jpg" class="img-responsive">
+                                                                    </div>
+                                                                </figure>
+                                                                <div class="forum-profile-content">
+                                                                    <div class="forum-profile-title">John Deo</div>
+                                                                    <div class="forum-details-list">
+                                                                        <ul>
+                                                                            <li><i class="fa fa-clock-o"></i> 2 days ago</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="forum-content">
+                                                                        <span class="text">What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive and exclusive food.</span>
+                                                                    </div>
+                                                                    <div class="forum-actions-list comment-actions-list">
+                                                                        <ul>
+                                                                            <li><a href="#">Upvote <small>(5)</small></a></li>
+                                                                            <li><a href="#">Downvote</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="forum-profile">
+                                                                <figure>
+                                                                    <div class="avtar-circle">
+                                                                        <img src="..\assets\img\john-deo.jpg" class="img-responsive">
+                                                                    </div>
+                                                                </figure>
+                                                                <div class="forum-profile-content">
+                                                                    <div class="forum-profile-title">John Deo</div>
+                                                                    <div class="forum-details-list">
+                                                                        <ul>
+                                                                            <li><i class="fa fa-clock-o"></i> 2 days ago</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="forum-content">
+                                                                        <span class="text">What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive and exclusive food.</span>
+                                                                    </div>
+                                                                    <div class="forum-actions-list comment-actions-list">
+                                                                        <ul>
+                                                                            <li><a href="#">Upvote <small>(5)</small></a></li>
+                                                                            <li><a href="#">Downvote</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="forum-profile" data-model="answer" data-answer="2">
+                                            <figure>
+                                                <div class="forum-answer-segment">2</div>
+                                                <div class="avtar-circle">
+                                                    <img src="..\assets\img\john-deo.jpg" class="img-responsive">
+                                                </div>
+                                            </figure>
+                                            <div class="forum-profile-content">
+                                                <div class="forum-profile-title">John Deo</div>
+                                                <div class="forum-details-list">
+                                                    <ul>
+                                                        <li><i class="fa fa-clock-o"></i> 2 days ago</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="forum-content">
+                                                    <div class="text">
+                                                        <p>What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive
+                                                            and exclusive food. There are easy and cheap option available which can provide you good health at low cost. Buttermilk- A gut friendly drink loaded with probiotics, keeps you cool in the summers.
+                                                            A much better options than high calorie sugary drinks to keep you hydrated. You can add fresh mint leaves and dry cumin powder to make it more tastier. It provides you calcium, protein, phosphorus
+                                                            and magnesium.</p>
+                                                        <p><img class="img-responsive" src="http://www.intrawallpaper.com/static/images/HD-Wallpapers-89_6k7Prv3.jpg"></p>
+                                                        <p>What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive
+                                                            and exclusive food. There are easy and cheap option available which can provide you good health at low cost. Buttermilk- A gut friendly drink loaded with probiotics, keeps you cool in the summers.
+                                                            A much better options than high calorie sugary drinks to keep you hydrated. You can add fresh mint leaves and dry cumin powder to make it more tastier. It provides you calcium, protein, phosphorus
+                                                            and magnesium.</p>
+
+                                                        <p>What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive
+                                                            and exclusive food. There are easy and cheap option available which can provide you good health at low cost. Buttermilk- A gut friendly drink loaded with probiotics, keeps you cool in the summers.
+                                                            A much better options than high calorie sugary drinks to keep you hydrated. You can add fresh mint leaves and dry cumin powder to make it more tastier. It provides you calcium, protein, phosphorus
+                                                            and magnesium.</p>
+                                                        <p><img class="img-responsive" src="http://hd.wallpaperswide.com/thumbs/dream_house-t1.jpg"></p>
+                                                        <p><a href="#">http://www.veative.com</a></p>
+                                                    </div>
+                                                    <div class="forum-actions-list answer-action">
+                                                        <ul>
+                                                            <li><a href="#">Upvote <small>(5)</small></a></li>
+                                                            <li><a href="#">Downvote</a></li>
+                                                            <li><a href="javascript:void(0)" onclick="commentSection('#comment-2')">Comment <small>(2)</small></a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="comment-box answer-action-comment-box hide" id="comment-2">
+                                                        <div class="forum-profile">
+                                                            <figure>
+                                                                <div class="avtar-circle">
+                                                                    <img src="..\assets\img\john-deo.jpg" class="img-responsive">
+                                                                </div>
+                                                            </figure>
+                                                            <div class="forum-profile-content">
+                                                                <form>
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <textarea type="text" placeholder="type your comment here.." class="form-control comment-textarea"></textarea>
+                                                                            <div class="input-group-btn">
+                                                                                <button class="btn bg-purple">Comment</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <div class="forum-devider"></div>
+                                                        <div class="forum-comments">
+                                                            <div class="forum-profile">
+                                                                <figure>
+                                                                    <div class="avtar-circle">
+                                                                        <img src="..\assets\img\john-deo.jpg" class="img-responsive">
+                                                                    </div>
+                                                                </figure>
+                                                                <div class="forum-profile-content">
+                                                                    <div class="forum-profile-title">John Deo</div>
+                                                                    <div class="forum-details-list">
+                                                                        <ul>
+                                                                            <li><i class="fa fa-clock-o"></i> 2 days ago</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="forum-content">
+                                                                        <span class="text">What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive and exclusive food.</span>
+                                                                    </div>
+                                                                    <div class="forum-actions-list comment-actions-list">
+                                                                        <ul>
+                                                                            <li><a href="#">Upvote <small>(5)</small></a></li>
+                                                                            <li><a href="#">Downvote</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="forum-profile">
+                                                                <figure>
+                                                                    <div class="avtar-circle">
+                                                                        <img src="..\assets\img\john-deo.jpg" class="img-responsive">
+                                                                    </div>
+                                                                </figure>
+                                                                <div class="forum-profile-content">
+                                                                    <div class="forum-profile-title">John Deo</div>
+                                                                    <div class="forum-details-list">
+                                                                        <ul>
+                                                                            <li><i class="fa fa-clock-o"></i> 2 days ago</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="forum-content">
+                                                                        <span class="text">What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive and exclusive food.</span>
+                                                                    </div>
+                                                                    <div class="forum-actions-list comment-actions-list">
+                                                                        <ul>
+                                                                            <li><a href="#">Upvote <small>(5)</small></a></li>
+                                                                            <li><a href="#">Downvote</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="not-answer-yet hide">
+                                            <i class="fa fa-pencil"><p></p></i>
+                                            <p>No Answers Yet</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /.content -->
+
+                </div>
+            </div>
+            <!-- /main content -->
+
+        </div>
+        <!-- Page content -->
+
+        <!-- /page content -->
+
+
+        <!-- Footer -->
+        <div class="footer text-muted hide">
+            Powered by <a href="https://www.veative.com/" target="_blank">Veative Labs</a>.
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- Invite user -->
+    <div id="invite_user" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title">Add Users</h5>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row mb-10">
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">User Type: </label>
+                            <div class="col-lg-9">
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-primary"><i class=" icon-user"></i></span>
+                                    <input type="text" class="form-control" placeholder="Student">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-10">
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">Name: </label>
+                            <div class="col-lg-9">
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-primary"><i class=" icon-user-tie"></i></span>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row mb-10">
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">Email (Optional): </label>
+                            <div class="col-lg-9">
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-primary"><i class=" icon-mail5"></i></span>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Invite user -->
+
+    <script>
+        $(function() {
+            $("#newAnswer").summernote({
+                minHeight: 200,
+            });
+            $("#questionExplation").summernote({
+                minHeight: 200,
+                placeholder: 'Question explanation.'
+            });
+        });
+
+        function questionFrom() {
+            if (!$("#questionFrom").hasClass("initilized"))
+                $("#tags").select2({
+                    placeholder: "Select Related Tags"
+                });
+            $("#questionFrom").toggleClass("hide"),
+                $("#newQuestion").focus(),
+                $("#questionFrom").addClass("initilized");
+
+        }
+
+        function commentSection(e) {
+            $(e.target).parents(".forum:first").children(".comment-box").toggleClass("hide");
+        }
+
+        function commentSectionModal(e) {
+            $(e.target).parents(".modal:first").find(".comment-box").toggleClass("hide");
+        }
+    </script>
+
+
+    <div class="modal fade" id="answerModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <a class="forum-question" href="fourm-detail.html" target="_blank">What is the healthiest and the cheapest food to eat daily?</a>
+                </div>
+                <div class="modal-body">
+                    <div class="forum-profile">
+                        <figure>
+                            <div class="avtar-circle">
+                                <img src="..\assets\img\john-deo.jpg" class="img-responsive">
+                            </div>
+                        </figure>
+                        <div class="forum-profile-content">
+                            <textarea id="newAnswer" placeholder="Write your answer"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-right">
+                    <button class="btn bg-purple">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="detailModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <a class="forum-question" href="fourm-detail.html" target="_blank">What is the healthiest and the cheapest food to eat daily?</a>
+                </div>
+                <div class="modal-body">
+                    <div class="forum-profile">
+                        <figure>
+                            <div class="avtar-circle">
+                                <img src="..\assets\img\john-deo.jpg" class="img-responsive">
+                            </div>
+                        </figure>
+                        <div class="forum-profile-content">
+                            <div class="forum-profile-title">John Deo</div>
+                            <div class="forum-details-list">
+                                <ul>
+                                    <li><i class="fa fa-clock-o"></i> 2 days ago</li>
+                                </ul>
+                            </div>
+                            <div class="forum-content">
+                                <div class="text">
+                                    <p>What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive and exclusive
+                                        food. There are easy and cheap option available which can provide you good health at low cost. Buttermilk- A gut friendly drink loaded with probiotics, keeps you cool in the summers. A much better options than high
+                                        calorie sugary drinks to keep you hydrated. You can add fresh mint leaves and dry cumin powder to make it more tastier. It provides you calcium, protein, phosphorus and magnesium.</p>
+                                    <p><img class="img-responsive" src="img/main-qimg-57cc0c465c1c1339af89cdcec26e4af1.webp"></p>
+                                    <p>What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive and exclusive
+                                        food. There are easy and cheap option available which can provide you good health at low cost. Buttermilk- A gut friendly drink loaded with probiotics, keeps you cool in the summers. A much better options than high
+                                        calorie sugary drinks to keep you hydrated. You can add fresh mint leaves and dry cumin powder to make it more tastier. It provides you calcium, protein, phosphorus and magnesium.</p>
+
+                                    <p>What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive and exclusive
+                                        food. There are easy and cheap option available which can provide you good health at low cost. Buttermilk- A gut friendly drink loaded with probiotics, keeps you cool in the summers. A much better options than high
+                                        calorie sugary drinks to keep you hydrated. You can add fresh mint leaves and dry cumin powder to make it more tastier. It provides you calcium, protein, phosphorus and magnesium.</p>
+                                    <p><img class="img-responsive" src="img/main-qimg-2c1767c297a47501d0d9a0e04b7fd154.webp"></p>
+                                    <p><a href="#">http://www.veative.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-box hide">
+                        <div class="forum-profile">
+                            <figure>
+                                <div class="avtar-circle">
+                                    <img src="..\assets\img\john-deo.jpg" class="img-responsive">
+                                </div>
+                            </figure>
+                            <div class="forum-profile-content">
+                                <form>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <textarea type="text" placeholder="type your comment here.." class="form-control comment-textarea"></textarea>
+                                            <div class="input-group-btn">
+                                                <button class="btn bg-purple">Comment</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="forum-devider"></div>
+                        <div class="forum-comments">
+                            <div class="forum-profile">
+                                <figure>
+                                    <div class="avtar-circle">
+                                        <img src="..\assets\img\john-deo.jpg" class="img-responsive">
+                                    </div>
+                                </figure>
+                                <div class="forum-profile-content">
+                                    <div class="forum-profile-title">John Deo</div>
+                                    <div class="forum-details-list">
+                                        <ul>
+                                            <li><i class="fa fa-clock-o"></i> 2 days ago</li>
+                                        </ul>
+                                    </div>
+                                    <div class="forum-content">
+                                        <span class="text">What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive and exclusive food.</a></span>
+                                    </div>
+                                    <div class="forum-actions-list comment-actions-list">
+                                        <ul>
+                                            <li><a href="#">Upvote <small>(5)</small></a></li>
+                                            <li><a href="#">Downvote</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="forum-profile">
+                                <figure>
+                                    <div class="avtar-circle">
+                                        <img src="..\assets\img\john-deo.jpg" class="img-responsive">
+                                    </div>
+                                </figure>
+                                <div class="forum-profile-content">
+                                    <div class="forum-profile-title">John Deo</div>
+                                    <div class="forum-details-list">
+                                        <ul>
+                                            <li><i class="fa fa-clock-o"></i> 2 days ago</li>
+                                        </ul>
+                                    </div>
+                                    <div class="forum-content">
+                                        <span class="text">What is the healthiest and the cheapest food to eat daily? Good health is achieved by a complete balanced food which covers our both macro and micro requirement and surely it’s not confined to expensive and exclusive food.</a></span>
+                                    </div>
+                                    <div class="forum-actions-list comment-actions-list">
+                                        <ul>
+                                            <li><a href="#">Upvote <small>(5)</small></a></li>
+                                            <li><a href="#">Downvote</a></li>
+                                            <li><a href="#">Comment <small>(2)</small></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="forum-profile">
+                        <div class="forum-profile-content">
+                            <div class="forum-actions-list">
+                                <ul>
+                                    <li><a href="#">Upvote <small>(5)</small></a></li>
+                                    <li><a href="#">Downvote</a></li>
+                                    <li><a href="javascript:void(0)" onclick="commentSectionModal(event)">Comment <small>(2)</small></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

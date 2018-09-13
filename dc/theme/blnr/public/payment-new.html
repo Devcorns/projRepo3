@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Welcome to Blenera Learning Platform</title>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<!-- Global stylesheets -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/lessonplan-treemenu.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/home/other.css" rel="stylesheet" type="text/css">
+		<!--link href="../assets/css/style.css" rel="stylesheet" type="text/css"-->
+		<link href="../assets/css/home/header_style.css" rel="stylesheet">
+		<link href="../assets/css/home/stroke-gap.min.css" rel="stylesheet">
+		<link href="../assets/css/products_details.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,800" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic" rel="stylesheet" type="text/css">
+		<!-- /global stylesheets -->
+		<!-- Core JS files -->
+		<script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+		<script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+		<script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+		
+		<script type="text/javascript" src="../assets/js/plugins/forms/styling/uniform.min.js"></script>
+		<!-- Theme JS files -->
+		<script type="text/javascript" src="../assets/js/core/app.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700" rel="stylesheet">
+		<style>
+			.form-control-feedback,
+			input.form-control {
+				height: 42px;
+				line-height:42px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="modal fade" id=paymentModal>
+			<div class=modal-dialog style="max-width: 450px;">
+				<div class=modal-content>
+					<div class=modal-header>
+						<button class=close data-dismiss=modal>X</button>
+						<p>Confirm Purchase</p>
+					</div>
+					<div class=modal-body>
+						<div class=fomr-horizontal>
+							<div class='p-10 mb-20' style='background:#f7f7f7;'>
+								<div class="row">
+									<div class="col-md-9">
+										<b>C# Programming Projects for Beginners</b>
+									</div>
+									<div class="col-md-3 text-right">
+										<i class="fa fa-inr"></i> <b style="font-size:20px">225</b>
+									</div>
+								</div>
+							</div>	
+							<ul class="nav nav-tabs nav-justified">
+								<li class=active><a href=#creaditCard data-toggle=tab>Creadit Card</a></li>
+								<li><a href=#payPal data-toggle=tab>Paypal</a></li>
+							</ul>
+							<div class=tab-content>
+								<div class='tab-pane active' id=creaditCard>
+									<div id=saveCards>
+										<div class="text-right mb-10">
+											<a href=javascript:void(0) id=addNewCard>Add new card</a>
+										</div>
+										<div class="panel save-card-panel">
+											<div class="panel-body">
+												<div class="row">
+													<div class="col-md-9 col-xs-7">
+														<h6 class="no-margin-top mb-10">John Deo</h6>
+														<p class="mb-15">XXXX XXXX XXXX 2658</p>
+														<input type="radio" class="sr-only" name="payment_card" id="payment_card_1">
+														<a href="#"><img src="../assets/img/payment/master-card.png" class="img-responsive" width="50" alt=""></a> 
+													</div>
+													<div class="col-md-3 col-xs-5 text-right">
+														<a href="#" class="label label-danger"><i class='fa fa-times'></i></a>
+														<div class="mt-35" style="margin-top:35px">
+															<input class="form-control" placeholder="CVV" onkeypress="cvvDone(event);" maxlength="3" autofocus="">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button class='btn btn-block btn-success btn-xlg mb-10'>Pay <i class='fa fa-inr'></i> 225</button>
+												
+										<p class='text-center font-size12 text-muted'>By clicking the "Pay" button, you agree to these <a href=#>Terms of Service.</a></p>
+									</div>
+									<div class=form-horizontal id=newCard style=display:none>
+										<div class='form-group has-feedback'>
+											<div class=col-xs-12>
+												<i class='fa fa-user form-control-feedback'></i>
+												<input type=text placeholder='Name on Card' class=form-control> 
+											</div>
+										</div>
+										<div class='form-group has-feedback no-margin-bottom'>
+											<div class=col-xs-12>
+												<i class='fa fa-credit-card form-control-feedback'></i>
+												<input type=text placeholder='Card number' class=form-control style="border-radius: 2px 2px 0 0;border-bottom: none;"> 
+											</div>
+										</div>
+										<div class='form-group has-feedback mb-5'>
+											<div class='col-xs-6 no-padding-right'>
+												<i class='fa fa-calendar-o form-control-feedback'></i>
+												<input type=text placeholder='MM/YY' class='form-control no-border-right' style="border-radius: 0 0 0 2px;"> 
+											</div>
+											<div class='col-xs-6 no-padding-left'>
+												<i class='fa fa-lock form-control-feedback'></i>
+												<input type=text placeholder='CVV' class=form-control style="border-radius: 0 0 2px 0;"> 
+											</div>
+										</div>
+										<div class='form-group crearfix mb-20'>
+											<div class=col-xs-12>
+												<div class=checkbox style="top:inherit;left:inherit;right:inherit">
+													<label>
+														<input type=checkbox name=remember class=styled checked>
+														Remember this card.
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class='form-group crearfix'>
+											<div class=col-xs-12>
+												<button class='btn btn-block btn-success btn-xlg mb-10'>Pay <i class='fa fa-inr'></i> 225</button>
+												
+												<p class='text-center font-size12 text-muted'>By clicking the "Pay" button, you agree to these <a href=#>Terms of Service.</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class=tab-pane id=payPal>
+									<p class=text-center><b>The price you will be charged by Paypal: US$25.</b></p>
+									<button class='btn btn-block btn-success btn-xlg mb-10'>Go To Paypal</button>
+									<p class='text-center font-size12 text-muted'>You will be redirected to Paypal's payment page and then sent back once you complete your purchase.</p>
+									<p class='text-center font-size12 text-muted'>By clicking the "Pay" button, you agree to these <a href=#>Terms of Service.</a></
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function(){
+				$('#paymentModal').modal();
+				$('.styled').uniform();
+				$(document).on('click', '#addNewCard', function(){
+					$('#newCard').show();
+					$('#saveCards').hide();
+				});
+			})
+		</script>
+	</body>
+</html>

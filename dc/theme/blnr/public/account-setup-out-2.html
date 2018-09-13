@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Blenera Learning Platform</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/selects/bootstrap_select.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+    <script type="text/javascript" src="../assets/js/pages/form_bootstrap_select.js"></script>
+    <!-- /theme JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/forms/styling/uniform.min.js"></script>
+
+</head>
+
+<body class="layout-boxed">
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse">
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu">
+                        <a id="nav-shop-all-button" href="../public/browse.html" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px;">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="login.html" class="nav-menu-active">Login</a></li>
+                        <li><a href="login.html" class="nav-menu-active">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /main navbar -->
+    <div class="page-header ">
+        <div class="breadcrumb-line breadcrumb-line-wide">
+            <ul class="breadcrumb">
+                <li>Account Setup</li>
+
+            </ul>
+
+            <ul class="breadcrumb-elements hide">
+                <li><a href="add_course.html" class="no-padding mt-5"><button class="btn btn-success btn-sm font-size16">Create Courses</button></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-gear position-left"></i>
+
+                        <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+                        <li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+                        <li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a>
+            <a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a></div>
+    </div>
+
+    <!-- Page container -->
+    <div class="page-container">
+
+        <!-- Page content -->
+        <div class="page-content">
+
+            <!-- Main content -->
+            <div class="content-wrapper">
+
+                <!-- Advanced login -->
+                <div class="container account-setup mt-20 pt-20">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Please fill out the form below</h4>
+                        </div>
+                        <div class="panel-body no-padding-bottom">
+                            <div class="col-md-4">
+
+                                <div class="panel panel-flat">
+                                    <div class="panel-heading">
+                                        <h6 class="text-bold panel-title"> Choose a username</h6>
+                                    </div>
+
+
+
+                                    <div class="panel-body choose-username">
+                                        <div class="form-group">
+                                            <label class="text-semibold">Select our suggested user name</label>
+                                            <ul class="select-username">
+
+
+                                                <div class="radio">
+                                                    <label>
+                                                <input type="radio" name="r1" class="styled" checked="checked">
+                                               <b> stddaizy23</b>
+                                            </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                <input type="radio" name="r1" class="styled">
+                                               <b> stddaizy.s29</b>
+                                            </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                <input type="radio" name="r1" class="styled" >
+                                                <b>stddaizy.p53</b>
+                                            </label>
+                                                </div>
+
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="mt-10 text-semibold">or create your own user name</label>
+                                            <ul class="select-username">
+                                                <div class="radio">
+                                                    <label>
+                                                <input type="radio" class="styled" checked="checked">
+                                                <input type="text" class="form-control">
+                                                <p class="text-muted">atlease 6 character long</p>
+                                            </label>
+                                                </div>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-8">
+
+                                <div class="panel panel-flat">
+
+
+
+                                    <div class="panel-body choose-username form-horizontal">
+                                        <div class="form-group mb-20">
+                                            <label class="control-label col-sm-3 text-right text-semibold" for="pwd">Password:</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                                                <p class="text-muted">At least 8 character long</p>
+                                            </div>
+
+                                            <div class="clearfix"></div>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3 text-right text-semibold" for="pwd">Re-Password:</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" class="form-control" id="pwd" placeholder="Re Enter password">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3 text-right text-semibold" for="pwd">Security question:</label>
+                                            <div class="col-sm-9">
+                                                <div class="form-group">
+
+                                                    <select class="bootstrap-select form-control" id="sel1">
+                                                <option>Select a question</option>
+                                                <option>Enter your first pet name</option>
+                                                <option>Enter your birth of place</option>
+                                                <option>Enter your Grand father data of birth</option>
+                                                
+                                            </select>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3 text-right text-semibold" for="ans">Answer</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="ans" placeholder="Write Answer">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3 text-right text-semibold" for="ans">E-mail</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="ans" placeholder="Write Answer">
+                                                <p class="text-muted">We will send k<sup>12</sup> communication to the e-mail we will not share your email with anyone else</p>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="form-group no-margin-bottom">
+                                            <label class="control-label col-sm-3 text-right text-semibold" for="ans">Re E-mail</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="ans" placeholder="Write Answer">
+
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="panel-footer c-panel-footer">
+                            <div class="col-md-12 text-right">
+                                <a href="account-setup-out-3.html" class="btn btn-primary">Continue</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="panel panel-default hide">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Fill out the form below</h4>
+                        </div>
+                        <div class="panel-body p-10">
+
+
+                            <div class="col-md-5">
+                                <div class="choose-username">
+                                    <label class="text-bold">
+                                        Choose a username
+                                    </label>
+                                    <br>
+                                    <label class="mt-10">Select our suggested user name</label>
+                                    <ul class="select-username">
+
+
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="styled" checked="checked">
+                                                Daizy23
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="styled" checked="checked">
+                                                Daizy29
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="styled" checked="checked">
+                                                Daizy.roy53
+                                            </label>
+                                        </div>
+
+
+                                    </ul>
+                                    <label class="mt-10">or create your own user name</label>
+                                    <ul class="select-username">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" class="styled" checked="checked">
+                                                <input type="text">
+                                            </label>
+                                        </div>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-7">
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <form action="index.html" class="hide">
+                    <div class="panel panel-body login-form">
+                        <div class="text-center">
+                            <div class="icon-object border-slate-300 text-slate-300"><i class="icon-reading"></i></div>
+                            <h5 class="content-group">Login to your account <small class="display-block">Your credentials</small></h5>
+                        </div>
+
+                        <div class="form-group has-feedback has-feedback-left">
+                            <input type="text" class="form-control" placeholder="Username">
+                            <div class="form-control-feedback">
+                                <i class="icon-user text-muted"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group has-feedback has-feedback-left">
+                            <input type="text" class="form-control" placeholder="Password">
+                            <div class="form-control-feedback">
+                                <i class="icon-lock2 text-muted"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group has-feedback has-feedback-left">
+                            <div class="input-group">
+                                <div class="input-group-addon">
+                                    <i class="icon-users text-muted"></i>
+                                </div>
+
+                                <select class="bootstrap-select bs-select-hidden" id="userlist" data-width="100%">
+										<option value="dashboard_student.html">Student</option>
+										<option value="dashboard_parents.html">Parent</option>
+										<option value="dashboard_coach_principle.html">Coach Principle</option>
+										<option value="dashboard_subject_teacher.html">Subject Teacher</option>
+										<option value="dashboard_class_supervisor.html">Class Supervisor</option>
+										<option value="dashboard_virtual_instructor.html">Virtual Instructor</option>
+										<option value="dashboard_subject_teacher.html">Subject Teacher</option>
+										<option value="dashboard_subject_expert.html">Subject Expert</option>
+										<option value="dashboard_site_cordinator.html">Site Cordinator</option>
+										</select>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <div class="form-group login-options">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label class="checkbox-inline">
+										<input type="checkbox" class="styled" checked="checked">
+										Remember
+									</label>
+                                </div>
+
+                                <div class="col-sm-6 text-right">
+                                    <a href="login_password_recover.html">Forgot password?</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <a href="search_result.html" class="btn bg-primary-400 btn-block" id="log-in">Login <i class="icon-arrow-right14 position-right"></i></a>
+                        </div>
+
+                        <div class="content-divider text-muted form-group"><span>or sign in with</span></div>
+                        <ul class="list-inline form-group list-inline-condensed text-center">
+                            <li><a href="#" class="btn border-indigo text-indigo btn-flat btn-icon btn-rounded"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#" class="btn border-pink-300 text-pink-300 btn-flat btn-icon btn-rounded"><i class="icon-dribbble3"></i></a></li>
+                            <li><a href="#" class="btn border-slate-600 text-slate-600 btn-flat btn-icon btn-rounded"><i class="icon-github"></i></a></li>
+                            <li><a href="#" class="btn border-info text-info btn-flat btn-icon btn-rounded"><i class="icon-twitter"></i></a></li>
+                        </ul>
+
+                        <div class="content-divider text-muted form-group"><span>Don't have an account?</span></div>
+                        <a href="general_registration.html" class="btn btn-default btn-block content-group">Sign up</a>
+                        <span class="help-block text-center no-margin">By continuing, you're confirming that you've read our <a href="#">Terms &amp; Conditions</a> and <a href="#">Cookie Policy</a></span>
+                    </div>
+                </form>
+                <!-- /advanced login -->
+
+            </div>
+            <!-- /main content -->
+
+        </div>
+        <!-- /page content -->
+
+
+        <!-- Footer -->
+        <div class="footer text-muted">
+            Powered by <a href="https://www.veative.com/" target="_blank">Veative Labs</a>.
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- /page container -->
+    <script>
+        $("#userlist").change(function() {
+            var val = $(this).val();
+            $("#log-in").attr("href", val);
+            //window.location.href = val;
+        })
+
+        function getParameterByName(name) {
+            var regexS = "[\\?&]" + name + "=([^&#]*)",
+                regex = new RegExp(regexS),
+                results = regex.exec(window.location.search);
+            if (results == null) {
+                return "";
+            } else {
+                return decodeURIComponent(results[1].replace(/\+/g, " "));
+            }
+        }
+        var usertype = getParameterByName('type');
+        if (usertype) $('#userlist option[value="' + usertype + '"]').prop('selected', true);
+    </script>
+
+
+    <script type="text/javascript">
+        // Default initialization
+        $(".styled, .multiselect-container input").uniform({
+            radioClass: 'choice'
+        });
+    </script>
+
+
+</body>
+
+</html>

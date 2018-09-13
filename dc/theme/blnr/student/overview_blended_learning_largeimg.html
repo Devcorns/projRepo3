@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Blenera Learning Platform</title>
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/other.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/visualization/echarts/echarts.js"></script>
+    <script type="text/javascript" src="../assets/js/charts/highchart/highcharts.js"></script>
+    <script type="text/javascript" src="../assets/js/charts/highchart/modules/heatmap.js"></script>
+    <!-- /core JS files -->
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+</head>
+
+<body class="">
+    <div class="navbar navbar-inverse">
+
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu">
+                        <a id="nav-shop-all-button" href="../public/browse.html" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px;">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle userbox_top" data-toggle="dropdown" aria-expanded="true" style="padding-top: 9px; padding-bottom: 8px;">
+                                <img src="../assets/images/childs/child-2.jpg" alt="" class="">
+                            </a>
+                            <ul class="dropdown-menu profiledrop_width">
+                                <div class="alartbox">This account is managed by <span>veative.com.</span><br>
+                                    <a href="#">Learn more</a>
+                                </div>
+                                <li class="p-10">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="../assets/images/childs/child-2.jpg" class="img-circle img-lg" style="width: 70px !important; height: 70px !important;" alt="">
+                                            <span class="changeimg">Change</span>
+                                        </a>
+                                        <div class="media-body">
+                                            <h6 class="media-heading">Nathan Alexander</h6>
+                                            <span class="text-muted"><a href="mailto:nathan@veative.com">nathan@veative.com</a></span>
+                                            <a href="../student/student-success-report.html" class="btn-primary btn-sm btn mt-10">My Account</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <div class="panel-footer pt-10 pb-5 text-right"><a href="../public/login.html" class="btn-default btn-xs btn"> Logout</a></div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-header">
+        <div class="breadcrumb-line breadcrumb-line-wide">
+            <a class="back-btn icon-arrow-left52" href="course_listing.html"></a>
+            <ul class="breadcrumb">
+                <li>7<sup>th</sup> Science</li>
+            </ul>
+
+            <a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="page-content custom-work">
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main sidebar-default">
+                <div class="sidebar-content">
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Navigation</span> <i class="icon-menu" title="Main pages"></i></li>
+                                <li class="active"><a href="index.html"><i class="icon-home4"></i> <span>Lesson plans </span></a></li>
+                                <li><a href="my_learning_path.html"><i class="icon-files-empty"></i> <span>My Learning Path</span></a></li>
+                                <li><a href="reports_analytics.html"><i class="icon-magazine"></i> Reports and Analytics </a></li>
+                                <li><a href="activity.html"><i class="icon-question3"></i> Activity</a></li>
+                                <li><a href="recommendation.html"><i class="icon-calendar22"></i> Recommendation</a></li>
+                                <!-- /main -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+                </div>
+            </div>
+            <!-- /main sidebar -->
+            <!-- Main content -->
+            <div class="content-wrapper search_location">
+                <div class="col-lg-3 hide">
+                    <div class="sidebar sidebar-secondary sidebar-default sidebar2 no-sidebar-bg">
+                        <div class="sidebar-content">
+                            <!-- Search task -->
+                            <!-- /search task -->
+                            <!-- Action buttons -->
+                            <div class="sidebar-category hide">
+                                <div class="category-title">
+                                    <span>Action buttons</span>
+                                    <ul class="icons-list">
+                                        <li>
+                                            <a href="javascript:void(0)" data-action="collapse"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-content">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <button class="btn bg-teal-400 btn-block btn-float btn-float-lg" type="button"><i class="icon-git-branch"></i> <span>Branch</span></button>
+                                            <button class="btn bg-purple-300 btn-block btn-float btn-float-lg" type="button"><i class="icon-mail-read"></i> <span>Messages</span></button>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <button class="btn bg-warning-400 btn-block btn-float btn-float-lg" type="button"><i class="icon-stats-bars"></i> <span>Statistics</span></button>
+                                            <button class="btn bg-blue btn-block btn-float btn-float-lg" type="button"><i class="icon-people"></i> <span>Users</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /action buttons -->
+                            <!-- Task navigation -->
+                            <div class="sidebar-category big-title">
+                                <div class="category-title">
+                                    <span>LEARNING</span>
+                                </div>
+                                <div class="category-content no-padding leftnav_content">
+                                    <ul class="navigation navigation-alt navigation-accordion mt-10 ">
+                                        <li class="active"><a href="#" class="display_flex"><i class="icon-add"></i><strong>Introduction to psychology</strong></a></li>
+                                        <li><a href="#" class="display_flex"><i class="icon-add"></i><strong> How well</strong> are my students self-assessing?</a></li>
+                                        <li><a href="#" class="display_flex"><i class="icon-add"></i> <strong>In</strong> the course are my student having difficulty?</a></li>
+                                        <li><a href="#" class="display_flex"><i class="icon-add"></i><strong>which</strong> students are having difficulties?</a></li>
+                                    </ul>
+                                </div>
+                                <div class="category-title">
+                                    <span>PARTICIPATION</span>
+                                </div>
+                                <div class="category-content no-padding leftnav_content">
+                                    <ul class="navigation navigation-alt navigation-accordion mt-10 ">
+                                        <li><a href="#" class="display_flex"><i class="icon-add"></i><strong> Where</strong> have my students spent their time?</a></li>
+                                        <li><a href="#" class="display_flex"><i class="icon-add"></i> <strong>How often</strong> are student logging in?</a></li>
+                                        <li><a href="#" class="display_flex"><i class="icon-add"></i><strong> Which</strong> activities my student having difficulty?</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-12 text-center pb-20 mb-20 pt-20">
+                    <h6>GET STARTED</h6>
+                    <h2 class="mt-5">7<sup>th</sup> Science</h2>
+                    <p>Get an overview of blended learning along with the definition of blended <br> learning and an introduction to several different models of blended learning.</p>
+                    <p><a href="introduction_learning.html"><button class="btn btn-primary btn-lg">Start Learning</button></a></p>
+                </div>
+
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="panel ">
+                        <div class="panel-body">
+                            <div class="row">
+                                <!-- Basic initialization -->
+                                <div class="col-lg-6">
+
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="https://cdn.kastatic.org/genfiles/topic-icons/icons/classical_genetics.png-68e737-128c.png" class="img-circle img-lg" alt="">
+                                        </a>
+
+                                        <div class="media-body gradetext">
+                                            <a href="introduction_learning.html">
+                                                <h5 class="media-heading">Intro to biology</h6>
+                                                    <h6 class="no-margin-top no-margin-bottom pt-5 pb-5">0 of 6 complete</h6>
+                                                    <span class="text-muted">New to biology? You're in the right place! Start your biological journey here.</span>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-3 listing-courses">
+                                    <div class="media">
+
+
+
+
+                                        <div class="media-body">
+                                            <p class="no-padding-bottom"><a href="introduction_learning.html">Welcome to biology!</a></p>
+                                            <p><a href="introduction_learning.html">The science of biology</a></p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- /Basic initialization -->
+                </div>
+
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="panel ">
+                        <div class="panel-body">
+                            <div class="row">
+                                <!-- Basic initialization -->
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="https://cdn.kastatic.org/genfiles/topic-icons/icons/biology.png-02d1da-128c.png" class="img-circle img-lg" alt="">
+                                        </a>
+
+                                        <div class="media-body gradetext">
+                                            <a href="introduction_learning.html">
+                                                <h5 class="media-heading">Chemistry of life</h6>
+                                                    <h6 class="no-margin-top no-margin-bottom  pt-5 pb-5">0 of 17 complete</h6>
+                                                    <span class="text-muted">Learn how chemistry makes life possible! From you, to your dog, to your dinner, to the global ecosystem, all living systems are made out of atoms that obey the basic rules of chemistry. Here, you can learn about the key properties of atoms, including what particles they contain, how they are organized, and how they form chemical bonds with one another.</span>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 listing-courses">
+                                    <div class="media">
+
+
+                                        <div class="media-body">
+                                            <p class="no-padding-bottom"><a href="introduction_learning.html">Elements and atoms</a></p>
+                                            <p><a href="introduction_learning.html">Electron shells and orbitals</a></p>
+                                            <p><a href="introduction_learning.html">Chemical bonds and reactions</a></p>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- /Basic initialization -->
+                </div>
+
+
+
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="panel ">
+                        <div class="panel-body">
+                            <div class="row">
+                                <!-- Basic initialization -->
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="https://cdn.kastatic.org/genfiles/topic-icons/icons/photosynthesis_in_plants.png-86cdd4-128c.png" class="img-circle img-lg" alt="">
+                                        </a>
+
+                                        <div class="media-body gradetext">
+                                            <a href="introduction_learning.html">
+                                                <h5 class="media-heading">Nutrition in Plants </h6>
+                                                    <h6 class="no-margin-top no-margin-bottom  pt-5 pb-5">1 of 21 complete</h6>
+                                                    <span class="text-muted">There's a lot of carbon in your body - in DNA, proteins, carbohydrates, fats, and other key biological molecules. How did that carbon get there? Drumroll... photosynthesis! Learn how plants and other photosynthetic organisms use light energy to make sugars from carbon dioxide and water, bringing both chemical energy and readily usable carbon into Earth’s global ecosystem.</span>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 listing-courses">
+                                    <div class="media">
+
+
+                                        <div class="media-body">
+                                            <p class="no-padding-bottom"><a href="introduction_learning.html">Intro to photosynthesis</a></p>
+                                            <p><a href="introduction_learning.html">The light-dependent reactions</a></p>
+                                            <p><a href="introduction_learning.html">The Calvin cycle</a></p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-3 listing-courses">
+                                    <div class="media">
+
+
+                                        <div class="media-body">
+                                            <p class="no-padding-bottom"><a href="introduction_learning.html">Photorespiration: C3, C4, and CAM plants</a></p>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- /Basic initialization -->
+                </div>
+
+
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="panel ">
+                        <div class="panel-body">
+                            <div class="row">
+                                <!-- Basic initialization -->
+                                <div class="col-lg-6">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="https://cdn.kastatic.org/genfiles/topic-icons/icons/classical_genetics.png-68e737-128c.png" class="img-circle img-lg" alt="">
+                                        </a>
+
+                                        <div class="media-body gradetext">
+                                            <a href="introduction_learning.html">
+                                                <h5 class="media-heading">Classical and molecular genetics</h6>
+                                                    <h6 class="no-margin-top no-margin-bottom  pt-5 pb-5">0 of 28 complete</h6>
+                                                    <span class="text-muted">Have you ever been told that you have your mother's eyes or grandfather's nose? Learn why traits run in families and how they're passed on. We'll look at Mendel's model of inheritance, see how it's been revised and extended in the past 150 years, and get a sneak preview of the modern concept of a gene.</span>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 listing-courses">
+                                    <div class="media">
+
+
+                                        <div class="media-body">
+                                            <p class="no-padding-bottom"><a href="introduction_learning.html">Mendelian genetics</a></p>
+                                            <p><a href="introduction_learning.html">Variations on Mendelian genetics</a></p>
+                                            <p><a href="introduction_learning.html">Chromosomal basis of genetics</a></p>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-lg-3 listing-courses">
+                                    <div class="media">
+
+
+
+                                        <div class="media-body">
+                                            <p class="no-padding-bottom"><a href="introduction_learning.html">Sex linkage, chromosomal mutations, & non-nuclear inheritance</a></p>
+                                            <p><a href="introduction_learning.html">Molecular basis of genetics</a></p>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- /Basic initialization -->
+                </div>
+            </div>
+        </div>
+        <!-- /main content -->
+    </div>
+    <!-- Page content -->
+    <!-- /page content -->
+    <!-- Footer -->
+    <div class="footer text-muted hide">
+        Powered by <a href="https://www.veative.com/" target="_blank">Veative Labs</a>.
+    </div>
+    <!-- /footer -->
+    </div>
+</body>
+<script>
+    jQuery(function($) {
+        // Asynchronously Load the map API 
+        var script = document.createElement('script');
+        script.src = "//maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+        document.body.appendChild(script);
+    });
+
+    function initialize() {
+        var map;
+        var bounds = new google.maps.LatLngBounds();
+        var mapOptions = {
+            mapTypeId: 'roadmap'
+        };
+
+        // Display a map on the page
+        map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+        map.setTilt(45);
+
+        // Multiple Markers
+        var markers = [
+            ['London Eye, London', 51.503454, -0.119562],
+            ['Palace of Westminster, London', 51.499633, -0.124755]
+
+        ];
+
+        // Info Window Content
+        var infoWindowContent = [
+            ['<div class="info_content">' +
+                '<h3>London Eye</h3>' +
+                '<p>The London Eye is a giant Ferris wheel situated on the banks of the River Thames. The entire structure is 135 metres (443 ft) tall and the wheel has a diameter of 120 metres (394 ft).</p>' + '</div>'
+            ],
+            ['<div class="info_content">' +
+                '<h3>Palace of Westminster</h3>' +
+                '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
+                '</div>'
+            ]
+        ];
+
+        // Display multiple markers on a map
+        var infoWindow = new google.maps.InfoWindow(),
+            marker, i;
+
+        // Loop through our array of markers & place each one on the map  
+        for (i = 0; i < markers.length; i++) {
+            var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+            bounds.extend(position);
+            marker = new google.maps.Marker({
+                position: position,
+                map: map,
+                title: markers[i][0]
+            });
+
+            // Allow each marker to have an info window    
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    infoWindow.setContent(infoWindowContent[i][0]);
+                    infoWindow.open(map, marker);
+                }
+            })(marker, i));
+
+            // Automatically center the map fitting all markers on the screen
+            map.fitBounds(bounds);
+        }
+
+        // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
+        var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+            this.setZoom(14);
+            google.maps.event.removeListener(boundsListener);
+        });
+
+    }
+</script>
+
+</html>
+<style>
+    #map_wrapper {
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    
+    #map_canvas {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .location_panel a {
+        color: #222;
+    }
+</style>

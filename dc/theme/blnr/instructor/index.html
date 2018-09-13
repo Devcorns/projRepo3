@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Blenera Learning Platform</title>
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/other.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+
+    <script type="text/javascript" src="../assets/js/plugins/visualization/echarts/echarts.js"></script>
+
+    <script type="text/javascript" src="../assets/js/charts/highchart/highcharts.js"></script>
+    <script type="text/javascript" src="../assets/js/charts/highchart/modules/heatmap.js"></script>
+
+    <!-- /core JS files -->
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+</head>
+
+<body class="">
+    <div class="navbar navbar-inverse">
+
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu">
+                        <a id="nav-shop-all-button" href="../public/browse.html" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px;">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle userbox_top" data-toggle="dropdown" aria-expanded="true" style="padding-top: 9px; padding-bottom: 8px;">
+                                <img src="../assets/images/team8.jpg" alt="" class="">
+
+                            </a>
+
+                            <ul class="dropdown-menu profiledrop_width">
+                                <div class="alartbox">This account is managed by <span>Veative Labs</span><br>
+                                    <a href="#">Learn more</a></div>
+
+                                <li class="p-10">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="../assets/images/team8.jpg" class="img-circle img-lg" style="width: 70px !important; height: 70px !important;" alt="">
+
+                                            <span class="changeimg">Change</span>
+                                        </a>
+
+                                        <div class="media-body">
+                                            <h6 class="media-heading">Barbara Walden</h6>
+                                            <span class="text-muted"><a href="mailto:barbara@pironcorp.com">barbara@pironcorp.com</a></span>
+
+                                            <a href="../student/student-success-report.html" class="btn-primary btn-sm btn mt-10">My Account</a>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+
+                                <div class="panel-footer pt-10 pb-5 text-right"><a href="../public/login.html" class="btn-default btn-xs btn"> Logout</a></div>
+
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-header">
+        <div class="breadcrumb-line breadcrumb-line-wide">
+            <ul class="breadcrumb">
+                <li>Instructor Dashboard</li>
+            </ul>
+            <ul class="breadcrumb-elements">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-gear position-left " style="font-size:22px;"></i>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+                        <li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+                        <li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="page-content custom-work">
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main sidebar-default">
+                <div class="sidebar-content">
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Navigation</span> <i class="icon-menu" title="Main pages"></i></li>
+                                <li class="active"><a href="#"><i class="icon-users"></i> <span>Dashboard</span></a></li>
+
+                                <!-- /main -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+                </div>
+            </div>
+            <!-- /main sidebar -->
+            <!-- Main content -->
+            <div class="content-wrapper">
+                <div class="col-lg-3 ">
+                    <div class="sidebar sidebar-secondary sidebar-default sidebar2 no-sidebar-bg">
+                        <div class="sidebar-content">
+                            <!-- Search task -->
+                            <!-- /search task -->
+                            <!-- Action buttons -->
+                            <div class="sidebar-category hide">
+                                <div class="category-title">
+                                    <span>Action buttons</span>
+                                    <ul class="icons-list">
+                                        <li>
+                                            <a href="javascript:void(0)" data-action="collapse"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-content">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <button class="btn bg-teal-400 btn-block btn-float btn-float-lg" type="button"><i class="icon-git-branch"></i> <span>Branch</span></button>
+                                            <button class="btn bg-purple-300 btn-block btn-float btn-float-lg" type="button"><i class="icon-mail-read"></i> <span>Messages</span></button>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <button class="btn bg-warning-400 btn-block btn-float btn-float-lg" type="button"><i class="icon-stats-bars"></i> <span>Statistics</span></button>
+                                            <button class="btn bg-blue btn-block btn-float btn-float-lg" type="button"><i class="icon-people"></i> <span>Users</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /action buttons -->
+                            <!-- Task navigation -->
+                            <div class="sidebar-category big-title">
+                                <div class="category-title">
+                                    <span>LEARNING</span>
+                                </div>
+                                <div class="category-content no-padding leftnav_content">
+                                    <ul class="navigation navigation-alt navigation-accordion mt-10 ">
+                                        <li class="active"><a href="#" class="display_flex"><i class="icon-add"></i><strong>Introduction to psychology</strong></a></li>
+                                        <li><a href="#" class="display_flex"><i class="icon-add"></i><strong> How well</strong> are my students self-assessing?</a></li>
+                                        <li><a href="#" class="display_flex"><i class="icon-add"></i> <strong>In</strong> the course are my student having difficulty?</a></li>
+                                        <li><a href="#" class="display_flex"><i class="icon-add"></i><strong>which</strong> students are having difficulties?</a></li>
+                                    </ul>
+                                </div>
+                                <div class="category-title">
+                                    <span>PARTICIPATION</span>
+                                </div>
+                                <div class="category-content no-padding leftnav_content">
+                                    <ul class="navigation navigation-alt navigation-accordion mt-10 ">
+                                        <li><a href="#" class="display_flex"><i class="icon-add"></i><strong> Where</strong> have my students spent their time?</a></li>
+                                        <li><a href="#" class="display_flex"><i class="icon-add"></i> <strong>How often</strong> are student logging in?</a></li>
+                                        <li><a href="#" class="display_flex"><i class="icon-add"></i><strong> Which</strong> activities my student having difficulty?</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 no-padding">
+                    <!-- Basic initialization -->
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="no-margin">Introduction to psychology</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!-- Productivity goal  [graph section] -->
+                                    <div class="panel panel-flat" style="height: 350px;">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">Which activities are my students having difficulty with?</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            All Students<br> Time Period: Start of Course
+                                            <table width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td class="text-center">PCT <br> Students
+                                                            <br> Attempted
+                                                        </td>
+                                                        <td class="text-center">
+                                                            First<br> Attempted
+                                                            <br> Accuracy
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class=""><i class="icon-pencil7 position-left"></i> Evaluating Qualitative Reserch studies DIGT</p>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <h4 class="text-orange-800">35</h4>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <h4 class="text-orange-800">46.0</h4>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class=""><i class="icon-pencil7 position-left"></i> Purposive Sampling LBD</p>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <h4 class="text-orange-800">70</h4>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <h4 class="text-orange-800">53.0</h4>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class=""><i class="icon-pencil7 position-left"></i> Valldity, Trustworthiness and legistimation in action Reserach</p>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <h4 class="text-orange-800">54</h4>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <h4 class="text-orange-800">55.0</h4>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- Productivity goal  [graph section] -->
+                                    <div class="panel panel-flat" style="height: 425px;">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">How often are students logging in?</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="mb-5">All Students</p>
+                                            <p>Time period: Start of Course</p>
+
+                                            <div class="chart-container">
+                                                <div class="chart" id="studentLoggingPie" style="height:300px"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /productivity goal -->
+
+                                    <!-- Productivity goal  [graph section] -->
+                                    <div class="panel panel-flat">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">How much content have my students completed?</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <p class="mb-5">All Students</p>
+                                                    <p>Time period: Start of Cource</p>
+                                                    <!-- <div class="media">
+                                                        <div class="media-left text-semibold">0%</div>
+                                                        <div class="media-body">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" style="width: 50%">
+                                                                    <span class="sr-only">50% Complete</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="media-right text-semibold">100%</div>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <!-- <div class="chart-container">
+                                                <div class="chart has-fixed-height" id="studentCompleted"></div>
+                                            </div> -->
+
+                                            <div id="heatmapChart" style="height: 400px; min-width: 310px; max-width: 800px; margin: 0 auto"></div>
+
+                                        </div>
+                                    </div>
+                                    <!-- /productivity goal -->
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- Productivity goal  [graph section] -->
+                                    <div class="panel panel-flat">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">How well are my students learning?</h4>
+
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="mb-5">All Students</p>
+                                            <div class="mb-20">
+                                                <p class="d-inline-block v-top">Time period: Start of Cource</p>
+                                                <div class="chart-container chart-container-inline custom-inline-chart">
+                                                    <div class="chart" id="multiple_donuts" style="height: 80px;width:180px"></div>
+                                                </div>
+                                                <div class="chart-container chart-container-inline custom-inline-chart">
+                                                    <div class="chart" id="avActivitiesCompleted" style="height: 80px;width:180px"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="chart-container">
+                                                <div class="chart" id="basic_bars" style="height:255px"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /productivity goal -->
+                                    <!-- Productivity goal  [graph section] -->
+                                    <div class="panel panel-flat">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">Which objectives are my students having difficulty with?</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <p class="mb-5"><span class="text-underline">Learning estimate <a href="#"><i class="icon-info22"></i></a></span> for All Students </p>
+                                            <p class="mb-5">Most active Learning Objectives</p>
+                                            <p>Time period: Start of Course</p>
+                                            <hr>
+                                            <div class="grade-area grade-area-1">
+                                                <div class="grade-head">
+                                                    <span class="grade-title">Identify ethical issues related to ecectronic research</span>
+                                                </div>
+                                                <div class="grade-body">
+                                                    <div class="grade-body-left">
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-d0" style="width: 20%"></div>
+                                                            <div class="progress-bar bg-danger" style="width: 30%"></div>
+                                                            <div class="progress-bar progress-bar-success" style="width: 20%"></div>
+                                                            <div class="progress-bar bg-orange-400" style="width: 30%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grade-body-right">
+                                                        <i class="icon-user"></i> <span class="grade-number">24</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grade-area grade-area-1">
+                                                <div class="grade-head">
+                                                    <span class="grade-title">Identify the purpose of mixed methods research</span>
+                                                </div>
+                                                <div class="grade-body">
+                                                    <div class="grade-body-left">
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-d0" style="width: 10%"></div>
+                                                            <div class="progress-bar progress-bar-success" style="width: 50%"></div>
+                                                            <div class="progress-bar bg-danger" style="width: 10%"></div>
+                                                            <div class="progress-bar bg-orange-400" style="width: 30%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grade-body-right">
+                                                        <i class="icon-user"></i> <span class="grade-number">29</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grade-area grade-area-1">
+                                                <div class="grade-head">
+                                                    <span class="grade-title">Describe the sampling techniques used in mixed methods research</span>
+                                                </div>
+                                                <div class="grade-body">
+                                                    <div class="grade-body-left">
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-d0" style="width: 20%"></div>
+                                                            <div class="progress-bar progress-bar-success" style="width: 20%"></div>
+                                                            <div class="progress-bar bg-danger" style="width: 10%"></div>
+                                                            <div class="progress-bar bg-orange-400" style="width: 50%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grade-body-right">
+                                                        <i class="icon-user"></i> <span class="grade-number">41</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- /productivity goal -->
+
+
+                                    <div class="panel panel-flat" style="height: 350px;">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">Which students have practiced the most?</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            All Students<br> Time Period: Start of Course
+                                            <table width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td class="text-center">PCT <br> Students
+                                                            <br> Attempted
+                                                        </td>
+                                                        <td class="text-center">
+                                                            First<br> Attempted
+                                                            <br> Accuracy
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class=""><i class="icon-user position-left"></i> Eric</p>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <h4 class="text-orange-800">35</h4>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <h4 class="text-orange-800">46</h4>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class=""><i class="icon-user position-left"></i> David</p>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <h4 class="text-orange-800">70</h4>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <h4 class="text-orange-800">53</h4>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p class=""><i class="icon-user position-left"></i> Gelp michal </p>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <h4 class="text-orange-800">55</h4>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <h4 class="text-orange-800">55</h4>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /Basic initialization -->
+                </div>
+            </div>
+        </div>
+        <!-- /main content -->
+    </div>
+    <!-- Page content -->
+    <!-- /page content -->
+    <!-- Footer -->
+    <div class="footer text-muted hide">
+        Powered by <a href="https://www.veative.com/" target="_blank">Veative Labs</a>.
+    </div>
+    <!-- /footer -->
+    </div>
+</body>
+<script>
+    $(function() {
+
+        // Set paths
+        // ------------------------------
+
+        require.config({
+            paths: {
+                echarts: '../assets/js/plugins/visualization/echarts'
+            }
+        });
+
+
+        // Configuration
+        // ------------------------------
+
+        require(
+            [
+                'echarts',
+                'echarts/theme/limitless',
+                'echarts/chart/pie',
+                'echarts/chart/bar'
+            ],
+
+
+            // Charts setup
+            function(ec, limitless) {
+
+
+                // Initialize charts
+                // ------------------------------
+
+                var basic_bars = ec.init(document.getElementById('basic_bars'), limitless);
+                var studentLoggingPie = ec.init(document.getElementById('studentLoggingPie'), limitless);
+                //var studentCompleted = ec.init(document.getElementById('studentCompleted'), limitless);
+                var multiple_donuts = ec.init(document.getElementById('multiple_donuts'), limitless);
+                var avActivitiesCompleted = ec.init(document.getElementById('avActivitiesCompleted'), limitless);
+
+
+                // Charts setup
+                // ------------------------------   
+
+                //
+                // Basic bars options
+                //
+
+                basic_bars_options = {
+
+                    // Add title
+                    title: {
+                        text: 'Learning Objectives',
+                        x: 'center',
+                        y: 'bottom'
+                    },
+
+
+                    // Setup grid
+                    grid: {
+                        x: 75,
+                        x2: 35,
+                        y: 10,
+                        y2: 60
+                    },
+
+                    // Add tooltip
+                    tooltip: {
+                        trigger: 'axis',
+                        axisPointer: {
+                            type: 'shadow'
+                        }
+                    },
+
+                    // Horizontal axis
+                    xAxis: [{
+                        type: 'value',
+                        boundaryGap: [0, 0.01]
+                    }],
+
+                    // Vertical axis
+                    yAxis: [{
+                        type: 'category',
+                        data: ['Low', '', 'Medium', '', 'High']
+                    }],
+
+                    // Add series
+                    series: [
+                        // {
+                        // name: 'Year 2013',
+                        // type: 'bar',
+                        // data: [10, 22, 35]
+                        // }
+                        {
+                            type: 'bar',
+                            data: [{
+
+                                    name: 'Year 2013',
+                                    value: 10,
+
+                                    itemStyle: {
+                                        normal: {
+                                            color: '#f00',
+                                            label: {
+                                                show: false
+                                            }
+                                        }
+                                    },
+
+                                }, {
+                                    name: 'Year 2013',
+                                    value: 30,
+
+                                    itemStyle: {
+                                        normal: {
+                                            color: '#c57907  ',
+                                            label: {
+                                                show: false
+                                            }
+                                        }
+                                    },
+
+                                }, {
+                                    name: 'Year 2013',
+                                    value: 80,
+
+                                    itemStyle: {
+                                        normal: {
+                                            color: '#FFA726',
+                                            label: {
+                                                show: false
+                                            }
+                                        }
+                                    },
+
+                                }, {
+                                    name: 'Year 2013',
+                                    value: 35,
+
+                                    itemStyle: {
+                                        normal: {
+                                            color: '#00a50c',
+                                            label: {
+                                                show: false
+                                            }
+                                        }
+                                    },
+
+                                }, {
+                                    name: 'Year 2013',
+                                    value: 28,
+
+                                    itemStyle: {
+                                        normal: {
+                                            color: '#008040',
+                                            label: {
+                                                show: false
+                                            }
+                                        }
+                                    },
+
+                                }
+
+
+
+
+                            ]
+                        }
+                    ]
+                };
+
+
+                var studentLoggingPie_options = {
+
+                    // Add tooltip
+                    // tooltip: {
+                    //     trigger: 'item',
+                    //     formatter: "{a} <br/>{b}: {c} ({d}%)"
+                    // },
+
+                    // Add legend
+                    legend: {
+                        orient: 'vertical',
+                        x: 'left',
+                        y: 'center',
+                        data: ['31 Times or more: 51 of students', '16 to 30 times: 41% of students', '6 to 15 times: 5% of students', '1 to 5 times: 3% of students', 'Note once: 0% of students']
+                    },
+
+                    // Add series
+                    series: [{
+                        name: 'Students Logging',
+                        type: 'pie',
+                        radius: '80%',
+                        center: ['70%', '50%'],
+                        itemStyle: {
+                            normal: {
+                                label: {
+                                    show: false
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            },
+                            emphasis: {
+                                label: {
+                                    show: false
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            }
+                        },
+                        data: [{
+                            value: 335,
+                            name: '31 Times or more: 51 of students'
+                        }, {
+                            value: 310,
+                            name: '16 to 30 times: 41% of students'
+                        }, {
+                            value: 234,
+                            name: '6 to 15 times: 5% of students'
+                        }, {
+                            value: 135,
+                            name: '1 to 5 times: 3% of students'
+                        }, {
+                            value: 1548,
+                            name: 'Note once: 0% of students'
+                        }]
+                    }]
+                };
+
+                //
+                // Stacked clustered columns options
+                //
+
+                // studentCompleted_options = {
+
+                //     // Setup grid
+                //     grid: {
+                //         x: 65,
+                //         x2: 20,
+                //         y: 50,
+                //         y2: 25
+                //     },
+
+                //     // Add tooltip
+                //     tooltip: {
+                //         trigger: 'axis'
+                //     },
+
+                //     // Horizontal axis
+                //     xAxis: [{
+                //         type: 'category',
+                //         data: ['Unit 1', 'Unit 2', 'Unit 3', 'Unit 4', 'Unit 5']
+                //     }, {
+                //         type: 'category',
+                //         axisLine: {
+                //             show: false
+                //         },
+                //         axisTick: {
+                //             show: false
+                //         },
+                //         axisLabel: {
+                //             show: false
+                //         },
+                //         splitArea: {
+                //             show: false
+                //         },
+                //         splitLine: {
+                //             show: false
+                //         },
+                //         data: ['Line', 'Bar', 'Scatter', 'Pies', 'Map']
+                //     }],
+
+                //     // Vertical axis
+                //     yAxis: [{
+                //         type: 'value',
+                //         axisLabel: {
+                //             formatter: '{value} ms'
+                //         },
+                //         axisLine: {
+                //             lineStyle: {
+                //                 color: '#dc143c'
+                //             }
+                //         }
+                //     }],
+
+                //     // Add series
+                //     series: [{
+                //         name: 'Version 1.7 - 2w data',
+                //         type: 'bar',
+                //         xAxisIndex: 1,
+                //         itemStyle: {
+                //             normal: {
+                //                 color: '#81C784',
+                //                 label: {
+                //                     show: true
+                //                 }
+                //             },
+                //             emphasis: {
+                //                 label: {
+                //                     show: true
+                //                 }
+                //             }
+                //         },
+                //         data: [1212, 2035, 1620, 955, 1300]
+                //     }, {
+                //         name: 'Version 1.7 - 20w data',
+                //         type: 'bar',
+                //         xAxisIndex: 1,
+                //         itemStyle: {
+                //             normal: {
+                //                 color: '#64B5F6',
+                //                 label: {
+                //                     show: true,
+                //                     formatter: function(p) {
+                //                         return p.value > 0 ? (p.value + '+') : '';
+                //                     }
+                //                 }
+                //             },
+                //             emphasis: {
+                //                 label: {
+                //                     show: false
+                //                 }
+                //             }
+                //         },
+                //         data: [2200, 3000, 2500, 3000, 2000]
+                //     }]
+                // };
+
+                //
+                // Multiple donuts options
+                //
+
+                // Top text label
+                var labelTop = {
+                    normal: {
+                        label: {
+                            show: false,
+                            position: 'center',
+                            formatter: '{b}\n',
+                            textStyle: {
+                                baseline: 'middle',
+                                fontWeight: 300,
+                                fontSize: 15
+                            }
+                        },
+                        labelLine: {
+                            show: false
+                        }
+                    }
+                };
+
+                // Format bottom label
+                var labelFromatter = {
+                    normal: {
+                        label: {
+                            formatter: function(params) {
+                                return (100 - params.value) + '%'
+                            },
+
+                            textStyle: {
+                                fontWeight: 600,
+                                fontSize: 20,
+                                color: '#666'
+                            }
+                        }
+                    }
+                }
+
+                // Bottom text label
+                var labelBottom = {
+                    normal: {
+                        color: '#eee',
+                        label: {
+                            show: true,
+                            position: 'center',
+                            textStyle: {
+                                baseline: 'middle'
+                            }
+                        },
+                        labelLine: {
+                            show: false
+                        }
+                    },
+                    emphasis: {
+                        color: 'rgba(0,0,0,0)'
+                    }
+                };
+                var labelTopblue = {
+                    normal: {
+                        color: '#0582db',
+                        label: {
+                            show: false,
+                            position: 'center',
+                            textStyle: {
+                                baseline: 'bottom'
+                            }
+                        },
+                        labelLine: {
+                            show: false
+                        }
+
+                    }
+
+                };
+
+
+                var labelTopgreen = {
+                    normal: {
+                        color: '#00a50c',
+                        label: {
+                            show: false,
+                            position: 'center',
+                            textStyle: {
+                                baseline: 'bottom'
+                            }
+                        },
+                        labelLine: {
+                            show: false
+                        }
+
+                    }
+
+
+                }
+
+                // Set inner and outer radius
+                var radius = [25, 30];
+
+                // Add options
+                multiple_donuts_options = {
+
+                    // Add legend
+                    legend: {
+                        x: 'left',
+                        y: 'center',
+                        data: ['Participating']
+                    },
+
+                    // Add series
+                    series: [{
+                        type: 'pie',
+                        center: ['75%', '50%'],
+                        radius: radius,
+                        itemStyle: labelFromatter,
+                        data: [{
+                            name: 'other',
+                            value: 22,
+                            itemStyle: labelBottom
+                        }, {
+                            name: 'Participating',
+                            value: 78,
+                            itemStyle: labelTopblue
+                        }]
+                    }]
+                };
+
+                avActivitiesCompleted_options = {
+
+                    // Add legend
+                    legend: {
+                        x: 'left',
+                        y: 'center',
+                        data: ['Average \n Activities \n Completed']
+                    },
+
+                    // Add series
+                    series: [{
+                        type: 'pie',
+                        center: ['70%', '50%'],
+                        radius: radius,
+                        itemStyle: labelFromatter,
+                        data: [{
+                            name: 'other',
+                            value: 38,
+                            itemStyle: labelBottom
+                        }, {
+                            name: 'Average \n Activities \n Completed',
+                            value: 62,
+                            itemStyle: labelTopgreen
+                        }]
+                    }]
+                };
+
+
+
+                // Apply options
+                // ------------------------------
+                basic_bars.setOption(basic_bars_options);
+                studentLoggingPie.setOption(studentLoggingPie_options);
+                //studentCompleted.setOption(studentCompleted_options);
+                multiple_donuts.setOption(multiple_donuts_options);
+                avActivitiesCompleted.setOption(avActivitiesCompleted_options);
+
+
+                // Resize charts
+                // ------------------------------
+
+                window.onresize = function() {
+                    setTimeout(function() {
+                        basic_bars.resize();
+                        studentLoggingPie.resize();
+                        //studentCompleted.resize();
+                        multiple_donuts.resize();
+                        avActivitiesCompleted.resize();
+                    }, 200);
+                }
+            }
+        );
+    });
+
+
+
+    // heatmap chart
+    Highcharts.chart('heatmapChart', {
+
+        chart: {
+            type: 'heatmap',
+            marginTop: 70,
+            marginBottom: 80,
+            plotBorderWidth: 1
+        },
+
+
+        title: {
+            text: ''
+        },
+
+        xAxis: {
+            categories: ['UNIT 1', 'UNIT 2', 'UNIT 3', 'UNIT 4', 'UNIT 5', 'UNIT 6', 'UNIT 7', 'UNIT 8', 'UNIT 9', 'UNIT 10']
+        },
+
+        yAxis: {
+            categories: ['', '', '', '', ''], //['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+            title: null
+        },
+
+        colorAxis: {
+            min: 0,
+            minColor: '#FFFFFF',
+            maxColor: Highcharts.getOptions().colors[0]
+        },
+
+        legend: {
+            align: 'left',
+            layout: 'horizontal',
+            verticalAlign: 'top',
+            y: 0,
+            x: 0,
+            symbolHeight: 15
+        },
+
+        tooltip: {
+            formatter: function() {
+                return '<b>' + this.series.xAxis.categories[this.point.x] + '</b> sold <br><b>' +
+                    this.point.value + '</b> items on <br><b>' + this.series.yAxis.categories[this.point.y] + '</b>';
+            }
+        },
+
+        series: [{
+            name: 'Sales per employee',
+            borderWidth: 0,
+            data: [
+                [0, 0, 0],
+                [0, 1, 19],
+                [0, 2, 20],
+                [0, 3, 25],
+                [0, 4, 35],
+                [1, 0, 92],
+                [1, 1, 110],
+                [1, 2, 120],
+                [1, 3, 121],
+                [1, 4, 152],
+                [2, 0, 35],
+                [2, 1, 15],
+                [2, 2, 123],
+                [2, 3, 64],
+                [2, 4, 52],
+                [3, 0, 72],
+                [3, 1, 132],
+                [3, 2, 114],
+                [3, 3, 19],
+                [3, 4, 16],
+                [4, 0, 38],
+                [4, 1, 5],
+                [4, 2, 8],
+                [4, 3, 117],
+                [4, 4, 115],
+                [5, 0, 88],
+                [5, 1, 32],
+                [5, 2, 12],
+                [5, 3, 6],
+                [5, 4, 120],
+                [6, 0, 13],
+                [6, 1, 44],
+                [6, 2, 88],
+                [6, 3, 98],
+                [6, 4, 96],
+                [7, 0, 31],
+                [7, 1, 1],
+                [7, 2, 82],
+                [7, 3, 32],
+                [7, 4, 30],
+                [8, 0, 85],
+                [8, 1, 97],
+                [8, 2, 123],
+                [8, 3, 64],
+                [8, 4, 84],
+                [9, 0, 47],
+                [9, 1, 114],
+                [9, 2, 31],
+                [9, 3, 48],
+                [9, 4, 91]
+            ],
+            dataLabels: {
+                enabled: true,
+                color: '#000000',
+                formatter: function() {
+                    return 'M ' + this.point.value;
+                }
+            }
+        }]
+
+    });
+</script>
+
+</html>

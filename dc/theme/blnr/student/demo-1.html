@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Blenera Learning Platform</title>
+
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/other.css" rel="stylesheet" type="text/css">
+
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/visualization/echarts/echarts.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/progressbar.min.js"></script>
+
+
+
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+</head>
+
+<body class="">
+    <div class="navbar navbar-inverse">
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu">
+                        <a id="nav-shop-all-button" href="javascript:void(0);" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px;">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle userbox_top" data-toggle="dropdown" aria-expanded="true" style="padding-top: 9px; padding-bottom: 8px;">
+                                <img src="../assets/images/childs/child-2.jpg" alt="" class="">
+
+                            </a>
+
+                            <ul class="dropdown-menu profiledrop_width">
+                                <div class="alartbox">This account is managed by <span>Veative Labs</span><br>
+                                    <a href="#">Learn more</a></div>
+
+                                <li class="p-10">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="../assets/images/childs/child-2.jpg" class="img-circle img-lg" style="width: 70px !important; height: 70px !important;" alt="">
+
+                                            <span class="changeimg">Change</span>
+                                        </a>
+
+                                        <div class="media-body">
+                                            <h6 class="media-heading">Nathan Alexander</h6>
+                                            <span class="text-muted"><a href="mailto:nathan@veative.com">nathan@veative.com</a></span>
+
+                                            <a href="../student/student-success-report.html" class="btn-primary btn-sm btn mt-10">My Account</a>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+
+                                <div class="panel-footer pt-10 pb-5 text-right"><a href="../public/login.html" class="btn-default btn-xs btn"> Logout</a></div>
+
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <div class="breadcrumb-line breadcrumb-line-wide">
+            <ul class="breadcrumb">
+                <li>Algebra 1</li>
+            </ul>
+
+            <ul class="breadcrumb-elements">
+                <li class="ab-bars">
+                    <div class="progress progress-xs">
+                        <div class="progress-bar bg-success-400" style="width: 70%">
+                            <span class="sr-only">70% Complete</span>
+                        </div>
+                        <div class="progress-bar" style="width: 10%; border-left:2px solid #fff; border-right:2px solid #fff;">
+                            <span class="sr-only">10% Complete (danger)</span>
+                        </div>
+                    </div>
+                    <div class="ab-bars-info">
+                        <div><span>Mastered:</span> 209</div>
+                        <div><span>Learned: </span> 1</div>
+                        <div><span>Remaining: </span> 209</div>
+                    </div>
+                </li>
+            </ul>
+            <a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a></div>
+
+
+    </div>
+
+
+
+
+
+    <div class="page-container">
+        <div class="page-content custom-work">
+
+
+
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main sidebar-default">
+                <div class="sidebar-content">
+
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+
+
+
+
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Navigation</span> <i class="icon-menu" title="Main pages"></i></li>
+                                <li><a href="school_user_management.html"><i class="icon-users"></i> <span>User Management</span></a></li>
+                                <li><a href="school_listing.html"><i class="icon-graduation2"></i> School Listing</a></li>
+                                <!-- /main -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+
+                </div>
+            </div>
+            <!-- /main sidebar -->
+
+
+
+
+            <!-- Main content -->
+            <div class="content-wrapper no-margin-top">
+                <div class="ab-content">
+                    <div class="ab-left-nav bg-info">
+                        <div class="ab-left-nav-subtitle">Up next:</div>
+                        <div class="ab-left-nav-title">Plotting opposite integers on a number line</div>
+                        <button class="ab-left-button">CONTINUE MY PATH</button>
+                        <hr>
+                        <div class="ab-left-nav-subtitle">Working Toward</div>
+                        <div class="ab-left-nav-content">
+                            <div class="ab-content-block">
+                                <div class="name">Class Progress</div>
+                                <div class="subname">210 of 438 Topics</div>
+                                <div class="subname">Due: Jun 1</div>
+                            </div>
+                            <div class="ab-content-block hide">
+                                <div class="name">Class Progress</div>
+                                <div class="subname">215 of 495 Topics</div>
+                            </div>
+                            <div class="ab-content-block hide">
+                                <div class="name">Team Goal</div>
+                                <div class="subname">2h 30m</div>
+                                <div class="subname">Due: Jul 3 11:59 PM</div>
+                            </div>
+                            <div class="ab-content-block">
+                                <div class="name">Chapter 3 - Linear Equations In Two Variables</div>
+                                <div class="subname">1 of 55 Topics</div>
+                                <div class="subname">Due: Jul 3 11:59 PM</div>
+                            </div>
+                            <div class="ab-content-block">
+                                <div class="name">Time Goal - 4</div>
+                                <div class="subname">5h 0m Remaining</div>
+                                <div class="subname">Total: 5h 0m</div>
+                                <div class="subname">Due: Sunday 11:59 PM</div>
+                            </div>
+                            <div class="ab-content-block hide">
+                                <div class="name">Pie Progress Goal 5</div>
+                                <div class="subname">154 of 156 Tpics</div>
+                                <div class="subname">Due: May 7</div>
+                            </div>
+                        </div>
+                        <div class="ab-left-nav-bar">
+                            <div class="ab-left-nav-subtitle head">WORK ON SOMETHING ELSE</div>
+                            <div class="ab-left-nav-bar-body">
+                                <ul class="media-list">
+                                    <li class="media">
+                                        <div class="media-body">
+                                            <div class="media-heading text-semibold">Quiz 1</div>
+                                            <div class="text-muted font-sm">Due:3 Dec 11:40 AM </div>
+                                            <div class="text-muted font-sm">Attempts: 0 of 3 Remeaning</div>
+                                        </div>
+                                        <div class="media-right media-middle">
+                                            <a href="javascript:void(0)" class="text-white"><i class="icon-arrow-right32"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="media-devider"></li>
+                                    <li class="media">
+                                        <div class="media-body">
+                                            <div class="media-heading text-semibold">Homework 1</div>
+                                            <div class="text-muted font-sm">Due:10 Dec 10:40 AM </div>
+                                            <div class="text-muted font-sm">Attempts: 0 of 3 Remeaning</div>
+                                        </div>
+                                        <div class="media-right media-middle">
+                                            <a href="javascript:void(0)" class="text-white"><i class="icon-arrow-right32"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="media-devider"></li>
+                                    <li class="media">
+                                        <div class="media-body">
+                                            <div class="media-heading text-semibold">Quiz 2</div>
+                                            <div class="text-muted font-sm">Due:3 Dec 11:40 AM </div>
+                                            <div class="text-muted font-sm">Attempts: 0 of 3 Remeaning</div>
+                                        </div>
+                                        <div class="media-right media-middle">
+                                            <a href="javascript:void(0)" class="text-white"><i class="icon-arrow-right32"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="media-devider"></li>
+                                    <li class="media">
+                                        <div class="media-body">
+                                            <div class="media-heading text-semibold">Homework 2</div>
+                                            <div class="text-muted font-sm">Due:10 Dec 10:40 AM </div>
+                                            <div class="text-muted font-sm">Attempts: 0 of 3 Remeaning</div>
+                                        </div>
+                                        <div class="media-right media-middle">
+                                            <a href="javascript:void(0)" class="text-white"><i class="icon-arrow-right32"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="media-devider"></li>
+                                    <li class="media">
+                                        <div class="media-body">
+                                            <div class="media-heading text-semibold">Quiz 3</div>
+                                            <div class="text-muted font-sm">Due:10 Dec 10:40 AM </div>
+                                            <div class="text-muted font-sm">Attempts: 0 of 3 Remeaning</div>
+                                        </div>
+                                        <div class="media-right media-middle">
+                                            <a href="javascript:void(0)" class="text-white"><i class="icon-arrow-right32"></i></a>
+                                        </div>
+                                    </li>
+                                    <li class="media-devider"></li>
+                                    <li class="media">
+                                        <div class="media-body">
+                                            <div class="media-heading text-semibold">No Other Assignments</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ab-content-body">
+                        <div class="panel panel-flat mt-20 mr-10">
+                            <div class="panel-body">
+                                <div class="chart-container">
+                                    <div class="chart" id="rose_diagram_hidden" style="height:500px"></div>
+                                </div>
+                                <div class="rose-graph-info">
+                                    <h4 class="no-margin">Data Analysis And Probability</h4>
+                                    <p>(30 Topics)</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-green" style="width: 10%"></div>
+                                    </div>
+                                    <ul class="no-items">
+                                        <li>
+                                            <span>2</span>
+                                            <span>Mastered</span>
+                                        </li>
+                                        <li>
+                                            <span>1</span>
+                                            <span>Learned</span>
+                                        </li>
+                                        <li>
+                                            <span>27</span>
+                                            <span>Remaining</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="panel-footer pt-10 pb-10 text-right">
+                                <button class="btn btn-info"><i class="icon-calendar3 position-left"></i> Calendar</button>
+                                <button class="btn btn-primary"><i class="icon-copy position-left"></i> Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /main content -->
+
+        </div>
+        <!-- Page content -->
+
+        <!-- /page content -->
+
+
+        <!-- Footer -->
+        <div class="footer text-muted hide">
+            Powered by <a href="https://www.veative.com/" target="_blank">Veative Labs</a>.
+        </div>
+        <!-- /footer -->
+
+    </div>
+
+
+</body>
+<script>
+    $(function() {
+
+        // Set paths
+        // ------------------------------
+
+        require.config({
+            paths: {
+                echarts: '../assets/js/plugins/visualization/echarts'
+            }
+        });
+
+
+        // Configuration
+        // ------------------------------
+
+        require(
+            [
+                'echarts',
+                'echarts/theme/limitless',
+                'echarts/chart/pie',
+                'echarts/chart/funnel'
+            ],
+
+
+            // Charts setup
+            function(ec, limitless) {
+
+
+                // Initialize charts
+                // ------------------------------
+
+                var rose_diagram_hidden = ec.init(document.getElementById('rose_diagram_hidden'), limitless);
+
+
+                // Charts setup
+                // ------------------------------   
+
+
+                //
+                // Nightingale roses with hidden labels options
+                //
+
+                rose_diagram_hidden_options = {
+
+                    // Add title
+                    title: {
+                        text: 'Chart Title',
+                        //subtext: 'This will be subtext',
+                        x: 'center'
+                    },
+
+                    // Add tooltip
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b}: +{c}$ ({d}%)"
+                    },
+
+                    // Add legend
+                    legend: {
+                        x: 'left',
+                        y: 'center',
+                        orient: 'vertical',
+                        itemGap: 30,
+                        data: [
+                            'Arithmatic Readiness \n \r (59 Topics)',
+                            'Real Number \n \r (39 Topics)',
+                            'Linear Equations \n \r (29 Topics)',
+                            'Functions and Lines \n \r (83 Topics)',
+                            'Systems \n \r (20 Topics)', 'Exponents \n \r (47 Topics)',
+                            'Polynomials and Factoring \n \r (27 Topics)',
+                            'Quadratic Functions \n \r (27 Topics)',
+                            'Radicals \n \r (25 Topics)',
+                            'Rational Expressions \n \r (29 Topics)'
+                        ]
+                    },
+
+                    // Enable drag recalculate
+                    calculable: false,
+
+                    // Add series
+                    series: [{
+                        name: 'Algebra 1',
+                        type: 'pie',
+                        radius: ['15%', '73%'],
+                        center: ['65%', '60%'],
+                        roseType: 'area',
+
+
+                        // Funnel
+                        width: '50%',
+                        height: '78%',
+                        x: '30%',
+                        y: '17.5%',
+                        max: 450,
+
+
+                        data: [{
+                            value: 440,
+                            name: 'Arithmatic Readiness \n \r (59 Topics)'
+                        }, {
+                            value: 260,
+                            name: 'Real Number \n \r (39 Topics)'
+                        }, {
+                            value: 350,
+                            name: 'Linear Equations \n \r (29 Topics)'
+                        }, {
+                            value: 250,
+                            name: 'Functions and Lines \n \r (83 Topics)'
+                        }, {
+                            value: 210,
+                            name: 'Systems \n \r (20 Topics)'
+                        }, {
+                            value: 350,
+                            name: 'Exponents \n \r (47 Topics)'
+                        }, {
+                            value: 300,
+                            name: 'Polynomials and Factoring \n \r (27 Topics)'
+                        }, {
+                            value: 430,
+                            name: 'Quadratic Functions \n \r (27 Topics)'
+                        }, {
+                            value: 400,
+                            name: 'Radicals \n \r (25 Topics)'
+                        }, {
+                            value: 450,
+                            name: 'Rational Expressions \n \r (29 Topics)'
+                        }]
+                    }]
+                };
+
+
+
+                // Apply options
+                // ------------------------------
+                rose_diagram_hidden.setOption(rose_diagram_hidden_options);
+
+
+
+                // Resize charts
+                // ------------------------------
+
+                window.onresize = function() {
+                    setTimeout(function() {
+                        rose_diagram_hidden.resize();
+                    }, 200);
+                }
+            }
+        );
+    });
+</script>
+
+</html>

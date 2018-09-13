@@ -42,7 +42,7 @@ export class SettingsComponent implements OnInit {
           }
 
       }
-      console.log(this.issueCheckBox);
+      //console.log(this.issueCheckBox);
   });
   }
 
@@ -54,7 +54,9 @@ addIssueType(val) {
   
    (this.issueSelectedForm.get('issueTypes') as FormArray).controls.push(new FormControl(val));
   // array.push(new FormControl(val));
-  console.log(val)
+
+  //this.issueTyp
+  console.log( val )
 }
 
 

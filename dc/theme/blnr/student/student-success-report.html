@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Blenera Learning Platform</title>
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/circle.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/other.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/visualization/echarts/echarts.js"></script>
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="../assets/js/charts/google/bubbles/bubble.js"></script>
+    <style type="text/css">
+        .datatable-header {
+            padding: 20px 20px 0px 20px
+        }
+        
+        .datatable-footer {
+            padding: 20px 20px 0px 20px
+        }
+        
+        .sidebar-content {
+            background: none !important;
+            box-shadow: none!important;
+            border: none!important;
+        }
+        
+        html,
+        body {
+            background: #f1f1f1 !important
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="navbar navbar-inverse">
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu">
+                        <a id="nav-shop-all-button" href="course_details_new.html" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px;">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle userbox_top" data-toggle="dropdown" aria-expanded="true" style="padding-top: 9px; padding-bottom: 8px;">
+                                <img src="../assets/images/childs/child-2.jpg" alt="" class="">
+
+                            </a>
+
+                            <ul class="dropdown-menu profiledrop_width">
+                                <div class="alartbox">This account is managed by <span>Veative Labs</span><br>
+                                    <a href="#">Learn more</a></div>
+
+                                <li class="p-10">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="../assets/images/childs/child-2.jpg" class="img-circle img-lg" style="width: 70px !important; height: 70px !important;" alt="">
+
+                                            <span class="changeimg">Change</span>
+                                        </a>
+
+                                        <div class="media-body">
+                                            <h6 class="media-heading">Nathan Alexander</h6>
+                                            <span class="text-muted"><a href="mailto:nathan@veative.com">nathan@veative.com</a></span>
+
+                                            <a href="student-success-report.html" class="btn-primary btn-sm btn mt-10">My Account</a>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+
+                                <div class="panel-footer pt-10 pb-5 text-right"><a href="../public/login.html" class="btn-default btn-xs btn"> Logout</a></div>
+
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-header ">
+        <div class="breadcrumb-line breadcrumb-line-wide">
+            <ul class="breadcrumb">
+                <li>My Profile</li>
+            </ul>
+            <ul class="breadcrumb-elements">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-gear position-left " style="font-size:22px;"></i>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+                        <li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+                        <li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="page-content custom-work">
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main sidebar-default">
+                <div class="sidebar-content">
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Navigation</span> <i class="icon-menu" title="Main pages"></i></li>
+                                <li><a href="index.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+                                <li><a href="assignment-dropbox.html"><i class="icon-files-empty"></i> <span>Dropbox</span></a></li>
+                                <li><a href="assignment-list.html"><i class="icon-magazine"></i> Assignment</a></li>
+                                <li><a href="forum.html"><i class="icon-question3"></i> Questions and Answers</a></li>
+                                <li><a href="schedule.html"><i class="icon-calendar22"></i> Schedule</a></li>
+                                <li><a href="course_listing.html"><i class="icon-bookmark"></i> My Courses</a></li>
+                                <!-- /main -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+                </div>
+            </div>
+            <!-- /main sidebar -->
+            <!-- Main content -->
+            <div class="content-wrapper student-success-report">
+                <div class="col-lg-3  ">
+                    <div class="sidebar sidebar-secondary sidebar-default sidebar2">
+                        <div class="sidebar-content">
+                            <!-- Search task -->
+                            <!-- /search task -->
+                            <!-- Action buttons -->
+                            <div class="sidebar-category hide">
+                                <div class="category-title">
+                                    <span>Action buttons</span>
+                                    <ul class="icons-list">
+                                        <li>
+                                            <a href="javascript:void(0)" data-action="collapse"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category-content">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <button class="btn bg-teal-400 btn-block btn-float btn-float-lg" type="button"><i class="icon-git-branch"></i> <span>Branch</span></button>
+                                            <button class="btn bg-purple-300 btn-block btn-float btn-float-lg" type="button"><i class="icon-mail-read"></i> <span>Messages</span></button>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <button class="btn bg-warning-400 btn-block btn-float btn-float-lg" type="button"><i class="icon-stats-bars"></i> <span>Statistics</span></button>
+                                            <button class="btn bg-blue btn-block btn-float btn-float-lg" type="button"><i class="icon-people"></i> <span>Users</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /action buttons -->
+                            <!-- Task navigation -->
+                            <div class="sidebar-category ">
+                                <div class="media profile">
+                                    <div class="media-left">
+                                        <img src="../assets/images/childs/child-2.jpg" class="media-object" style="width:100px">
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <h4 class="media-heading">Nathan Alexander</h4>
+                                        <p>+91 99 99 999999</p>
+                                    </div>
+                                </div>
+                                <div class="fillups-block">
+                                    <div class="fillups">
+                                        <span>Credit Earned</span>
+                                        <input type="text" readonly>
+                                    </div>
+                                    <div class="fillups">
+                                        <span>Credit Attempet</span>
+                                        <input type="text" readonly>
+                                    </div>
+                                    <div class="fillups">
+                                        <span>GPA</span>
+                                        <input type="text" readonly>
+                                    </div>
+                                </div>
+                                <div class="email-box ">
+                                    &nbsp;
+                                </div>
+                                <div class="chart-container">
+                                    <div class="chart" id="tornado_bars_staggered" style="height: 250px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 no-padding-right">
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs nav-tabs-solid nav-tabs-component no-margin">
+                            <li class="active"><a href="#solid-rounded-tab1" data-toggle="tab" class="text-regular no-border-radius">Success Index</a></li>
+                            <li><a href="#solid-rounded-tab2" data-toggle="tab" class="text-regular no-border-radius">Assessment</a></li>
+                            <li><a href="#solid-rounded-tab3" data-toggle="tab" class="text-regular no-border-radius">Sociogram</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="solid-rounded-tab1">
+                                <div class="panel panel-default ">
+                                    <div class="panel-body">
+                                        <h4 class="text-bold  no-margin-top">Success Index</h4>
+                                        <h4><i class="icon-target text-success"></i> Success</h4>
+                                        <h2 class="mt-10 no-margin-bottom">65%</h2>
+                                        <h6 class="no-margin">Predicated Grade</h6>
+                                        <p class="mt-20">Indication</p>
+                                        <ul>
+                                            <li>The student has only accessed some of the course content</li>
+                                            <li>The student only participates in some of the courses online discussion</li>
+                                        </ul>
+                                        <h4>Course Timeline</h4>
+                                        <div class="chart-container">
+                                            <div class="chart" id="d3-bar-tooltip"></div>
+                                        </div>
+                                        <h4>Risk Quadrant</h4>
+                                        <div class="chart-container">
+                                            <div class="chart" id="google-bubble"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="solid-rounded-tab2">
+                                <div class="panel panel-default assessment-box">
+                                    <div class="panel-body">
+                                        <h4 class="text-bold no-margin-top">Assessment</h4>
+                                        <div class="table-responsive mb-20 mt-20">
+                                            <table class="table table-framed">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Overall Achievment</th>
+                                                        <th>Current Grade</th>
+                                                        <th>Class Low<br>
+                                                            <span class="text-muted">(25th Percentile)</span>
+                                                        </th>
+                                                        <th>Class High<br>
+                                                            <span class="text-muted">(75th Percentile)</span>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="progress ">
+                                                                <div class="progress-bar progress-bar-success" style="width: 55%">
+                                                                    <span>55% Overall Achievment </span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>43%</td>
+                                                        <td>33%</td>
+                                                        <td>43%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-md-6">
+                                                <div class="chart-container">
+                                                    <div class="chart has-fixed-height has-minimum-width" id="pie_timeline"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="table-responsive">
+                                                    <table class="table table-framed table-bordered table-striped mb-20">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="50%" colspan="2"> <i class="icon-diamond4 position-left"></i>Student Grade</th>
+                                                                <th width="50%"> <i class=" icon-grid7 position-left"></i>Class Range</th>
+                                                            </tr>
+                                                        </thead>
+                                                    </table>
+                                                    <table class="table table-framed table-bordered table-striped">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Grade Item</th>
+                                                                <th>Grade</th>
+                                                                <th>Weight</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><i class=" icon-square i-w-dis"></i> Weekly Discussion</td>
+                                                                <td>75%</td>
+                                                                <td class="text-muted">19%</td>
+                                                                <!-- <td>@Kopyov</td> -->
+                                                            </tr>
+                                                            <tr>
+                                                                <td><i class=" icon-square i-ass"></i> Weekly Assessment</td>
+                                                                <td>78%</td>
+                                                                <td class="text-muted">31%</td>
+                                                                <!-- <td>@Vicky</td> -->
+                                                            </tr>
+                                                            <tr>
+                                                                <td><i class=" icon-square i-studies"></i> Class Studies</td>
+                                                                <td>100%</td>
+                                                                <td class="text-muted">3%</td>
+                                                                <!-- <td>@Alex</td> -->
+                                                            </tr>
+                                                            <tr>
+                                                                <td><i class=" icon-square i-project"></i> Projects</td>
+                                                                <td>13%</td>
+                                                                <td class="text-muted">31%</td>
+                                                                <!-- <td>@Frank</td> -->
+                                                            </tr>
+                                                            <tr>
+                                                                <td><i class=" icon-square i-summative"></i> Summative</td>
+                                                                <td>10%</td>
+                                                                <td class="text-muted">16%</td>
+                                                                <!-- <td>@Frank</td> -->
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="solid-rounded-tab3">
+                                <div class="panel panel-flat">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">Sociogram</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="graph-area" id="knowledgeGraph">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /main content -->
+        </div>
+        <!-- Page content -->
+        <!-- /page content -->
+        <!-- Footer -->
+        <div class="footer text-muted hide">
+            Powered by <a href="https://www.veative.com/" target="_blank">Veative Labs</a>.
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- Invite user -->
+    <div id="invite_user" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h5 class="modal-title">Add Users</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-10">
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">User Type: </label>
+                            <div class="col-lg-9">
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-primary"><i class=" icon-user"></i></span>
+                                    <input type="text" class="form-control" placeholder="Student">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-10">
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">Name: </label>
+                            <div class="col-lg-9">
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-primary"><i class=" icon-user-tie"></i></span>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-10">
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">Email (Optional): </label>
+                            <div class="col-lg-9">
+                                <div class="input-group">
+                                    <span class="input-group-addon bg-primary"><i class="icon-mail5"></i></span>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Invite user -->
+</body>
+<style>
+
+</style>
+<script>
+    /* ------------------------------------------------------------------------------
+     *
+     *  # D3.js - bar chart with tooltip
+     *
+     *  Demo d3.js bar chart setup with tooltip and .tsv data source
+     *
+     *  Version: 1.0
+     *  Latest update: August 1, 2015
+     *
+     * ---------------------------------------------------------------------------- */
+
+    $(function() {
+
+        /* Tab Setting */
+        $('[href="#solid-rounded-tab3"]').on('show.bs.tab', function() {
+            let obj = $($(this).attr('href')).find('#knowledgeGraph');
+            if (!obj.children('iframe').length) {
+                $($(this).attr('href')).find('#knowledgeGraph').html('<iframe src="http://192.168.1.210/lmsforschool/assets/js/charts/knowledge-graph/demo/khan.html" frameborder="0" class="knoledge-graph"></iframe>');
+            }
+        });
+        /* -/end tab settings*/
+
+
+        //barTooltip('#d3-bar-tooltip2', 200);
+        // Initialize chart
+        barTooltip('#d3-bar-tooltip', 200);
+
+        // Chart setup
+        function barTooltip(element, height) {
+
+
+            // Basic setup
+            // ------------------------------
+
+            // Define main variables
+            var d3Container = d3.select(element),
+                margin = {
+                    top: 5,
+                    right: 10,
+                    bottom: 20,
+                    left: 40
+                },
+                width = d3Container.node().getBoundingClientRect().width - margin.left - margin.right,
+                height = height - margin.top - margin.bottom - 5;
+
+
+
+            // Construct scales
+            // ------------------------------
+
+            // Horizontal
+            var x = d3.scale.ordinal()
+                .rangeRoundBands([0, width], .1, .5);
+
+            // Vertical
+            var y = d3.scale.linear()
+                .range([height, 0]);
+
+            // Color
+            var color = d3.scale.category20c();
+
+
+
+            // Create axes
+            // ------------------------------
+
+            // Horizontal
+            var xAxis = d3.svg.axis()
+                .scale(x)
+                .orient("bottom");
+
+            // Vertical
+            var yAxis = d3.svg.axis()
+                .scale(y)
+                .orient("left")
+                .ticks(2, "%");
+
+
+
+            // Create chart
+            // ------------------------------
+
+            // Add SVG element
+            var container = d3Container.append("svg");
+
+            // Add SVG group
+            var svg = container
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+            // Create tooltip
+            // ------------------------------
+
+            // Create tooltip
+            var tip = d3.tip()
+                .attr('class', 'd3-tip')
+                .offset([-10, 0])
+                .html(function(d) {
+                    return d.frequency;
+                });
+
+            // Initialize tooltip
+            svg.call(tip);
+
+
+
+            // Load data
+            // ------------------------------
+
+            d3.tsv("../assets/demo_data/d3/bars/bars_tooltip.tsv", function(error, data) {
+
+                // Pull out values
+                data.forEach(function(d) {
+                    d.frequency = +d.frequency;
+                });
+
+
+                // Set input domains
+                // ------------------------------
+
+                // Horizontal
+                x.domain(data.map(function(d) {
+                    return d.letter;
+                }));
+
+                // Vertical
+                y.domain([0, d3.max(data, function(d) {
+                    return d.frequency;
+                })]);
+
+
+                //
+                // Append chart elements
+                //
+
+                // Append axes
+                // ------------------------------
+
+                // Horizontal
+                svg.append("g")
+                    .attr("class", "d3-axis d3-axis-horizontal d3-axis-strong")
+                    .attr("transform", "translate(0," + height + ")")
+                    .call(xAxis);
+
+                // Vertical
+                var verticalAxis = svg.append("g")
+                    .attr("class", "d3-axis d3-axis-vertical d3-axis-strong")
+                    .call(yAxis);
+
+                // Add text label
+                verticalAxis.append("text")
+                    .attr("transform", "rotate(-90)")
+                    .attr("y", 10)
+                    .attr("dy", ".71em")
+                    .style("text-anchor", "end")
+                    .style("fill", "#999")
+                    .style("font-size", 12)
+                    .text("Frequency");
+
+
+                // Append bars
+                svg.selectAll(".d3-bar")
+                    .data(data)
+                    .enter()
+                    .append("rect")
+                    .attr("class", "d3-bar")
+                    .style("fill", function(d) {
+                        console.log(d);
+                        if (d.letter <= 12) {
+                            return 'green';
+                        } else if (d.letter > 12 && d.letter <= 20) {
+                            return 'orange'
+
+                        } else {
+                            return 'red'
+                        }
+                        // return 'red'
+                        // return color(d.letter);
+
+                    })
+                    .attr("x", function(d) {
+
+                        return x(d.letter);
+                    })
+                    .attr("width", x.rangeBand())
+                    .attr("y", function(d) {
+                        return y(d.frequency);
+                    })
+                    .attr("height", function(d) {
+                        return height - y(d.frequency);
+                    })
+                    .on('mouseover', tip.attr('class', 'tooltip-inner in').show)
+                    .on('mouseout', tip.hide);
+            });
+
+
+
+            // Resize chart
+            // ------------------------------
+
+            // Call function on window resize
+            $(window).on('resize', resize);
+
+            // Call function on sidebar width change
+            $('.sidebar-control').on('click', resize);
+
+            // Resize function
+            // 
+            // Since D3 doesn't support SVG resize by default,
+            // we need to manually specify parts of the graph that need to 
+            // be updated on window resize
+            function resize() {
+
+                // Layout variables
+                width = d3Container.node().getBoundingClientRect().width - margin.left - margin.right;
+
+
+                // Layout
+                // -------------------------
+
+                // Main svg width
+                container.attr("width", width + margin.left + margin.right);
+
+                // Width of appended group
+                svg.attr("width", width + margin.left + margin.right);
+
+
+                // Axes
+                // -------------------------
+
+                // Horizontal range
+                x.rangeRoundBands([0, width], .1, .5);
+
+                // Horizontal axis
+                svg.selectAll('.d3-axis-horizontal').call(xAxis);
+
+
+                // Chart elements
+                // -------------------------
+
+                // Bars
+                svg.selectAll('.d3-bar').attr("x", function(d) {
+                    return x(d.letter);
+                }).attr("width", x.rangeBand());
+            }
+        }
+    });
+</script>
+
+<script>
+    /* ------------------------------------------------------------------------------
+     *
+     *  # Echarts - bars and tornados
+     *
+     *  Bars and tornados chart configurations
+     *
+     *  Version: 1.0
+     *  Latest update: August 1, 2015
+     *
+     * ---------------------------------------------------------------------------- */
+
+    $(function() {
+        var tornado_bars_staggered, pie_timeline;
+
+        // Set paths
+        // ------------------------------
+
+        require.config({
+            paths: {
+                echarts: '../assets/js/plugins/visualization/echarts'
+            }
+        });
+
+
+        // Configuration
+        // ------------------------------
+
+        require(
+            [
+                'echarts',
+                'echarts/theme/limitless',
+                'echarts/chart/bar',
+                'echarts/chart/line',
+                'echarts/chart/pie'
+            ],
+
+
+            // Charts setup
+            function(ec, limitless) {
+
+
+                // Initialize charts
+                // ------------------------------
+
+
+                tornado_bars_staggered = ec.init(document.getElementById('tornado_bars_staggered'), limitless);
+                pie_timeline = ec.init(document.getElementById('pie_timeline'), limitless);
+
+
+                // Charts setup
+                // ------------------------------
+                //
+                //
+                // Basic pie options
+                //
+
+                pie_timeline_options = {
+                    // Add tooltip
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b}: {c} ({d}%)"
+                    },
+
+
+
+                    // Add series
+                    series: [{
+                        name: 'Assessment',
+                        type: 'pie',
+                        radius: '100%',
+                        center: ['50%', '50%'],
+                        itemStyle: {
+                            normal: {
+                                label: {
+                                    show: false
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            },
+                            emphasis: {
+                                label: {
+                                    show: false
+                                },
+                                labelLine: {
+                                    show: false
+                                }
+                            }
+                        },
+
+                        data: [{
+                            itemStyle: {
+                                normal: {
+                                    color: '#6baed6',
+                                }
+                            },
+                            value: 200,
+                            name: 'Weekly Discussion'
+                        }, {
+                            itemStyle: {
+                                normal: {
+                                    color: '#9ecae1',
+                                }
+                            },
+                            value: 200,
+                            name: 'Weekly Assessment'
+                        }, {
+                            itemStyle: {
+                                normal: {
+                                    color: '#c6dbef',
+                                }
+                            },
+                            value: 234,
+                            name: 'Class Studies'
+                        }, {
+                            itemStyle: {
+                                normal: {
+                                    color: '#e6550d',
+                                }
+                            },
+                            value: 250,
+                            name: 'Projects'
+                        }, {
+                            itemStyle: {
+                                normal: {
+
+                                    color: '#fd8d3c',
+                                }
+                            },
+                            value: 300,
+                            name: 'Summative'
+                        }]
+                    }]
+                };
+
+
+
+                //
+                // Tornado with staggered labels options
+                //
+
+                var labelRight = {
+                    normal: {
+                        color: '#FF7043',
+                        label: {
+                            position: 'right'
+                        }
+                    }
+                };
+
+                tornado_bars_staggered_options = {
+
+                    // Setup grid
+                    grid: {
+                        x: 25,
+                        x2: 25,
+                        y: 25,
+                        y2: 10
+                    },
+
+                    // Add tooltip
+                    tooltip: {
+                        trigger: 'axis',
+                        axisPointer: {
+                            type: 'shadow'
+                        },
+                        formatter: function(params) {
+                            return params[0].seriesName + ': ' + params[0].value + ' â‚¬';
+                        }
+                    },
+
+                    // Horizontal axis
+                    xAxis: [{
+                        type: 'value',
+                        position: 'top',
+                        splitLine: {
+                            lineStyle: {
+                                type: 'dashed'
+                            }
+                        },
+                    }],
+
+                    // Vertical axis
+                    yAxis: [{
+                        type: 'category',
+                        axisLine: {
+                            show: false
+                        },
+                        axisLabel: {
+                            show: false
+                        },
+                        axisTick: {
+                            show: false
+                        },
+                        splitLine: {
+                            show: false
+                        },
+                        data: ['Assessments', 'Social Lerning', 'Content Access', 'Course Access', 'Success Index']
+                    }],
+
+                    // Add series
+                    series: [{
+                        name: 'Cost of living',
+                        type: 'bar',
+                        stack: 'Total',
+                        itemStyle: {
+                            normal: {
+                                color: '#66BB6A',
+                                barBorderRadius: 3,
+                                label: {
+                                    show: true,
+                                    position: 'left',
+                                    formatter: '{b}'
+                                }
+                            },
+                            emphasis: {
+                                barBorderRadius: 3
+                            }
+                        },
+                        data: [{
+                            value: .5
+                        }, {
+                            value: -1.2,
+                            itemStyle: labelRight
+                        }, {
+                            value: 1.6
+                        }, {
+                            value: 2.25
+                        }, {
+                            value: 1.8
+                        }]
+                    }]
+                };
+
+
+
+                // Apply options
+                // ------------------------------
+
+
+                tornado_bars_staggered.setOption(tornado_bars_staggered_options);
+                pie_timeline.setOption(pie_timeline_options);
+
+
+
+                // Resize charts
+                // ------------------------------
+
+                window.onresize = function() {
+                    setTimeout(function() {
+                        tornado_bars_staggered.resize();
+                        pie_timeline.resize();
+                    }, 200);
+                }
+            }
+        );
+
+        $('[data-toggle="tab"]').on('shown.bs.tab', function() {
+            tornado_bars_staggered.resize();
+            pie_timeline.resize();
+        });
+    });
+</script>
+
+</html>

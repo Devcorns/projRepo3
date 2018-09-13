@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Kalemon</title>
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="../assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/colors.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/other.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="../assets/js/plugins/uploaders/fileinput.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/wizards/steps.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/validation/validate.min.js"></script>
+    <script type="text/javascript" src="../assets/js/pages/form_inputs.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/forms/selects/bootstrap_select.min.js"></script>
+    <script type="text/javascript" src="../assets/js/core/app.js"></script>
+    <script type="text/javascript" src="../assets/js/pages/wizard_steps.js"></script>
+    <script type="text/javascript" src="../assets/js/pages/uploader_bootstrap.js"></script>
+    <script type="text/javascript" src="../assets/js/pages/form_bootstrap_select.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugins/pickers/daterangepicker.js"></script>
+</head>
+
+<body class="">
+    <div class="navbar navbar-inverse ">
+        <div class="">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="http://192.168.1.210/blenera/public/login.html">
+                    <img src="../assets/img/logo.png" alt="Schoobrary">
+                </a>
+                <ul class="nav navbar-nav pull-right visible-xs-block">
+                    <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="fa fa-bars" style="font-size:16px;"></i></a></li>
+                    <li><a class="sidebar-mobile-main-toggle"><i class="icon-more"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-mobile">
+                <ul class="nav navbar-nav ">
+                    <li class="desktmenu">
+                        <a id="nav-shop-all-button" href="javascript:void(0);" class="nav-menu-active"> <i class="icon-menu7"></i> Browse<span class="visible-xs-inline-block position-right"> </span> </a>
+                        <div class="amazonmenu nav-locale-in nav-lang-en">
+                            <div id="navbar" role="navigation" class="nav-subnav-container nav-skin-default nav-sprite-v1">
+                                <div id="nav-cross-shop" class="nav-xshop-large">
+                                    <div style="display:none">
+                                        <div id="nav_browse_flyout">
+                                            <div id="nav_subcats_wrap" class="nav_browse_wrap">
+                                                <div id="nav_subcats">
+                                                    <div id="nav_subcats_0" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">عام</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Literature" class="nav_a nav_item" data-nav-tabindex="1" tabindex="1">ادب</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Economy" class="nav_a nav_item" data-nav-tabindex="2" tabindex="1">اقتصاد</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Education" class="nav_a nav_item" data-nav-tabindex="3" tabindex="1">تربية وتعليم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Law" class="nav_a nav_item" data-nav-tabindex="4" tabindex="1">قانون</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Human+sciences" class="nav_a nav_item" data-nav-tabindex="5" tabindex="1">علوم انسانية</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">الكتب الاثرائية</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Characters" class="nav_a nav_item" data-nav-tabindex="6" tabindex="1">شخصيات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Figures+and+events" class="nav_a nav_item" data-nav-tabindex="7" tabindex="1">فاعليات ومناسبات</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Facts+and+concepts" class="nav_a nav_item" data-nav-tabindex="8" tabindex="1">حقائق ومفاهيم</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Organizations+and+institutions" class="nav_a nav_item" data-nav-tabindex="9" tabindex="1">المنظمات والمؤسسات</a></li>
+                                                        </ul>
+                                                        <ul class="nav_browse_ul nav_browse_cat2_ul">
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">المناهج </li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+native" class="nav_a nav_item" data-nav-tabindex="10" tabindex="1">لغة عربية للناطقين بها </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/for+non-native" class="nav_a nav_item" data-nav-tabindex="11" tabindex="1">لغة عربية للناطقين بغيرها</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/speakers" class="nav_a nav_item" data-nav-tabindex="12" tabindex="1">تربية اسلامية</a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Islamic+Education" class="nav_a nav_item" data-nav-tabindex="13" tabindex="1">علوم اجتماعية </a></li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Social+sciences" class="nav_a nav_item" data-nav-tabindex="14" tabindex="1">Social sciences</a></li>
+                                                            <li class="nav_first nav_pop_li nav_browse_cat_head">كتب ونشرات تدريبية (هوز)</li>
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category/Educational+Technology" class="nav_a nav_item" data-nav-tabindex="15" tabindex="1">تكنولوجيا التعليم</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_1" class="nav_browse_subcat nav_super_cat">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/publisher" class="nav_a nav_item" data-nav-tabindex="16" tabindex="1">جميع الناشرين</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div id="nav_subcats_2" class="nav_browse_subcat nav_super_cat" style="height: 0px; display: none;">
+                                                        <ul class="nav_browse_ul nav_browse_cat_ul">
+                                                            <li class="nav_first nav_subcat_link nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/author" class="nav_a nav_item" data-nav-tabindex="17" tabindex="1">جميع الكتاب</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul id="nav_cats" class="nav_browse_ul">
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_0">
+                                                    تصفح حسب التصنيف
+                                                    <div class="nav_tag ">الكتب التعليمية لجميع الأعمار</div>
+                                                </li>
+                                                <li class="nav_pop_li nav_cat" id="nav_cat_1">
+                                                    تصفح حسب الناشر
+                                                    <div class="nav_tag ">الناشرين التعليميين، وأكثر من ذلك ...
+                                                    </div>
+                                                </li>
+                                                <li class="nav_taglined nav_pop_li nav_cat" id="nav_cat_2">
+                                                    تصفح حسب المؤلف
+                                                    <div class="nav_tag ">الكتاب التعليمية شعبية</div>
+                                                </li>
+                                                <!--     <li class="nav_pop_li nav_divider_before"><a href="http://192.168.1.210/schoobrary-development/santosh/public/featured">Featured Courses</a>
+														<div class="nav_tag">Sed ut perspiciatis unde omnis</div>
+														</li>-->
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Interactive+book" data-nav-tabindex="18" tabindex="1">كتب تفاعلية </a>
+                                                    <div class="nav_tag">دفع إلى الأجهزة النقالة، وسهلة الاستخدام</div>
+                                                </li>
+                                                <li class="nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/type/Books" data-nav-tabindex="19" tabindex="1">كتب مطبوعة </a>
+                                                    <div class="nav_tag">مع تمارين cloze والنسخة المكتبية.</div>
+                                                </li>
+                                                <!--  <li class="nav_pop_li"><a href="http://192.168.1.210/schoobrary-development/santosh/public/mode/BOB">Enhanced eBooks</a>
+														<div class="nav_tag">With cloze exercises and desktop ver.</div>
+														</li>
+														<li class="nav_pop_li nav_divider_after"><a href="#">Just Launched</a>
+														<div class="nav_tag">New releases</div>
+														</li>-->
+                                                <li class="nav_taglined nav_pop_li">
+                                                    <a href="http://192.168.1.210/schoobrary-development/santosh/public/browse/category" data-nav-tabindex="20" tabindex="1">عرض الكل</a>
+                                                    <div class="nav_tag">اختر من دليل الموقع الكامل</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div id="nav_flyout_anchor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form method="get" onsubmit="return checksearchinput();" class="navbar-form navbar-right" action="#">
+                            <div class="form-group has-feedback">
+                                <input type="search" id="search" name="q" value="" class="form-control searchinput input-xs searchinput" placeholder="Search" style="width:580px;">
+                                <div class="form-control-feedback">
+                                    <input type="submit" class="icon-search3 searchicon text-muted text-size-base" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+
+                        <li class="dropdown language-switch">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> <img src="/schoobrary-development/santosh/public/images/flags/ae.png" class="position-left" id="currentset" rel="rtl"> <span class="caret"></span> </a>
+                            <ul class="dropdown-menu active">
+                                <li>
+                                    <a href="javascript:void(0)" rel="ca" id="en_US" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ca.png" alt=""> English</a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)" rel="ae" id="ar_AE" class="change_language"><img src="/schoobrary-development/santosh/public/images/flags/ae.png" alt=""> Arabic</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle userbox_top" data-toggle="dropdown" aria-expanded="true" style="padding-top: 9px; padding-bottom: 8px;">
+                                <img src="http://s3.amazonaws.com/bucket.hawwaz.com/file_1510571234.png" alt="" class="">
+
+                            </a>
+
+                            <ul class="dropdown-menu profiledrop_width">
+                                <div class="alartbox">This account is managed by <span>pironcorp.com.</span><br>
+                                    <a href="#">Learn more</a></div>
+
+                                <li class="p-10">
+                                    <div class="media">
+                                        <a href="#" class="media-left">
+                                            <img src="http://s3.amazonaws.com/bucket.hawwaz.com/file_1510571234.png" class="img-circle img-lg" style="width: 70px !important; height: 70px !important;" alt="">
+
+                                            <span class="changeimg">Change</span>
+                                        </a>
+
+                                        <div class="media-body">
+                                            <h6 class="media-heading">Hugo Bills</h6>
+                                            <span class="text-muted"><a href="mailto:Hugo@pironcorp.com">Hugo@pironcorp.com</a></span>
+
+                                            <a href="#" class="btn-primary btn-sm btn mt-10">My Account</a>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+
+
+                                <div class="panel-footer pt-10 pb-5 text-right"><a href="../public/login.html" class="btn-default btn-xs btn"> Logout</a></div>
+
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-header ">
+        <div class="breadcrumb-line breadcrumb-line-wide">
+            <ul class="breadcrumb">
+                <li>User Management</li>
+
+            </ul>
+
+            <ul class="breadcrumb-elements">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-gear position-left"></i>
+
+                        <span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#"><i class="icon-user-lock"></i> Account security</a></li>
+                        <li><a href="#"><i class="icon-statistics"></i> Analytics</a></li>
+                        <li><a href="#"><i class="icon-accessibility"></i> Accessibility</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-gear"></i> All settings</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="breadcrumb-elements-toggle"><i class="icon-menu-open"></i></a>
+        </div>
+    </div>
+    <div class="page-container">
+        <!-- Page content -->
+        <div class="page-content custom-work">
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main sidebar-default">
+                <div class="sidebar-content">
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="navigation-header"><span>Navigation</span> <i class="icon-menu" title="Main pages"></i></li>
+                                <li><a href="school_user_management.html"><i class="icon-users"></i> <span>User Management</span></a></li>
+                                <li><a href="school_listing.html"><i class="icon-graduation2"></i> School Listing</a></li>
+                                <!-- /main -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+                </div>
+            </div>
+            <!-- /main sidebar -->
+            <!-- Main content -->
+            <div class="content-wrapper">
+                <div class="pl-10 col-lg-6 col-lg-offset-3">
+                    <!-- course header-->
+                    <div class="panel">
+                        <div class="panel-heading" style='border-bottom:1px solid #ddd'>
+                            <h4 class="panel-title">Create School</h4>
+                        </div>
+                        <div class=panel-body>
+                            <div class=form-horizontal>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>Country</label>
+                                    <div class=col-md-10>
+                                        <select name="location" data-width=100% class="bootstrap-select">
+												<option>Select Country</option>
+												<option value="3">Chile</option>
+												<option value="4">Argentina</option>
+												<option value="5">Colombia</option>
+												<option value="6">Peru</option>
+											</select>
+                                    </div>
+                                </div>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>School Name</label>
+                                    <div class=col-md-10>
+                                        <input type="text" class="form-control" placeholder='School Name'>
+                                    </div>
+                                </div>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>School or District Name</label>
+                                    <div class=col-md-10>
+                                        <input type="text" class="form-control" placeholder='School or District Name'>
+                                    </div>
+                                </div>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>Partner Organization Name</label>
+                                    <div class=col-md-10>
+                                        <select name="location" data-width=100% class="bootstrap-select">
+												<option>Any Organization</option>
+										</select>
+                                    </div>
+                                </div>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>School Type</label>
+                                    <div class=col-md-10>
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										Private
+									</label>
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										Public
+									</label>
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										Public Charter
+									</label>
+                                    </div>
+                                </div>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>Community Type</label>
+                                    <div class=col-md-10>
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										Rural
+									</label>
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										Suburban
+									</label>
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										Urban
+									</label>
+                                    </div>
+                                </div>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>FRL%</label>
+                                    <div class=col-md-10>
+                                        <select class="bootstrap-select" data-width="100%">
+
+                                        <option value="">Any FRL %</option>
+                                        <option value="0-19">0 - 19%</option>
+                                        <option value="20-39">20 - 39%</option>
+                                        <option value="40-59">40 - 59%</option>
+                                        <option value="60-79">60 - 79%</option>
+                                        <option value="80-100">80 - 100%</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>ELL%</label>
+                                    <div class=col-md-10>
+                                        <select class="bootstrap-select" data-width="100%">
+                                <option value="">Any</option>
+                                <option value="1">&lt; 1 year</option>
+                                <option value="3">1 - 3 years</option>
+                                <option value="5">3 - 5 years</option>
+                                <option value="10">5 - 10 years</option>
+                                <option value="11">10+ years</option>
+                            </select>
+                                    </div>
+                                </div>
+
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>Years Blended</label>
+                                    <div class=col-md-10>
+                                        <select class="bootstrap-select" data-width="100%">
+                                <option value="">Any</option>
+                                <option value="1">&lt; 1 year</option>
+                                <option value="3">1 - 3 years</option>
+                                <option value="5">3 - 5 years</option>
+                                <option value="10">5 - 10 years</option>
+                                <option value="11">10+ years</option>
+                            </select>
+                                    </div>
+                                </div>
+
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>City</label>
+                                    <div class=col-md-10>
+                                        <select class="bootstrap-select" data-width="100%">
+                                <option value="">Any City</option>
+                                                                    <option value="176 Wellington Parade, East Melbourne, Victoria - 3002">176 Wellington Parade, East Melbourne, Victoria - 3002</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="Abu Dhabi">Abu Dhabi</option>
+                                                                    <option value="Accra">Accra</option>
+                                                                    <option value="Alexandria">Alexandria</option>
+                                                                    <option value="Algoma">Algoma</option>
+                                                                    <option value="Allentown">Allentown</option>
+                                                                    <option value="Alpharetta">Alpharetta</option>
+                                                                    <option value="Amarillo">Amarillo</option>
+                                                                    <option value="Amherst">Amherst</option>
+                                                                    <option value="Anaheim">Anaheim</option>
+                                                                    <option value="Anchorage">Anchorage</option>
+                                                                    <option value="Andover">Andover</option>
+                                                                    <option value="Andrews">Andrews</option>
+                                                                    <option value="Ann Arbor">Ann Arbor</option>
+                                                                    <option value="Arcata">Arcata</option>
+                                                                    <option value="Arvada">Arvada</option>
+                                                                    <option value="Ashburn">Ashburn</option>
+                                                                    <option value="Atherton">Atherton</option>
+                                                                    <option value="Auckland">Auckland</option>
+                                                                    <option value="Aurora">Aurora</option>
+                                                                    <option value="Austin">Austin</option>
+                                                                    <option value="Baker City">Baker City</option>
+                                                                    <option value="Baltimore">Baltimore</option>
+                                                                    <option value="Bancroft">Bancroft</option>
+                                                                    <option value="Barrington">Barrington</option>
+                                                                    <option value="Barron">Barron</option>
+                                                                    <option value="Baton Rouge">Baton Rouge</option>
+                                                                    <option value="Baxter">Baxter</option>
+                                                                    <option value="Beaumont">Beaumont</option>
+                                                                    <option value="Belleville">Belleville</option>
+                                                                    <option value="Belo Horizonte, Minas Gerais">Belo Horizonte, Minas Gerais</option>
+                                                                    <option value="Bensenville">Bensenville</option>
+                                                                    <option value="Bergenfield">Bergenfield</option>
+                                                                    <option value="Bernardsville">Bernardsville</option>
+                                                                    <option value="Beverly Hills">Beverly Hills</option>
+                                                                    <option value="Birmingham">Birmingham</option>
+                                                                    <option value="Biscoe">Biscoe</option>
+                                                                    <option value="Bladensburg">Bladensburg</option>
+                                                                    <option value="Bloomington">Bloomington</option>
+                                                                    <option value="Boonville">Boonville</option>
+                                                                    <option value="Boston">Boston</option>
+                                                                    <option value="Boulder">Boulder</option>
+                                                                    <option value="Bramley, Johannesburg, Gauteng">Bramley, Johannesburg, Gauteng</option>
+                                                                    <option value="Brattleboro">Brattleboro</option>
+                                                                    <option value="Brewster">Brewster</option>
+                                                                    <option value="Bridgeport">Bridgeport</option>
+                                                                    <option value="Brighton">Brighton</option>
+                                                                    <option value="Broken Bow">Broken Bow</option>
+                                                                    <option value="Bronx">Bronx</option>
+                                                                    <option value="Brooklyn">Brooklyn</option>
+                                                                    <option value="Brooklyn Park">Brooklyn Park</option>
+                                                                    <option value="Brownsville">Brownsville</option>
+                                                                    <option value="Burleson">Burleson</option>
+                                                                    <option value="Byron">Byron</option>
+                                                                    <option value="Cabot">Cabot</option>
+                                                                    <option value="Cadiz">Cadiz</option>
+                                                                    <option value="Calgary, AB">Calgary, AB</option>
+                                                                    <option value="Cambridge City">Cambridge City</option>
+                                                                    <option value="Çanakkale">Çanakkale</option>
+                                                                    <option value="Cape Town, Western Cape">Cape Town, Western Cape</option>
+                                                                    <option value="Carmel">Carmel</option>
+                                                                    <option value="Carrollton">Carrollton</option>
+                                                                    <option value="Cave Creek">Cave Creek</option>
+                                                                    <option value="Cedar Rapids">Cedar Rapids</option>
+                                                                    <option value="Center Point">Center Point</option>
+                                                                    <option value="Central Falls">Central Falls</option>
+                                                                    <option value="Centurion, Pretoria, Gauteng">Centurion, Pretoria, Gauteng</option>
+                                                                    <option value="Chandigarh">Chandigarh</option>
+                                                                    <option value="Chanhassen">Chanhassen</option>
+                                                                    <option value="Chantilly">Chantilly</option>
+                                                                    <option value="Charlotte">Charlotte</option>
+                                                                    <option value="Chaska">Chaska</option>
+                                                                    <option value="Chattahoochee">Chattahoochee</option>
+                                                                    <option value="Chattanooga">Chattanooga</option>
+                                                                    <option value="Chepachet">Chepachet</option>
+                                                                    <option value="Chicago">Chicago</option>
+                                                                    <option value="Cincinnati">Cincinnati</option>
+                                                                    <option value="Cleveland">Cleveland</option>
+                                                                    <option value="Cleveland Heights">Cleveland Heights</option>
+                                                                    <option value="Clinton Township">Clinton Township</option>
+                                                                    <option value="CLYDE">CLYDE</option>
+                                                                    <option value="Colorado Springs">Colorado Springs</option>
+                                                                    <option value="Columbia Heights">Columbia Heights</option>
+                                                                    <option value="Columbus">Columbus</option>
+                                                                    <option value="Compton">Compton</option>
+                                                                    <option value="Concord">Concord</option>
+                                                                    <option value="Conrad">Conrad</option>
+                                                                    <option value="Conway">Conway</option>
+                                                                    <option value="Conyers">Conyers</option>
+                                                                    <option value="Cookeville">Cookeville</option>
+                                                                    <option value="Copper Center">Copper Center</option>
+                                                                    <option value="Coral Gables">Coral Gables</option>
+                                                                    <option value="Corning">Corning</option>
+                                                                    <option value="Coronado">Coronado</option>
+                                                                    <option value="Coventry">Coventry</option>
+                                                                    <option value="Cresta, Randburg, Gauteng">Cresta, Randburg, Gauteng</option>
+                                                                    <option value="Curitiba, Paraná">Curitiba, Paraná</option>
+                                                                    <option value="Curtis">Curtis</option>
+                                                                    <option value="Dahlgren">Dahlgren</option>
+                                                                    <option value="Dallas">Dallas</option>
+                                                                    <option value="Daly City">Daly City</option>
+                                                                    <option value="Danville">Danville</option>
+                                                                    <option value="Deary">Deary</option>
+                                                                    <option value="Deephaven">Deephaven</option>
+                                                                    <option value="Denver">Denver</option>
+                                                                    <option value="Des Moines">Des Moines</option>
+                                                                    <option value="Detroit">Detroit</option>
+                                                                    <option value="Dhaka">Dhaka</option>
+                                                                    <option value="Diepsloot, Gauteng">Diepsloot, Gauteng</option>
+                                                                    <option value="Dorchester">Dorchester</option>
+                                                                    <option value="Dousman">Dousman</option>
+                                                                    <option value="Downington">Downington</option>
+                                                                    <option value="Dubna">Dubna</option>
+                                                                    <option value="Dumaguete">Dumaguete</option>
+                                                                    <option value="Dupree">Dupree</option>
+                                                                    <option value="Durban, KwaZulu Natal">Durban, KwaZulu Natal</option>
+                                                                    <option value="Durham">Durham</option>
+                                                                    <option value="E. Walpole">E. Walpole</option>
+                                                                    <option value="Eagle">Eagle</option>
+                                                                    <option value="Eagle Point">Eagle Point</option>
+                                                                    <option value="Eagleville">Eagleville</option>
+                                                                    <option value="East London">East London</option>
+                                                                    <option value="East Sandwich">East Sandwich</option>
+                                                                    <option value="East Weymouth">East Weymouth</option>
+                                                                    <option value="Edison">Edison</option>
+                                                                    <option value="El Cerrito">El Cerrito</option>
+                                                                    <option value="El Dorado">El Dorado</option>
+                                                                    <option value="El Paso">El Paso</option>
+                                                                    <option value="Ellenwood">Ellenwood</option>
+                                                                    <option value="Elm Creek">Elm Creek</option>
+                                                                    <option value="Englewood">Englewood</option>
+                                                                    <option value="Escondido">Escondido</option>
+                                                                    <option value="Euless">Euless</option>
+                                                                    <option value="Evans">Evans</option>
+                                                                    <option value="Evanston">Evanston</option>
+                                                                    <option value="Exeter">Exeter</option>
+                                                                    <option value="Fairbanks">Fairbanks</option>
+                                                                    <option value="Fairfax">Fairfax</option>
+                                                                    <option value="Falcon">Falcon</option>
+                                                                    <option value="Farmington">Farmington</option>
+                                                                    <option value="Ferndale, Randburg, Gauteng">Ferndale, Randburg, Gauteng</option>
+                                                                    <option value="Fleurhof, Gauteng">Fleurhof, Gauteng</option>
+                                                                    <option value="Flower Mound">Flower Mound</option>
+                                                                    <option value="Fort Collins">Fort Collins</option>
+                                                                    <option value="Fort Pierce">Fort Pierce</option>
+                                                                    <option value="Fort Worth">Fort Worth</option>
+                                                                    <option value="Foster">Foster</option>
+                                                                    <option value="Fraser">Fraser</option>
+                                                                    <option value="Fredericksburg">Fredericksburg</option>
+                                                                    <option value="Gainesville">Gainesville</option>
+                                                                    <option value="Garden City Park">Garden City Park</option>
+                                                                    <option value="Garland">Garland</option>
+                                                                    <option value="Gent">Gent</option>
+                                                                    <option value="Gessner Rd Houston">Gessner Rd Houston</option>
+                                                                    <option value="Gibbon">Gibbon</option>
+                                                                    <option value="Gilbert">Gilbert</option>
+                                                                    <option value="Gilroy">Gilroy</option>
+                                                                    <option value="Glennallen">Glennallen</option>
+                                                                    <option value="Goose Creek">Goose Creek</option>
+                                                                    <option value="Goshen">Goshen</option>
+                                                                    <option value="Gothenburg">Gothenburg</option>
+                                                                    <option value="Grand Rapids">Grand Rapids</option>
+                                                                    <option value="Greater Cairo">Greater Cairo</option>
+                                                                    <option value="Greeley">Greeley</option>
+                                                                    <option value="Green Sea">Green Sea</option>
+                                                                    <option value="Groton">Groton</option>
+                                                                    <option value="Gugulethu, Western Cape">Gugulethu, Western Cape</option>
+                                                                    <option value="Halfway House, Midrand, Gauteng">Halfway House, Midrand, Gauteng</option>
+                                                                    <option value="Hamilton">Hamilton</option>
+                                                                    <option value="Hangush, KwaZulu Natal">Hangush, KwaZulu Natal</option>
+                                                                    <option value="Harrisburg">Harrisburg</option>
+                                                                    <option value="Hartford">Hartford</option>
+                                                                    <option value="Haslett">Haslett</option>
+                                                                    <option value="Hawthorne">Hawthorne</option>
+                                                                    <option value="Hayward">Hayward</option>
+                                                                    <option value="Hertford">Hertford</option>
+                                                                    <option value="Hiawatha">Hiawatha</option>
+                                                                    <option value="Hilton">Hilton</option>
+                                                                    <option value="Houston">Houston</option>
+                                                                    <option value="Hummelstown">Hummelstown</option>
+                                                                    <option value="Huntington Beach">Huntington Beach</option>
+                                                                    <option value="Huntington Park">Huntington Park</option>
+                                                                    <option value="Huntley">Huntley</option>
+                                                                    <option value="Hurricane">Hurricane</option>
+                                                                    <option value="Hyderabad">Hyderabad</option>
+                                                                    <option value="Ibirubá">Ibirubá</option>
+                                                                    <option value="Ibirubá/RS">Ibirubá/RS</option>
+                                                                    <option value="Incline Village">Incline Village</option>
+                                                                    <option value="Indiana">Indiana</option>
+                                                                    <option value="Indianapolis">Indianapolis</option>
+                                                                    <option value="Itajai - Santa Catarina">Itajai - Santa Catarina</option>
+                                                                    <option value="Ithaca">Ithaca</option>
+                                                                    <option value="Jackal Creek, Gauteng">Jackal Creek, Gauteng</option>
+                                                                    <option value="Jamaica Plain">Jamaica Plain</option>
+                                                                    <option value="Johannesburg">Johannesburg</option>
+                                                                    <option value="Johannesburg, Gauteng">Johannesburg, Gauteng</option>
+                                                                    <option value="Jundiaí">Jundiaí</option>
+                                                                    <option value="Kalona">Kalona</option>
+                                                                    <option value="Katy">Katy</option>
+                                                                    <option value="Kaysville">Kaysville</option>
+                                                                    <option value="Keller">Keller</option>
+                                                                    <option value="Kingman">Kingman</option>
+                                                                    <option value="Kingsport">Kingsport</option>
+                                                                    <option value="Kingston">Kingston</option>
+                                                                    <option value="Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur">Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</option>
+                                                                    <option value="Kuala Terengganu, Terengganu">Kuala Terengganu, Terengganu</option>
+                                                                    <option value="Lakewood">Lakewood</option>
+                                                                    <option value="Lancaster">Lancaster</option>
+                                                                    <option value="Land O Lakes">Land O Lakes</option>
+                                                                    <option value="Langepas">Langepas</option>
+                                                                    <option value="Lanoka Harbor">Lanoka Harbor</option>
+                                                                    <option value="Laredo">Laredo</option>
+                                                                    <option value="Las Vegas">Las Vegas</option>
+                                                                    <option value="Layton">Layton</option>
+                                                                    <option value="Lebanon">Lebanon</option>
+                                                                    <option value="Leesburg">Leesburg</option>
+                                                                    <option value="Lewisville">Lewisville</option>
+                                                                    <option value="Lexington">Lexington</option>
+                                                                    <option value="Liberty">Liberty</option>
+                                                                    <option value="lima">lima</option>
+                                                                    <option value="Lindsay">Lindsay</option>
+                                                                    <option value="Litchfield">Litchfield</option>
+                                                                    <option value="Little Rock">Little Rock</option>
+                                                                    <option value="Littleton">Littleton</option>
+                                                                    <option value="Liverpool">Liverpool</option>
+                                                                    <option value="Locust Grove">Locust Grove</option>
+                                                                    <option value="Logan">Logan</option>
+                                                                    <option value="London">London</option>
+                                                                    <option value="Loris">Loris</option>
+                                                                    <option value="Los Altos">Los Altos</option>
+                                                                    <option value="Los Angeles">Los Angeles</option>
+                                                                    <option value="Los Gatos">Los Gatos</option>
+                                                                    <option value="Lufkin">Lufkin</option>
+                                                                    <option value="Mabalacat City">Mabalacat City</option>
+                                                                    <option value="Macon">Macon</option>
+                                                                    <option value="Makati City">Makati City</option>
+                                                                    <option value="malim nawar">malim nawar</option>
+                                                                    <option value="Manaus">Manaus</option>
+                                                                    <option value="Manchester">Manchester</option>
+                                                                    <option value="Manheim">Manheim</option>
+                                                                    <option value="Maple Park">Maple Park</option>
+                                                                    <option value="Marion">Marion</option>
+                                                                    <option value="Marlboro">Marlboro</option>
+                                                                    <option value="Marshalltown">Marshalltown</option>
+                                                                    <option value="Mc Leansboro">Mc Leansboro</option>
+                                                                    <option value="McDonough">McDonough</option>
+                                                                    <option value="MEDOWIE">MEDOWIE</option>
+                                                                    <option value="Melaka, Melaka">Melaka, Melaka</option>
+                                                                    <option value="Memphis">Memphis</option>
+                                                                    <option value="Menifee">Menifee</option>
+                                                                    <option value="Mentor">Mentor</option>
+                                                                    <option value="Meriden">Meriden</option>
+                                                                    <option value="Meridian">Meridian</option>
+                                                                    <option value="Merritt Island">Merritt Island</option>
+                                                                    <option value="Mexico">Mexico</option>
+                                                                    <option value="Miami">Miami</option>
+                                                                    <option value="Middlebury">Middlebury</option>
+                                                                    <option value="Middleton">Middleton</option>
+                                                                    <option value="Milan">Milan</option>
+                                                                    <option value="Millis">Millis</option>
+                                                                    <option value="Milpitas">Milpitas</option>
+                                                                    <option value="Milwaukee">Milwaukee</option>
+                                                                    <option value="Minneapolis">Minneapolis</option>
+                                                                    <option value="Monroe">Monroe</option>
+                                                                    <option value="Montecito">Montecito</option>
+                                                                    <option value="Monterey">Monterey</option>
+                                                                    <option value="Monterrey">Monterrey</option>
+                                                                    <option value="Montgomery">Montgomery</option>
+                                                                    <option value="Monticello">Monticello</option>
+                                                                    <option value="Mooresville">Mooresville</option>
+                                                                    <option value="Moorpark">Moorpark</option>
+                                                                    <option value="Moreno Valley">Moreno Valley</option>
+                                                                    <option value="Morgan Hill">Morgan Hill</option>
+                                                                    <option value="Morganville">Morganville</option>
+                                                                    <option value="Morristown">Morristown</option>
+                                                                    <option value="Moscow">Moscow</option>
+                                                                    <option value="Mountain House">Mountain House</option>
+                                                                    <option value="Mountain Top">Mountain Top</option>
+                                                                    <option value="Mountain View">Mountain View</option>
+                                                                    <option value="Mt. Hope">Mt. Hope</option>
+                                                                    <option value="Muar, Johor">Muar, Johor</option>
+                                                                    <option value="Mumbai">Mumbai</option>
+                                                                    <option value="Mundelein">Mundelein</option>
+                                                                    <option value="Murphy">Murphy</option>
+                                                                    <option value="Murray">Murray</option>
+                                                                    <option value="Myrtle Beach">Myrtle Beach</option>
+                                                                    <option value="Naches">Naches</option>
+                                                                    <option value="Nampa">Nampa</option>
+                                                                    <option value="Nashville">Nashville</option>
+                                                                    <option value="Natick">Natick</option>
+                                                                    <option value="New Albany">New Albany</option>
+                                                                    <option value="New Cairo">New Cairo</option>
+                                                                    <option value="New Doornfontein, Johannesburg, Gauteng">New Doornfontein, Johannesburg, Gauteng</option>
+                                                                    <option value="New Haven">New Haven</option>
+                                                                    <option value="New Holland">New Holland</option>
+                                                                    <option value="New London">New London</option>
+                                                                    <option value="New Orleans">New Orleans</option>
+                                                                    <option value="New York">New York</option>
+                                                                    <option value="New York City">New York City</option>
+                                                                    <option value="Newark">Newark</option>
+                                                                    <option value="Newton">Newton</option>
+                                                                    <option value="Nogales">Nogales</option>
+                                                                    <option value="North Kingstown">North Kingstown</option>
+                                                                    <option value="North Las Vegas">North Las Vegas</option>
+                                                                    <option value="North Scituate">North Scituate</option>
+                                                                    <option value="Northbrook">Northbrook</option>
+                                                                    <option value="Norwalk">Norwalk</option>
+                                                                    <option value="Oakland">Oakland</option>
+                                                                    <option value="Oakland, CA &amp; Indianapolis, IN">Oakland, CA &amp; Indianapolis, IN</option>
+                                                                    <option value="Odessa">Odessa</option>
+                                                                    <option value="Okemos">Okemos</option>
+                                                                    <option value="Omaha">Omaha</option>
+                                                                    <option value="Oregon">Oregon</option>
+                                                                    <option value="Orlando">Orlando</option>
+                                                                    <option value="Oxenford">Oxenford</option>
+                                                                    <option value="Oxford">Oxford</option>
+                                                                    <option value="Palo Alto">Palo Alto</option>
+                                                                    <option value="Paramus">Paramus</option>
+                                                                    <option value="Parma">Parma</option>
+                                                                    <option value="Pea Ridge">Pea Ridge</option>
+                                                                    <option value="Pen Argyl">Pen Argyl</option>
+                                                                    <option value="Perry Hall">Perry Hall</option>
+                                                                    <option value="Perth">Perth</option>
+                                                                    <option value="Pflugerville">Pflugerville</option>
+                                                                    <option value="Philadelphia">Philadelphia</option>
+                                                                    <option value="Phoenix">Phoenix</option>
+                                                                    <option value="Pickerington">Pickerington</option>
+                                                                    <option value="Piedmont">Piedmont</option>
+                                                                    <option value="Plano">Plano</option>
+                                                                    <option value="Pocatello">Pocatello</option>
+                                                                    <option value="Ponce De Leon">Ponce De Leon</option>
+                                                                    <option value="Portland">Portland</option>
+                                                                    <option value="Porto Alegre, Rio Grande do Sul">Porto Alegre, Rio Grande do Sul</option>
+                                                                    <option value="Portsmouth">Portsmouth</option>
+                                                                    <option value="Potomac">Potomac</option>
+                                                                    <option value="Pottstown">Pottstown</option>
+                                                                    <option value="Prescott">Prescott</option>
+                                                                    <option value="Providence">Providence</option>
+                                                                    <option value="Provo">Provo</option>
+                                                                    <option value="Quemú Quemú">Quemú Quemú</option>
+                                                                    <option value="Quezon City">Quezon City</option>
+                                                                    <option value="Quezon City, M. Mla.">Quezon City, M. Mla.</option>
+                                                                    <option value="Quezon City, Metro Manila">Quezon City, Metro Manila</option>
+                                                                    <option value="Racine">Racine</option>
+                                                                    <option value="Raymondville, TX">Raymondville, TX</option>
+                                                                    <option value="Red Oak">Red Oak</option>
+                                                                    <option value="Redford">Redford</option>
+                                                                    <option value="Redwood City">Redwood City</option>
+                                                                    <option value="Redwood City, Ca">Redwood City, Ca</option>
+                                                                    <option value="Republic">Republic</option>
+                                                                    <option value="Reseda">Reseda</option>
+                                                                    <option value="Reynoldsburg">Reynoldsburg</option>
+                                                                    <option value="Richmond">Richmond</option>
+                                                                    <option value="Richmond Hill">Richmond Hill</option>
+                                                                    <option value="Rincón de Romos, Aguascalientes">Rincón de Romos, Aguascalientes</option>
+                                                                    <option value="RIO DE JANEIRO">RIO DE JANEIRO</option>
+                                                                    <option value="Rio de Janeiro, Rio de Janeiro">Rio de Janeiro, Rio de Janeiro</option>
+                                                                    <option value="Rio Rancho">Rio Rancho</option>
+                                                                    <option value="Riverside">Riverside</option>
+                                                                    <option value="Rock Hill">Rock Hill</option>
+                                                                    <option value="Rockville">Rockville</option>
+                                                                    <option value="Rocky River">Rocky River</option>
+                                                                    <option value="Roseville">Roseville</option>
+                                                                    <option value="Rynfield, Benoni, Gauteng">Rynfield, Benoni, Gauteng</option>
+                                                                    <option value="Sacramento">Sacramento</option>
+                                                                    <option value="Saint Albans">Saint Albans</option>
+                                                                    <option value="Saint George">Saint George</option>
+                                                                    <option value="Saint Paris">Saint Paris</option>
+                                                                    <option value="Salisbury">Salisbury</option>
+                                                                    <option value="Salt Lake City">Salt Lake City</option>
+                                                                    <option value="Salto Grande">Salto Grande</option>
+                                                                    <option value="San Antonio">San Antonio</option>
+                                                                    <option value="San Diego">San Diego</option>
+                                                                    <option value="San Francisco">San Francisco</option>
+                                                                    <option value="San Francisco, Ca">San Francisco, Ca</option>
+                                                                    <option value="San Jose">San Jose</option>
+                                                                    <option value="San Mateo">San Mateo</option>
+                                                                    <option value="San Pedro">San Pedro</option>
+                                                                    <option value="Santa Catarina">Santa Catarina</option>
+                                                                    <option value="Santa Clara">Santa Clara</option>
+                                                                    <option value="São Luis, Maranhão">São Luis, Maranhão</option>
+                                                                    <option value="São Paulo">São Paulo</option>
+                                                                    <option value="São Paulo, São Paulo">São Paulo, São Paulo</option>
+                                                                    <option value="São Paulo/SP">São Paulo/SP</option>
+                                                                    <option value="Scarborough">Scarborough</option>
+                                                                    <option value="Seattle">Seattle</option>
+                                                                    <option value="Seremban, Negeri Sembilan">Seremban, Negeri Sembilan</option>
+                                                                    <option value="Seri Manjung, Perak">Seri Manjung, Perak</option>
+                                                                    <option value="Seward">Seward</option>
+                                                                    <option value="Sharon">Sharon</option>
+                                                                    <option value="Sialkot">Sialkot</option>
+                                                                    <option value="Sitiawan, Perak">Sitiawan, Perak</option>
+                                                                    <option value="Slana">Slana</option>
+                                                                    <option value="Slaterville Springs">Slaterville Springs</option>
+                                                                    <option value="Smyrna">Smyrna</option>
+                                                                    <option value="Somerville">Somerville</option>
+                                                                    <option value="Somolu">Somolu</option>
+                                                                    <option value="Sorocaba/SP">Sorocaba/SP</option>
+                                                                    <option value="South Orange County">South Orange County</option>
+                                                                    <option value="South Yarra">South Yarra</option>
+                                                                    <option value="Southfield">Southfield</option>
+                                                                    <option value="Sparks">Sparks</option>
+                                                                    <option value="Spring City">Spring City</option>
+                                                                    <option value="Springfield">Springfield</option>
+                                                                    <option value="St George">St George</option>
+                                                                    <option value="St. George">St. George</option>
+                                                                    <option value="Stanton">Stanton</option>
+                                                                    <option value="Stellenbosch, Western Cape">Stellenbosch, Western Cape</option>
+                                                                    <option value="Sterling">Sterling</option>
+                                                                    <option value="Strongsville">Strongsville</option>
+                                                                    <option value="Sunnyvale">Sunnyvale</option>
+                                                                    <option value="Surrey">Surrey</option>
+                                                                    <option value="Sutton-in-Ashfield">Sutton-in-Ashfield</option>
+                                                                    <option value="Swartz Creek">Swartz Creek</option>
+                                                                    <option value="Syracuse">Syracuse</option>
+                                                                    <option value="Tacoma">Tacoma</option>
+                                                                    <option value="Tangier">Tangier</option>
+                                                                    <option value="Tegucigalpa">Tegucigalpa</option>
+                                                                    <option value="Tenterden, Kent">Tenterden, Kent</option>
+                                                                    <option value="The Colony">The Colony</option>
+                                                                    <option value="Thornton">Thornton</option>
+                                                                    <option value="Throop">Throop</option>
+                                                                    <option value="Tiffin">Tiffin</option>
+                                                                    <option value="Tipton">Tipton</option>
+                                                                    <option value="Toledo">Toledo</option>
+                                                                    <option value="Tulsa">Tulsa</option>
+                                                                    <option value="Tustin">Tustin</option>
+                                                                    <option value="Upton">Upton</option>
+                                                                    <option value="Vancouver">Vancouver</option>
+                                                                    <option value="Venice">Venice</option>
+                                                                    <option value="Venus">Venus</option>
+                                                                    <option value="Vista">Vista</option>
+                                                                    <option value="Waipahu">Waipahu</option>
+                                                                    <option value="Wales">Wales</option>
+                                                                    <option value="Warwick">Warwick</option>
+                                                                    <option value="Washington">Washington</option>
+                                                                    <option value="Waterford">Waterford</option>
+                                                                    <option value="Waterkloof Glen, Gauteng">Waterkloof Glen, Gauteng</option>
+                                                                    <option value="Watertown">Watertown</option>
+                                                                    <option value="Watts">Watts</option>
+                                                                    <option value="Waukesha">Waukesha</option>
+                                                                    <option value="Wausau">Wausau</option>
+                                                                    <option value="Wayne">Wayne</option>
+                                                                    <option value="Weatherford">Weatherford</option>
+                                                                    <option value="West Branch">West Branch</option>
+                                                                    <option value="West Palm Beach">West Palm Beach</option>
+                                                                    <option value="West Valley City">West Valley City</option>
+                                                                    <option value="Westminster">Westminster</option>
+                                                                    <option value="Williamsburg">Williamsburg</option>
+                                                                    <option value="Wilmerding">Wilmerding</option>
+                                                                    <option value="Wilson">Wilson</option>
+                                                                    <option value="Windham">Windham</option>
+                                                                    <option value="Winlock">Winlock</option>
+                                                                    <option value="Winston-salem">Winston-salem</option>
+                                                                    <option value="Woodinville">Woodinville</option>
+                                                                    <option value="Wynne">Wynne</option>
+                                                                    <option value="Yuma">Yuma</option>
+                                                            </select>
+                                    </div>
+                                </div>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>State</label>
+                                    <div class=col-md-10>
+                                        <select class="bootstrap-select" data-width="100%">
+                                <option value="">Any State</option>
+                                                                    <option value="AL">Alabama</option>
+                                                                    <option value="AK">Alaska</option>
+                                                                    <option value="AZ">Arizona</option>
+                                                                    <option value="AR">Arkansas</option>
+                                                                    <option value="CA">California</option>
+                                                                    <option value="CO">Colorado</option>
+                                                                    <option value="CT">Connecticut</option>
+                                                                    <option value="DE">Delaware</option>
+                                                                    <option value="DC">District of Columbia</option>
+                                                                    <option value="FL">Florida</option>
+                                                                    <option value="GA">Georgia</option>
+                                                                    <option value="HI">Hawaii</option>
+                                                                    <option value="ID">Idaho</option>
+                                                                    <option value="IL">Illinois</option>
+                                                                    <option value="IN">Indiana</option>
+                                                                    <option value="IA">Iowa</option>
+                                                                    <option value="KS">Kansas</option>
+                                                                    <option value="KY">Kentucky</option>
+                                                                    <option value="LA">Louisiana</option>
+                                                                    <option value="ME">Maine</option>
+                                                                    <option value="MD">Maryland</option>
+                                                                    <option value="MA">Massachusetts</option>
+                                                                    <option value="MI">Michigan</option>
+                                                                    <option value="MN">Minnesota</option>
+                                                                    <option value="MS">Mississippi</option>
+                                                                    <option value="MO">Missouri</option>
+                                                                    <option value="MT">Montana</option>
+                                                                    <option value="NE">Nebraska</option>
+                                                                    <option value="NV">Nevada</option>
+                                                                    <option value="NH">New Hampshire</option>
+                                                                    <option value="NJ">New Jersey</option>
+                                                                    <option value="NM">New Mexico</option>
+                                                                    <option value="NY">New York</option>
+                                                                    <option value="NC">North Carolina</option>
+                                                                    <option value="ND">North Dakota</option>
+                                                                    <option value="OH">Ohio</option>
+                                                                    <option value="OK">Oklahoma</option>
+                                                                    <option value="OR">Oregon</option>
+                                                                    <option value="PA">Pennsylvania</option>
+                                                                    <option value="RI">Rhode Island</option>
+                                                                    <option value="SC">South Carolina</option>
+                                                                    <option value="SD">South Dakota</option>
+                                                                    <option value="TN">Tennessee</option>
+                                                                    <option value="TX">Texas</option>
+                                                                    <option value="UT">Utah</option>
+                                                                    <option value="VT">Vermont</option>
+                                                                    <option value="VA">Virginia</option>
+                                                                    <option value="WA">Washington</option>
+                                                                    <option value="WV">West Virginia</option>
+                                                                    <option value="WI">Wisconsin</option>
+                                                                    <option value="WY">Wyoming</option>
+                                                            </select>
+
+                                    </div>
+                                </div>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>Country</label>
+                                    <div class=col-md-10>
+                                        <select class="bootstrap-select" data-width="100%">
+
+                                <option value="">Any Country</option>
+                                                                    <option value="Argentina">Argentina</option>
+                                                                    <option value="Australia">Australia</option>
+                                                                    <option value="Bangladesh">Bangladesh</option>
+                                                                    <option value="Belgium">Belgium</option>
+                                                                    <option value="Belize">Belize</option>
+                                                                    <option value="Brazil">Brazil</option>
+                                                                    <option value="Canada">Canada</option>
+                                                                    <option value="Egypt">Egypt</option>
+                                                                    <option value="Ghana">Ghana</option>
+                                                                    <option value="Honduras">Honduras</option>
+                                                                    <option value="India">India</option>
+                                                                    <option value="Malaysia">Malaysia</option>
+                                                                    <option value="Mexico">Mexico</option>
+                                                                    <option value="Morocco">Morocco</option>
+                                                                    <option value="New Zealand">New Zealand</option>
+                                                                    <option value="Nigeria">Nigeria</option>
+                                                                    <option value="Pakistan">Pakistan</option>
+                                                                    <option value="Peru">Peru</option>
+                                                                    <option value="Philippines">Philippines</option>
+                                                                    <option value="Russian Federation">Russian Federation</option>
+                                                                    <option value="South Africa">South Africa</option>
+                                                                    <option value="Turkey">Turkey</option>
+                                                                    <option value="United Arab Emirates">United Arab Emirates</option>
+                                                                    <option value="United Kingdom">United Kingdom</option>
+                                                                    <option value="United States">United States</option>
+                                                            </select>
+                                    </div>
+                                </div>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>Blended Model</label>
+                                    <div class=col-md-10>
+
+                                        <label class="checkbox-inline">
+                                        <img src="../assets/img/icon/model-icon-a-la-carte.png" alt="" height="25" width="25">
+										<input type="checkbox" class="styled">
+										A La Carte
+									</label>
+
+                                        <label class="checkbox-inline">
+                                         <img src="../assets/img/icon/model-icon-enriched-virtual.png"  alt="" height="25" width="25">
+										<input type="checkbox" class="styled">
+										Enriched Virtual
+									</label>
+
+
+                                        <label class="checkbox-inline">
+                                         <img src="../assets/img/icon/model-icon-flex.png" alt="" height="25" width="25">
+										<input type="checkbox" class="styled">
+										Flex
+									</label>
+                                        <label class="checkbox-inline">
+                                         <img src="../assets/img/icon/model-icon-flipped-classroom.png" alt="" height="25" width="25">
+										<input type="checkbox" class="styled">
+										Flipped Classroom
+									</label>
+                                        <br>
+                                        <label class="checkbox-inline">
+                                         <img src="../assets/img/icon/model-icon-individual-rotation.png" alt="" height="25" width="25">
+										<input type="checkbox" class="styled">
+										Individual Rotation
+									</label>
+                                        <label class="checkbox-inline">
+                                        <img src="../assets/img/icon/model-icon-lab-rotation.png" alt="" height="25" width="25">
+										<input type="checkbox" class="styled">
+										Lab Rotation
+									</label>
+                                        <label class="checkbox-inline">
+                                       <img src="../assets/img/icon/model-icon-station-rotation.png" alt="" height="25" width="25">
+										<input type="checkbox" class="styled">
+										Station Rotation
+									</label>
+                                    </div>
+                                </div>
+
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>With 2 or more Blended Models</label>
+                                    <div class=col-md-10>
+                                        <select name="location" data-width=100% class="bootstrap-select">
+												<option>No</option>
+										</select>
+                                    </div>
+                                </div>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>Grades</label>
+                                    <div class=col-md-10>
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										Unchecked styled
+									</label>
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										Unchecked styled
+									</label>
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										Unchecked styled
+									</label>
+                                    </div>
+                                </div>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>EdTech Products</label>
+                                    <div class=col-md-10>
+                                        <input type="text" class="form-control" placeholder='Admin'>
+                                    </div>
+                                </div>
+
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>Program Focus</label>
+                                    <div class=col-md-10>
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										Dropout Recovery/Prevention
+									</label>
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										English Language Learners
+									</label>
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										General
+									</label>
+
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										Gifted/Talented
+									</label>
+
+
+                                        <label class="checkbox-inline">
+										<input type="checkbox" class="styled">
+										Special Education
+									</label>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>Admin</label>
+                                    <div class=col-md-10>
+                                        <input type="text" class="form-control" placeholder='Admin'>
+                                    </div>
+                                </div>
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>Password</label>
+                                    <div class=col-md-10>
+                                        <input type=password class=form-control placeholder=Password>
+                                    </div>
+                                </div>
+
+                                <div class=form-group>
+                                    <label class='control-label col-md-2'>Expired On</label>
+                                    <div class=col-md-10>
+                                        <div class="input-group"> <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+                                            <input type=text class="form-control datepicker" placeholder="Expired on">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='form-group no-margin-bottom'>
+                                    <div class='col-md-10 col-md-offset-2 text-right'>
+                                        <button type=button class="btn bg-success">Create School</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /main content -->
+        </div>
+        <!-- /page content -->
+        <!-- Footer -->
+        <div class="footer text-muted"> Powered by <a href="http://www.pironcorp.com/" target="_blank">Piron Corporation Inc</a>. </div>
+        <!-- /footer -->
+    </div>
+    <script>
+        function addMorerow(e) {
+
+
+            var x = `
+				<div class='row mb-10'>
+					<div class="col-lg-4">
+						<select class=bootstrap-select data-width=100%>
+							<option>Select Standard</option>
+							<option>1</option>
+							<option>2</option>
+						</select>
+					</div>
+					<div class="col-lg-4">
+						<select class=bootstrap-select data-width=100%>
+							<option>Select Grade</option>
+							<option>1</option>
+							<option>2</option>
+						</select>
+					</div>
+					<div class="col-lg-4">
+						<select class=bootstrap-select data-width=100%>
+							<option>Select Subject</option>
+							<option>1</option>
+							<option>2</option>
+						</select>
+					</div>
+				</div>
+				`;
+            $(e.srcElement).before(x);
+            $(".bootstrap-select").selectpicker();
+
+        }
+
+        $(function() {
+
+            $('.datepicker').daterangepicker({
+                singleDatePicker: true,
+                drops: "up"
+            });
+
+            $(document).on('change', '[name=CCO_CHECKBOX]', ccoPanel);
+            $(document).on('change', '[name=TEST_PLATFORM_CHECKBOX]', testPlatform);
+
+            function ccoPanel() {
+                $('[name=CCO_CHECKBOX]').is(':checked') ? $('#ccoPanel').show() : $('#ccoPanel').hide()
+            }
+
+            function testPlatform() {
+                $("[name=TEST_PLATFORM_CHECKBOX]").is(":checked") ? $("#testPlatform").show() : $("#testPlatform").hide()
+            }
+            ccoPanel();
+        })
+    </script>
+</body>
+
+</html>
